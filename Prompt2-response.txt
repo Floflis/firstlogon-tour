@@ -1,0 +1,15 @@
+To add more steps and move them to separate files, you can create a new Dart file for each step. Each file will contain a Step widget that you can customize according to your needs.
+
+For example, you can create a new file called step1.dart:
+
+You can do the same for step2.dart, step3.dart, and so on.
+
+Then, in your step_screen.dart file, you can import these steps and add them to your [buildSteps](file:///home/daniella/ubuntu_tour/lib/step_screen.dart#13%2C14-13%2C14) method:
+
+For the last step, you can add a "Finalize" button that closes the app. Here's an example of how you can do this:
+
+For adding other sample elements like radio buttons and cards with images, you can add them in the content property of your Step widget. Here's an example of how you can add a radio button:
+
+And here's an example of how you can add a card with an image:
+
+Remember to replace 'path_to_your_image' with the actual path to your image.

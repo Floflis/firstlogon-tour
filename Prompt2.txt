@@ -1,0 +1,5 @@
+About lib/step_screen.dart: about the buildSteps (such as Step 1), I want more steps (Step 2, Step 3, etc) and I want to move them to separate files instead of placing all into the same step_screen.dart
+
+Please add different mockup steps, each step will have a placeholder text of your choice; all of them (including Step 1, but except the last step which should have a "Finalize" button to close the app) should have a button to go to the next step (or, shouldn't this button be at step_screen.dark itself?).
+
+At some steps, you should also add other sample elements for me to later customize/modify, such as radio buttons choices, cards with images to choose an option (such as the OS theme/cursor color), etc.
