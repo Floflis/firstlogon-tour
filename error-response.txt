@@ -1,10 +1,9 @@
-The error you're encountering is due to a null safety issue. In Dart, a bool? type can hold true, false, or null, while a bool type can only hold true or false.
+The error you're encountering is due to the Navigator not finding the route '/step'. This is because you have two instances of MaterialApp in your application, one in main.dart and another in app.dart. The routes are defined in app.dart, but the MaterialApp in main.dart doesn't know about these routes.
 
-In your step_screen.dart file, you're trying to assign a bool? value to a bool variable, which is not allowed.
+To fix this, you should only have one MaterialApp in your application. You can remove the MaterialApp widget from main.dart and only use the UbuntuTourApp widget which is defined in app.dart.
 
-Here's the problematic line in your code:
+Here's how you can fix it:
 
+In main.dart, replace the runApp function with the following:
 
-To fix this, you need to ensure that the value you're assigning to [checkboxValue](file:///home/daniella/ubuntu_tour/lib/step_screen.dart#11%2C8-11%2C8) is not null. You can do this by providing a default value using the ?? operator. Here's how you can fix it:
-
-This will assign false to _checkboxValue if value[ is ](file:///home/daniella/ubuntu_tour/README.md#3%2C5-3%2C5)null.
+This will ensure that the UbuntuTourApp widget, which contains the defined routes, is the root of your widget tree. Now, when you navigate to '/step', the Navigator will be able to find the corresponding widget.
