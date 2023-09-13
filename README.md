@@ -9,6 +9,9 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 - Flutter SDK: Make sure you have Flutter installed on your machine. If not, you can get it from [here](https://flutter.dev/docs/get-started/install).
+
+#### Additional
+
 - Dart SDK: Dart comes with Flutter. If you've installed Flutter, you probably have Dart. If not, get it from [here](https://dart.dev/get-dart).
 - Linux: This application is designed to be compiled to Linux as a native application.
 
@@ -16,7 +19,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/ubuntutour.git
+git clone https://github.com/floflis/ubuntutour.git
 ```
 2. Navigate into the project directory
 ```bash
@@ -46,7 +49,7 @@ flutter test
 
 ## Authors
 
-- Your Name
+- Daniella Mesquita/Floflis DAO
 
 ## License
 
