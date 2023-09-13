@@ -1,0 +1,28 @@
+ubuntu_tour on  main [?] is 📦 v1.0.0+1 via 🎯 v3.1.1 
+❯ flutter build linux
+
+ERROR: lib/step_screen.dart:20:5: Error: 'step1' is imported from both 'package:ubuntu_tour/step1.dart' and 'package:ubuntu_tour/step2.dart'.
+ERROR:     step1(context),
+ERROR:     ^^^^^
+ERROR: lib/step_screen.dart:21:5: Error: The method 'step2' isn't defined for the class '_StepScreenState'.
+ERROR:  - '_StepScreenState' is from 'package:ubuntu_tour/step_screen.dart' ('lib/step_screen.dart').
+ERROR: Try correcting the name to the name of an existing method, or defining a method named 'step2'.
+ERROR:     step2(context),
+e class '_StepScreenState'.
+ERROR:  - '_StepScreenState' is from 'package:ubuntu_tour/step_screen.dart' ('lib/step_screen.dart').
+ERROR: Try correcting the name to the name of an existing method, or defining a method named 'step3'.
+ERROR:     step3(context),
+ERROR:     ^^^^^
+ERROR: lib/step_screen.dart:34:27: Error: Too few positional arguments: 1 required, 0 given.
+ERROR:         steps: _buildSteps(),
+ERROR:                           ^
+ERROR: lib/step_screen.dart:37:41: Error: Too few positional arguments: 1 required, 0 given.
+ERROR:           if (_currentStep < _buildSteps().length - 1) {
+ERROR:                                         ^
+ERROR: lib/step3.dart:40:5: Error: Undefined name 'SystemNavigator'.
+ERROR:     SystemNavigator.pop();
+ERROR:     ^^^^^^^^^^^^^^^
+ERROR: Target kernel_snapshot failed: Exception
+Building Linux application...                                           
+Build process failed
+
