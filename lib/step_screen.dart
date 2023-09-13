@@ -26,7 +26,7 @@ class _StepScreenState extends State<StepScreen> {
             ),
             Checkbox(
               value: _checkboxValue,
-              onChanged: (bool value) {
+              onChanged: (bool? value) {
                 setState(() {
                   _checkboxValue = value;
                 });
