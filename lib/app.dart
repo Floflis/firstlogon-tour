@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'welcome_screen.dart';
-import 'step_screen.dart';
+import 'screens/welcome_screen.dart';
+import 'screens/step_screen.dart';
 import 'dart:io';
 import 'dart:convert';
 

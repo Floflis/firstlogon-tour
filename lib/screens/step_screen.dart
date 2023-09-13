@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'app.dart';
+import '../app.dart';
 
 //import 'step1.dart';
 //import 'step2.dart';
