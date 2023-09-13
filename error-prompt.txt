@@ -1,24 +1,10 @@
-ubuntu_tour on  main [✘!?] is 📦 v1.0.0+1 via 🎯 v3.1.1 
+ubuntu_tour on  main [?] is 📦 v1.0.0+1 via 🎯 v3.1.1 
 ❯ flutter build linux
 
-ERROR: lib/main.dart:17:13: Error: The method 'WelcomeScreen' isn't defined for the class 'UbuntuTourApp'.
-ERROR:  - 'UbuntuTourApp' is from 'package:ubuntu_tour/main.dart' ('lib/main.dart').
-ERROR: Try correcting the name to the name of an existing method, or defining a method named 'WelcomeScreen'.
-ERROR:       home: WelcomeScreen(),
-ERROR:             ^^^^^^^^^^^^^
-ERROR: lib/welcome_screen.dart:23:13: Error: The method 'RaisedButton' isn't def
-b/welcome_screen.dart').
-ERROR: Try correcting the name to the name of an existing method, or defining a method named 'RaisedButton'.
-ERROR:             RaisedButton(
-ERROR:             ^^^^^^^^^^^^
-ERROR: lib/step_screen.dart:20:13: Error: The method 'RaisedButton' isn't defined for the class '_StepScreenState'.
-ERROR:  - '_StepScreenState' is from 'package:ubuntu_tour/step_screen.dart' ('lib/step_screen.dart').
-ERROR: Try correcting the name to the name of an existing method, or defining a method named 'RaisedButton'.
-ERROR:             RaisedButton(
-ERROR:             ^^^^^^^^^^^^
-ERROR: lib/step_screen.dart:29:26: Error: The argument type 'void Function(bool)' can't be assigned to the parameter type 'void Function(bool?)?' because 'bool?' is nullable and 'bool' isn't.
-ERROR:               onChanged: (bool value) {
-ERROR:                          ^
+ERROR: lib/step_screen.dart:31:36: Error: A value of type 'bool?' can't be assigned to a variable of type 'bool' because 'bool?' is nullable and 'bool' isn't.
+ERROR:                   _checkboxValue = value;
+ERROR:                                    ^
 ERROR: Target kernel_snapshot failed: Exception
 Building Linux application...                                           
 Build process failed
+
