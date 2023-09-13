@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'app.dart';
 
+import 'welcome_screen.dart';
+
 void main() {
   runApp(UbuntuTourApp());
 }
