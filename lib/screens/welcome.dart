@@ -32,3 +32,24 @@ class WelcomeScreen extends StatelessWidget {
     );
   }
 }
+
+//class WelcomeScreen extends StatelessWidget {
+//  @override
+//  Widget build(BuildContext context) {
+//    return FutureBuilder<String>(
+//      future: Executable.getOSName(),
+//      builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+//        if (snapshot.connectionState == ConnectionState.waiting) {
+//          return CircularProgressIndicator();
+//        } else {
+//          return Scaffold(
+//            appBar: AppBar(
+//              title: Text('Welcome to ${snapshot.data}'),
+//            ),
+//            // rest of the code...
+//          );
+//        }
+//      },
+//    );
+//  }
+//}

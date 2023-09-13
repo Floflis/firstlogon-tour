@@ -28,4 +28,9 @@ class Executable {
     String output = await process.stdout.transform(utf8.decoder).join();
     return output;
   }
+
+static Future<String> getOSName() async {
+  var process = await Process.run('awk', ['-F=', '/^NAME/{print \$2}', '/etc/os-release']);
+  return process.stdout.toString().trim().replaceAll('"', '');
+}
 }
