@@ -18,9 +18,9 @@ class _StepScreenState extends State<StepScreen> {
           children: <Widget>[
             Text('This is the placeholder for Step 1'),
             ElevatedButton(
-              child: Text('Run Executable'),
+              child: Text('Run Executable (sample: cinnamon-settings)'),
               onPressed: () async {
-                String output = await Executable.run('your-command-here');
+                String output = await Executable.run('cinnamon-settings');
                 print(output);
               },
             ),
