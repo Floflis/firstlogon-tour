@@ -1,4 +1,3 @@
-```dart
 import 'dart:io';
 import 'dart:convert';
 
@@ -9,4 +8,3 @@ class Executable {
     return output;
   }
 }
-```

@@ -1,0 +1,9 @@
+The error messages indicate that there are some undefined methods in your code. Here are the issues and their solutions:
+
+1. WelcomeScreen is not defined in UbuntuTourApp class. This is because WelcomeScreen is defined in welcome_screen.dart but it's not imported in main.dart. To fix this, you need to import welcome_screen.dart in main.dart:
+
+2. RaisedButton is not defined in WelcomeScreen and [StepScreenState](file:///home/daniella/ubuntu_tour/lib/step_screen.dart#6%2C3-6%2C3) classes. This is because RaisedButton has been replaced by ElevatedButton in Flutter 2.0. You need to replace all instances of RaisedButton with ElevatedButton in welcome_screen.dart and step_screen.dart.
+
+3. The onChanged callback in Checkbox widget is expecting a nullable boolean 1 but you are providing a non-nullable boolean 1. You need to change the callback to accept a nullable boolean in step_screen.dart:
+
+After making these changes, you should be able to build your Flutter application for Linux without any errors.

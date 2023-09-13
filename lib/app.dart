@@ -1,4 +1,3 @@
-```dart
 import 'package:flutter/material.dart';
 import 'welcome_screen.dart';
 import 'step_screen.dart';
@@ -30,4 +29,3 @@ class Executable {
     return output;
   }
 }
-```

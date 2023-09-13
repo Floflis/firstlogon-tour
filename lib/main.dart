@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
+import 'app.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(UbuntuTourApp());
 }
 
-class MyApp extends StatelessWidget {
+class UbuntuTourApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('My App'),
-        ),
-        body: Center(
-          child: Text('Hello, world!'),
-        ),
+      title: 'Ubuntu Tour',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      home: WelcomeScreen(),
     );
   }
 }
