@@ -25,9 +25,9 @@ git clone https://github.com/floflis/ubuntutour.git
 ```bash
 cd ubuntutour
 ```
-3. Get the dependencies
+3. Get the dependencies and prepare for Linux build
 ```bash
-flutter pub get
+./init.sh
 ```
 4. Compile the application
 ```bash
