@@ -1,11 +1,15 @@
-- fix all issues and enable multistep from separate files
-- mv steps into their own folder!
+- rename, rmv generic "ubuntu"
 
 - enable to export to .deb
 https://pub.dev/packages/flutter_to_debian
 https://github.com/jeffrey0606/flutter_to_debian (PR to fix 'debain')
 then add .deb instructions to /media/daniella/Seagate Expansion Drive/flo-bkp-sync_custom/CursorAI_promptRules.txt
 and copy deb features to /media/daniella/B/git/Floflis/Floflis/HTML5/B2G/davidLauncher/cinnamon
+
+- in app texts, replace "Ubuntu" by the output of a Linux command to get OS name (will be Ubuntu, Floflis or other) ; make this app OS-agnostic
+- add permissive MIT license in .md
+
+- fix all issues and enable multistep from separate files
 
 HOW HELLISH IS TO STYLIZE YOUR FLUTTER APP https://docs.flutter.dev/get-started/flutter-for/web-devs
 but here's the savior: https://docs.flutter-view.io/guide/styling-with-css https://docs.flutter-view.io/
