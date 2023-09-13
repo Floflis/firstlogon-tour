@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'screens/welcome_screen.dart';
-import 'screens/step_screen.dart';
+import 'screens/welcome.dart';
+import 'screens/steps.dart';
 import 'dart:io';
 import 'dart:convert';
 
@@ -16,7 +16,7 @@ class UbuntuTourApp extends StatelessWidget {
       home: WelcomeScreen(),
       routes: {
         '/welcome': (context) => WelcomeScreen(),
-        '/step': (context) => StepScreen(),
+        '/steps': (context) => StepScreen(),
       },
     );
   }

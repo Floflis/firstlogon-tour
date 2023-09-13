@@ -22,7 +22,7 @@ class WelcomeScreen extends StatelessWidget {
             SizedBox(height: 50),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/step');
+                Navigator.pushNamed(context, '/steps');
               },
               child: Text('Start Setup'),
             ),
