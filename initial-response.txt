@@ -1,0 +1,107 @@
+GENERATING PROJECT...
+Step 0
+Computing project structure
+To create this project, we will need several files for different purposes. Here's a breakdown of the files and their purposes:
+1. `pubspec.yaml`: This is the package file for Dart projects. It will contain the project metadata and dependencies.
+2. `main.dart`: This is the main entry point of the Flutter application. It will contain the main function and will call the runApp function with the MyApp class.
+3. `app.dart`: This file will contain the MyApp class which is a StatelessWidget. This is the root widget of the application.
+4. `welcome_screen.dart`: This file will contain the WelcomeScreen widget. This is the first screen that the user will see when they open the application.
+5. `step_screen.dart`: This file will contain the StepScreen widget. This screen will be shown for each step of the tour/wizard.
+6. `executable.dart`: This file will contain the code to open an external executable.
+7. `README.md`: This file will contain the instructions to compile and run the application.
+The order of creation should be as follows:
+1. `pubspec.yaml`: This file should be created first as it contains the project metadata and dependencies.
+2. `main.dart`: This file should be created next as it is the main entry point of the application.
+3. `app.dart`: This file should be created next as it contains the root widget of the application.
+4. `welcome_screen.dart`: This file should be created next as it contains the first screen of the application.
+5. `step_screen.dart`: This file should be created next as it contains the screens for each step of the tour/wizard.
+6. `executable.dart`: This file should be created next as it contains the code to open an external executable.
+7. `README.md`: This file should be created last as it contains the instructions to compile and run the application.
+Now, let's call the function with these filenames:
+```typescript
+functions.outputFileNames({
+  fileNames: [
+   "pubspec.yaml",
+   "main.dart",
+   "app.dart",
+   "welcome_screen.dart",
+   "step_screen.dart",
+   "executable.dart",
+   "README.md"
+  ]
+});
+```
+Step 1
+Finding related files for pubspec.yaml
+{
+  "dependencies": []
+}
+Step 2
+Generating pubspec.yaml
+Creating file...
+Thinking...
+Writing code...
+Step 3
+Finding related files for main.dart
+{
+  "dependencies": ["pubspec.yaml"]
+}
+Step 4
+Generating main.dart
+Creating file...
+Thinking...
+Sure, here is the `main.dart` file for your Flutter application:
+Writing code...
+Step 5
+Finding related files for app.dart
+{
+  "dependencies": ["main.dart"]
+}
+Step 6
+Generating app.dart
+Creating file...
+Thinking...
+Writing code...
+Step 7
+Finding related files for welcome_screen.dart
+{
+  "dependencies": ["main.dart", "app.dart"]
+}
+Step 8
+Generating welcome_screen.dart
+Creating file...
+Thinking...
+Writing code...
+Step 9
+Finding related files for step_screen.dart
+{
+  "dependencies": ["app.dart", "main.dart"]
+}
+Step 10
+Generating step_screen.dart
+Creating file...
+Thinking...
+Writing code...
+Step 11
+Finding related files for executable.dart
+{
+  "dependencies": ["main.dart", "app.dart", "welcome_screen.dart", "step_screen.dart"]
+}
+Step 12
+Generating executable.dart
+Creating file...
+Thinking...
+Writing code...
+Step 13
+Finding related files for README.md
+{
+  "dependencies": ["pubspec.yaml", "main.dart", "app.dart", "welcome_screen.dart", "step_screen.dart", "executable.dart"]
+}
+Step 14
+Generating README.md
+Creating file...
+Thinking...
+Writing code...
+Step 15
+All done!
+

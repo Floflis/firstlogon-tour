@@ -1,0 +1,13 @@
+Build a Flutter app. It should be able to leverage an external executable, such executable that can be a Rust program or even a Bash script executable.
+
+This Flutter app should be compilable to Linux, as a native application.
+
+How this Flutter (Dart language) app will work?
+This is an Ubuntu first-logon tour/wizard app.
+It should have a welcoming screen right when it is open.
+This welcoming screen will have a button for going to the next steps.
+Please add mockup steps, each step will have a placeholder text of your choice; they'll also have sample buttons that open an external executable (as mentioned before) and obviously a button to go to the next step.
+
+At the steps, you should also add other sample elements for me to later customize/modify, such as radio buttons/checkboxes, cards with images to choose an option (such as the OS theme/cursor color), etc.
+
+Ensure this Flutter app come with a README.md explaining EVERY step necessary to compile and put it to work.
