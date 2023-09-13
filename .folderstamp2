@@ -1,0 +1,682 @@
+This folder: /home/daniella/ubuntu_tour
+
+  File: ./.folderstamp
+  Size: 40        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868374     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:38:17.462008755 -0300
+Modify: 2023-09-13 15:38:17.462008755 -0300
+Change: 2023-09-13 15:38:17.462008755 -0300
+ Birth: 2023-09-13 15:38:17.462008755 -0300
+IPFS hash: QmVWxzBxQMUcfLqHib1nuUZENcZasAVnYua9jZfZumU7z2
+------------------------------
+  File: ./lib/main.dart
+  Size: 426       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9857057     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:40.522918815 -0300
+Modify: 2023-09-13 15:33:40.017139820 -0300
+Change: 2023-09-13 15:33:46.088975251 -0300
+ Birth: 2023-09-13 15:33:40.013139929 -0300
+IPFS hash: QmcsmaPb4s9t12zvoFSdjBc2W69cRJAWSae8sWCSvw4TLA
+------------------------------
+  File: ./step_screen.dart
+  Size: 1602      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9845981     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:40.566917726 -0300
+Modify: 2023-09-13 15:34:07.608395564 -0300
+Change: 2023-09-13 15:34:07.624395134 -0300
+ Birth: 2023-09-13 15:34:07.604395671 -0300
+IPFS hash: QmW7jQnwGpuV7teQX3keLnVMPutEnNjYRtgRY2Qt7SezSx
+------------------------------
+  File: ./pubspec.yaml
+  Size: 1706      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872494     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:27:27.600354192 -0300
+Modify: 2023-09-13 15:27:24.236468358 -0300
+Change: 2023-09-13 15:27:24.240468222 -0300
+ Birth: 2023-09-13 15:27:24.232468494 -0300
+IPFS hash: QmehEhAds7kG5WQs4ccTiKkzSC1rhUdZAYJNth8qAngx9y
+------------------------------
+  File: ./.git/COMMIT_EDITMSG
+  Size: 32        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868447     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:40.650915644 -0300
+Modify: 2023-09-13 15:31:54.920065289 -0300
+Change: 2023-09-13 15:31:54.920065289 -0300
+ Birth: 2023-09-13 15:15:06.537560116 -0300
+IPFS hash: QmTKz2HZWEca8Nz5GUuB3g6AJiZHpQuNtPP4ui3RS99PZ4
+------------------------------
+  File: ./.git/info/exclude
+  Size: 240       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9845975     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:14:44.531269207 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmcfzxUpw36y8fu2GR3s7Vgq7RBgooKtc6BgsqFnadsDLc
+------------------------------
+  File: ./.git/logs/HEAD
+  Size: 759       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868460     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:40.738913464 -0300
+Modify: 2023-09-13 15:31:54.920065289 -0300
+Change: 2023-09-13 15:31:54.920065289 -0300
+ Birth: 2023-09-13 15:15:06.537560116 -0300
+IPFS hash: QmdECK49818gDtXGtghCyXKsv5ciQn7RrDFF1a8J3BD6fc
+------------------------------
+  File: ./.git/logs/refs/heads/main
+  Size: 759       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868463     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:40.778912473 -0300
+Modify: 2023-09-13 15:31:54.920065289 -0300
+Change: 2023-09-13 15:31:54.920065289 -0300
+ Birth: 2023-09-13 15:15:06.537560116 -0300
+IPFS hash: QmdECK49818gDtXGtghCyXKsv5ciQn7RrDFF1a8J3BD6fc
+------------------------------
+  File: ./.git/HEAD
+  Size: 21        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868423     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:14:44.503271416 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmbRUdVtdtxcpdqyJE3iZwTJq7FPcXR1ErQRFB76sQCg9H
+------------------------------
+  File: ./.git/objects/70/72b51cda6726c653e16b9b383ff21b6ef91a50
+  Size: 393       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872628     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:40.858910491 -0300
+Modify: 2023-09-13 15:31:54.876066546 -0300
+Change: 2023-09-13 15:31:54.876066546 -0300
+ Birth: 2023-09-13 15:31:54.876066546 -0300
+IPFS hash: QmXZCjUA6CWrsRnvTrwyv7gxJHwJoeXhb1GFjHpCYsoGvk
+------------------------------
+  File: ./.git/objects/f1/51ebe7cc02070ae6fad60467d3b459f661956d
+  Size: 451       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868452     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:18:07.341322792 -0300
+Modify: 2023-09-13 15:15:06.537560116 -0300
+Change: 2023-09-13 15:15:06.537560116 -0300
+ Birth: 2023-09-13 15:15:06.537560116 -0300
+IPFS hash: QmTqZavHcC8bh3GHnnJCF6jkaByxMobWkBbvH56zU7Q1Be
+------------------------------
+  File: ./.git/objects/5d/0007a141c99806b204054750b6caf33eb3dda8
+  Size: 170       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868471     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:18:07.373320876 -0300
+Modify: 2023-09-13 15:18:07.353322073 -0300
+Change: 2023-09-13 15:18:07.353322073 -0300
+ Birth: 2023-09-13 15:18:07.353322073 -0300
+IPFS hash: QmY85WFWWj2Y6rWT7Dp5oH4H2jN9nAqbM8aM4Dp9xKYPmK
+------------------------------
+  File: ./.git/objects/e5/b2cb37cbd92ad8da36be6cb395d3c7b73cdf91
+  Size: 175       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872505     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:31:54.908065632 -0300
+Modify: 2023-09-13 15:28:33.374177656 -0300
+Change: 2023-09-13 15:28:33.374177656 -0300
+ Birth: 2023-09-13 15:28:33.374177656 -0300
+IPFS hash: QmP54pDwm4Y6gMyBLAWUTw8PbT3JghPtEDFGv2Mz5LFozJ
+------------------------------
+  File: ./.git/objects/83/4159ae971e631e31cee23a6663424888bc500b
+  Size: 800       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868430     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:18:07.357321834 -0300
+Modify: 2023-09-13 15:14:44.531269207 -0300
+Change: 2023-09-13 15:14:44.531269207 -0300
+ Birth: 2023-09-13 15:14:44.531269207 -0300
+IPFS hash: QmaLpfrvavCLw3JB2sY4ftAseVGVtLELb6QZJLhTJSZnGE
+------------------------------
+  File: ./.git/objects/76/d31ae1228d2f8a3a3d0b00c370a46d10ffb64a
+  Size: 754       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868442     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:28:33.386177269 -0300
+Modify: 2023-09-13 15:14:44.531269207 -0300
+Change: 2023-09-13 15:14:44.531269207 -0300
+ Birth: 2023-09-13 15:14:44.531269207 -0300
+IPFS hash: QmTTt5JsLAXjzyK3tLeoHFzbhBPDEX7yLEh3CzZ2UboRV9
+------------------------------
+  File: ./.git/objects/81/ac190495b3523d7ac4cdbfd0e3915bb914c806
+  Size: 994       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868438     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:41.110904249 -0300
+Modify: 2023-09-13 15:14:44.531269207 -0300
+Change: 2023-09-13 15:14:44.531269207 -0300
+ Birth: 2023-09-13 15:14:44.531269207 -0300
+IPFS hash: QmdKLKi6oqafVer6xJTnPoW36JvVg5wBBEBdcW39mvPAb7
+------------------------------
+  File: ./.git/objects/96/4ed875f6eee6ddf65a64fd219d4c5e70f9c1eb
+  Size: 443       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868432     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:29:10.872981110 -0300
+Modify: 2023-09-13 15:14:44.531269207 -0300
+Change: 2023-09-13 15:14:44.531269207 -0300
+ Birth: 2023-09-13 15:14:44.531269207 -0300
+IPFS hash: QmRQAGPn3pKrg6pbJjDrnUQXApLPHc8AVuk7Ro9UfCDTVB
+------------------------------
+  File: ./.git/objects/24/c5ac9d4132223607ec04084f050c5f1f800da3
+  Size: 361       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872503     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:41.198902069 -0300
+Modify: 2023-09-13 15:28:33.326179208 -0300
+Change: 2023-09-13 15:28:33.326179208 -0300
+ Birth: 2023-09-13 15:28:33.326179208 -0300
+IPFS hash: QmQp31DLtQLKnxKMG1hv3JRgrZ5dya6JtYfF8Dnajur7gU
+------------------------------
+  File: ./.git/objects/7f/b97dfd2dee366b3b6898113b64c66aa8245dd8
+  Size: 362       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872506     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:28:33.382177397 -0300
+Modify: 2023-09-13 15:28:33.374177656 -0300
+Change: 2023-09-13 15:28:33.378177527 -0300
+ Birth: 2023-09-13 15:28:33.374177656 -0300
+IPFS hash: QmTJJgsqgiAexr6hxeBZayB8Uterdcp3x5EKcPvt9xTqkb
+------------------------------
+  File: ./.git/objects/11/fefc577181be1cf254e20c8d7f5558d2e9d163
+  Size: 201       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868434     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:29:11.696955157 -0300
+Modify: 2023-09-13 15:14:44.531269207 -0300
+Change: 2023-09-13 15:14:44.531269207 -0300
+ Birth: 2023-09-13 15:14:44.531269207 -0300
+IPFS hash: Qmbi1CrnA144VbbGJAjQC32ASV3XuNbtQN4rbU3R5VzveN
+------------------------------
+  File: ./.git/objects/6e/934dc0b18a942e330924869f64212163860a61
+  Size: 179       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872630     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:41.322898998 -0300
+Modify: 2023-09-13 15:31:54.920065289 -0300
+Change: 2023-09-13 15:31:54.920065289 -0300
+ Birth: 2023-09-13 15:31:54.920065289 -0300
+IPFS hash: QmRA6hV4Mm7Poh3QvZiHaCjeYmQQQPcgvjzwd1LPEbskxW
+------------------------------
+  File: ./.git/objects/1f/29fc112814bc367f9adfa481b265322962c530
+  Size: 549       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868436     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:41.362898007 -0300
+Modify: 2023-09-13 15:14:44.531269207 -0300
+Change: 2023-09-13 15:14:44.531269207 -0300
+ Birth: 2023-09-13 15:14:44.531269207 -0300
+IPFS hash: QmPTAGCLAPyxBLKdHzQBHcvXjc3VkcYRvBr8ZPjQ4AuzfM
+------------------------------
+  File: ./.git/objects/da/223125068e387165249a50e1ede7fdb55fe61b
+  Size: 178       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868468     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:28:33.362178043 -0300
+Modify: 2023-09-13 15:18:07.349322313 -0300
+Change: 2023-09-13 15:18:07.349322313 -0300
+ Birth: 2023-09-13 15:18:07.349322313 -0300
+IPFS hash: QmT23kMx9iaLJgSxxpo8CH6EvyGxpw2EeXS3u1stB3ww4m
+------------------------------
+  File: ./.git/objects/ba/fba02b9fff7b45f8e7d1df920822a2d928b15f
+  Size: 821       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868465     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:29:16.420806628 -0300
+Modify: 2023-09-13 15:18:07.305324947 -0300
+Change: 2023-09-13 15:18:07.305324947 -0300
+ Birth: 2023-09-13 15:18:07.305324947 -0300
+IPFS hash: Qmd4kJPa6eXSKjtx7mPwmq5B4E7JtK7BGVVKWVEux5a1Go
+------------------------------
+  File: ./.git/objects/48/5e7b1b7c24bb64110e56d7d9ccdc41c6dc405d
+  Size: 646       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868444     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:29:16.832793695 -0300
+Modify: 2023-09-13 15:14:44.531269207 -0300
+Change: 2023-09-13 15:14:44.531269207 -0300
+ Birth: 2023-09-13 15:14:44.531269207 -0300
+IPFS hash: QmQNX5TxcxJ9H78B7NQ9XNqKUx5n7oHwGSLRwttPRa7Epn
+------------------------------
+  File: ./.git/objects/63/5707f82e1b78f0b044a8103cf1b2fb27bf740f
+  Size: 281       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868440     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:29:12.916916754 -0300
+Modify: 2023-09-13 15:14:44.531269207 -0300
+Change: 2023-09-13 15:14:44.531269207 -0300
+ Birth: 2023-09-13 15:14:44.531269207 -0300
+IPFS hash: QmU4YH1mLGBJPxT6uHTG9CTSb3Q2ep45w8L8f5GZAycCmD
+------------------------------
+  File: ./.git/objects/79/97b4270ae42fa27bdbad7819ca6986c5e9dffe
+  Size: 54        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872626     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:31:54.924065175 -0300
+Modify: 2023-09-13 15:31:54.876066546 -0300
+Change: 2023-09-13 15:31:54.876066546 -0300
+ Birth: 2023-09-13 15:31:54.876066546 -0300
+IPFS hash: QmT1oQGvNMBM4LFgAizKo3Ec2PdaVMRdqLUTgLNacRxsCS
+------------------------------
+  File: ./.git/objects/ff/935da3adfa3be8cb9bb4bbd355187b54662774
+  Size: 391       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872631     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:31:54.924065175 -0300
+Modify: 2023-09-13 15:31:54.920065289 -0300
+Change: 2023-09-13 15:31:54.920065289 -0300
+ Birth: 2023-09-13 15:31:54.920065289 -0300
+IPFS hash: QmW2bQwVtkW12B4ZGdgAgsJ84Tg13QaAFxUDE7NmuqAauu
+------------------------------
+  File: ./.git/objects/68/f3c8098051d270e1ba18789f2ba7fc6b150e60
+  Size: 206       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872633     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:31:54.944064603 -0300
+Modify: 2023-09-13 15:31:54.920065289 -0300
+Change: 2023-09-13 15:31:54.920065289 -0300
+ Birth: 2023-09-13 15:31:54.920065289 -0300
+IPFS hash: Qmean9RRv45eyExtXCEMEyWVXV465ujp11HFHQL35NKLEQ
+------------------------------
+  File: ./.git/objects/86/f4c7c157806eb5e5738eee48583c4154509a2b
+  Size: 245       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872623     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:41.714889289 -0300
+Modify: 2023-09-13 15:31:44.912352070 -0300
+Change: 2023-09-13 15:31:44.916351955 -0300
+ Birth: 2023-09-13 15:31:44.912352070 -0300
+IPFS hash: QmZm1v4wn1a62c6u8HbqmNHABqnsWdMUUeXeWnEbvSGYbD
+------------------------------
+  File: ./.git/objects/30/0fe3ed3947a1fe0e35cadcd6b7407cb9a422ff
+  Size: 361       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868454     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:15:06.541559810 -0300
+Modify: 2023-09-13 15:15:06.537560116 -0300
+Change: 2023-09-13 15:15:06.537560116 -0300
+ Birth: 2023-09-13 15:15:06.537560116 -0300
+IPFS hash: QmRHdVmB5YcEkPP77utgZcJyqcV4o8SZoj8drt15Ebqp3h
+------------------------------
+  File: ./.git/objects/e9/79a2d4d2a65498f1baadba65bbd09f90dcbabb
+  Size: 361       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868469     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:18:07.353322073 -0300
+Modify: 2023-09-13 15:18:07.349322313 -0300
+Change: 2023-09-13 15:18:07.349322313 -0300
+ Birth: 2023-09-13 15:18:07.349322313 -0300
+IPFS hash: Qmda27WKSryXNtwUnzWuZduGCiTYEEifSjTrtd8uXwww8A
+------------------------------
+  File: ./.git/objects/98/46c065edd5759cce09b3b1acc869ac37344857
+  Size: 189       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872508     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:28:33.406176621 -0300
+Modify: 2023-09-13 15:28:33.378177527 -0300
+Change: 2023-09-13 15:28:33.378177527 -0300
+ Birth: 2023-09-13 15:28:33.378177527 -0300
+IPFS hash: QmSGwbQpsErfqshecatsWvk9dvDjS45Ft82sWJ4gakTxN8
+------------------------------
+  File: ./.git/objects/90/3beb0f0fa26a0e636ac9a09fc5dca260654d06
+  Size: 744       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872501     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:41.878885227 -0300
+Modify: 2023-09-13 15:28:33.314179595 -0300
+Change: 2023-09-13 15:28:33.314179595 -0300
+ Birth: 2023-09-13 15:28:33.314179595 -0300
+IPFS hash: QmaVeSSZ2tmSsVHDGpi1Ng5kRZ4mxCRifPjtJJ7sXHfrvv
+------------------------------
+  File: ./.git/objects/38/a7dec1e623be7e4df574f5019510f6c5a79da5
+  Size: 328       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868449     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:15:06.513561950 -0300
+Modify: 2023-09-13 15:15:06.473565009 -0300
+Change: 2023-09-13 15:15:06.473565009 -0300
+ Birth: 2023-09-13 15:15:06.473565009 -0300
+IPFS hash: QmPUCepHPPAVL8togT4cVKCzXwQiNUT1euaiGsYhthDPXN
+------------------------------
+  File: ./.git/objects/6a/027a030941ad273e29faec34b4294248c9f753
+  Size: 457       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868446     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:29:17.484773239 -0300
+Modify: 2023-09-13 15:14:44.535268891 -0300
+Change: 2023-09-13 15:14:44.535268891 -0300
+ Birth: 2023-09-13 15:14:44.535268891 -0300
+IPFS hash: QmcpaPKhVRAEV22fQso5yRgWr4gyjsgcCcqSdbMMLpUHXG
+------------------------------
+  File: ./.git/objects/6a/3da7f637043aea5f30ca1fc08f80a17a83e126
+  Size: 362       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868466     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.002882156 -0300
+Modify: 2023-09-13 15:18:07.313324468 -0300
+Change: 2023-09-13 15:18:07.313324468 -0300
+ Birth: 2023-09-13 15:18:07.313324468 -0300
+IPFS hash: QmV7ikAKn3cWuVUM8TK7pcQgT9Ghmr9ZqjDrg6MaYiZCDg
+------------------------------
+  File: ./.git/objects/16/d07c892e40f451a30bc3686d970bd12b0a2c30
+  Size: 182       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868456     Links: 1
+Access: (0444/-r--r--r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:15:06.557558587 -0300
+Modify: 2023-09-13 15:15:06.537560116 -0300
+Change: 2023-09-13 15:15:06.537560116 -0300
+ Birth: 2023-09-13 15:15:06.537560116 -0300
+IPFS hash: QmTeLdxzEx29Gg5FH1gmBAbyBZLgLz3P58S1LgnbBhQhkQ
+------------------------------
+  File: ./.git/description
+  Size: 73        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868424     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.086880076 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: Qmdy135ZFG4kUALkaMhr6Cy3VhhkxyAh264kyg3725x8be
+------------------------------
+  File: ./.git/refs/heads/main
+  Size: 41        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872635     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:31:54.924065175 -0300
+Modify: 2023-09-13 15:31:54.920065289 -0300
+Change: 2023-09-13 15:31:54.920065289 -0300
+ Birth: 2023-09-13 15:31:54.920065289 -0300
+IPFS hash: QmZ53jc2Yc5DLXaTjcWzQGvbUcZfzK8Ge2o3wvNNzpKTm1
+------------------------------
+  File: ./.git/index
+  Size: 946       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9857016     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:31:54.940064718 -0300
+Modify: 2023-09-13 15:31:54.920065289 -0300
+Change: 2023-09-13 15:31:54.920065289 -0300
+ Birth: 2023-09-13 15:31:54.920065289 -0300
+IPFS hash: QmeUxvEGqjmAmQdd6Sw9CUGZs9piBz7GsWvYLHFgnn79X3
+------------------------------
+  File: ./.git/config
+  Size: 50        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868425     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:14:44.503271416 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmRCdhLuCqhZ91NTcxSCfU1QXxV4CjkUdteiSfNPmsV7qH
+------------------------------
+  File: ./.git/hooks/pre-applypatch.sample
+  Size: 424       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868397     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.262875718 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmdzjzkpM31jTKd5YBJkWsbDXJeeW1Uy1UxVPwfKFxwy89
+------------------------------
+  File: ./.git/hooks/commit-msg.sample
+  Size: 896       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868415     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.302874728 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmQbraCfKaCTZkqtdXCJPc11CWEiZGw1yYGwtbA6nbXWeh
+------------------------------
+  File: ./.git/hooks/pre-merge-commit.sample
+  Size: 416       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9846001     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.346873638 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmPte81MJoXgCngK75SVZTn2DAXskuo9gdVr2uR5PfVVQE
+------------------------------
+  File: ./.git/hooks/post-update.sample
+  Size: 189       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868413     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.382872747 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmQjYxVj9iwitDGkmR48Cemr1JTgc6pvwo5cFkumNWqnjm
+------------------------------
+  File: ./.git/hooks/pre-commit.sample
+  Size: 1643      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9845999     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.426871658 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmY33NoK9jzqitkPK1QdWTnNQt7m6DsE4fYvyohjdbyfju
+------------------------------
+  File: ./.git/hooks/pre-rebase.sample
+  Size: 4850      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,38	Inode: 9845997     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.470870568 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmfUUWWehKQYqGWXi32pzS9iPaSMiMTTB9uZHzpmZ3Z87x
+------------------------------
+  File: ./.git/hooks/fsmonitor-watchman.sample
+  Size: 4655      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,38	Inode: 9868414     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.510869578 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmNuzc8ypDCeoqfQffuasAjbdeFcj8o8kwuLq4eSUfYFkS
+------------------------------
+  File: ./.git/hooks/pre-commit
+  Size: 176       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868427     Links: 1
+Access: (0775/-rwxrwxr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:15:06.473565009 -0300
+Modify: 2023-09-13 15:14:44.523269838 -0300
+Change: 2023-09-13 15:14:44.523269838 -0300
+ Birth: 2023-09-13 15:14:44.519270153 -0300
+IPFS hash: QmZYjh8EXpuAJrm3Z7KBcEDzkUcuPHv4yM7jydGG6u8Tcc
+------------------------------
+  File: ./.git/hooks/pre-push.sample
+  Size: 1348      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9845998     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.590867597 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmXprUtrWGYLRETUvuA89HjwUGdufGrwJxYaXyGwQ7TMvQ
+------------------------------
+  File: ./.git/hooks/applypatch-msg.sample
+  Size: 478       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868416     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.634866508 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmY2duvZ5Resxt8astYUgQ8RXQz1N9axe77gCb5j6M95Gf
+------------------------------
+  File: ./.git/hooks/prepare-commit-msg.sample
+  Size: 1492      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9845986     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.678865418 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmPku8ai5p4sSCDHe19n9Ekfo21xM5urFdkq9Rg1wBHjcV
+------------------------------
+  File: ./.git/hooks/update.sample
+  Size: 3635      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9845979     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.718864428 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmV7QB3DHmN59g58DH4YFJMSsFsUCdc9PHK1uAdq2wk1wH
+------------------------------
+  File: ./.git/hooks/pre-receive.sample
+  Size: 544       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9845996     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.762863339 -0300
+Modify: 2023-09-13 15:14:44.499271732 -0300
+Change: 2023-09-13 15:14:44.499271732 -0300
+ Birth: 2023-09-13 15:14:44.499271732 -0300
+IPFS hash: QmRKbU9DFRNWjR1UwV4nC6MXPnrNanfsBM5579t4HLUuig
+------------------------------
+  File: ./app.dart
+  Size: 806       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9845987     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:42.802862348 -0300
+Modify: 2023-09-13 15:33:59.088624406 -0300
+Change: 2023-09-13 15:33:59.092624299 -0300
+ Birth: 2023-09-13 15:33:59.084624514 -0300
+IPFS hash: QmX4APtLdATVwSuMR9xiHHCUWH56DPE4ZwET6kiQYaH832
+------------------------------
+  File: ./.dart_tool/package_config_subset
+  Size: 3538      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872498     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:36:08.569231659 -0300
+Modify: 2023-09-13 15:27:29.932275217 -0300
+Change: 2023-09-13 15:27:29.932275217 -0300
+ Birth: 2023-09-13 15:27:29.932275217 -0300
+IPFS hash: QmQkjvFu4cZ37wLXD6uxPDB7baiDkkKXVVPFrnrpi7TqM9
+------------------------------
+  File: ./.dart_tool/version
+  Size: 6         	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9872497     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:33:16.621778226 -0300
+Modify: 2023-09-13 15:27:29.924275487 -0300
+Change: 2023-09-13 15:27:29.924275487 -0300
+ Birth: 2023-09-13 15:27:29.924275487 -0300
+IPFS hash: QmVXkbaXCV2UBm1qZPsffy2sSV9NamaYonDdu56ebXSscD
+------------------------------
+  File: ./.dart_tool/package_config.json
+  Size: 4391      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,38	Inode: 9872496     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:27:29.928275352 -0300
+Modify: 2023-09-13 15:27:29.876277112 -0300
+Change: 2023-09-13 15:27:29.876277112 -0300
+ Birth: 2023-09-13 15:27:29.872277247 -0300
+IPFS hash: Qmd2zicvYVGScZ8tFZ3qPTtfoxT6PHjYYEuXoADsLSRtYf
+------------------------------
+  File: ./README.md
+  Size: 1566      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868457     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:18:07.305324947 -0300
+Modify: 2023-09-13 15:17:57.365924036 -0300
+Change: 2023-09-13 15:17:57.369923794 -0300
+ Birth: 2023-09-13 15:17:57.357924521 -0300
+IPFS hash: QmVm8Lcc5FWAgV3VV2hEzUEiQKMU9AYYxTy49FjSfWdX91
+------------------------------
+  File: ./executable.dart
+  Size: 267       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9845989     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:43.018856999 -0300
+Modify: 2023-09-13 15:34:22.036009960 -0300
+Change: 2023-09-13 15:34:22.044009748 -0300
+ Birth: 2023-09-13 15:34:22.036009960 -0300
+IPFS hash: QmepA2cBUZV2xSuytdmaGQUscMCb6fLSh5w3i9ViGCDdJD
+------------------------------
+  File: ./welcome_screen.dart
+  Size: 927       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9845977     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:43.058856009 -0300
+Modify: 2023-09-13 15:33:53.288780688 -0300
+Change: 2023-09-13 15:33:53.308780148 -0300
+ Birth: 2023-09-13 15:33:53.284780796 -0300
+IPFS hash: QmdcHvCK3tr74fMZCRyoydZy6Epr92EtHKXAzdEmn1hWtE
+------------------------------
+  File: ./initial-prompt.txt
+  Size: 979       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9845972     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:14:44.531269207 -0300
+Modify: 2023-09-13 15:13:48.867843179 -0300
+Change: 2023-09-13 15:13:48.871842837 -0300
+ Birth: 2023-09-13 15:13:48.843845234 -0300
+IPFS hash: QmNizcxAr5CYiVJ1pWJ6dd5coaKd5zvg43xjKEgbSiCN2t
+------------------------------
+  File: ./.gitignore
+  Size: 12        	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868373     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:19.127450698 -0300
+Modify: 2023-09-13 15:36:50.736162190 -0300
+Change: 2023-09-13 15:36:50.740162089 -0300
+ Birth: 2023-09-13 15:36:50.736162190 -0300
+IPFS hash: Qmepx4Gc8E3VDcKNGU99g5ygATTVcuduvB58y8bKKkuMtc
+------------------------------
+  File: ./initial-response.txt
+  Size: 3478      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9845973     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:14:44.531269207 -0300
+Modify: 2023-09-13 15:14:09.498104426 -0300
+Change: 2023-09-13 15:14:09.498104426 -0300
+ Birth: 2023-09-13 15:14:09.490105089 -0300
+IPFS hash: QmWik3oquPtJwHzBFqqbJUiYDYMGoAAwBDCrwfVV87BGnJ
+------------------------------
+  File: ./.folderstamp1
+  Size: 33088     	Blocks: 72         IO Block: 4096   regular file
+Device: 8,38	Inode: 9868372     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:40.478919906 -0300
+Modify: 2023-09-13 15:37:43.274850663 -0300
+Change: 2023-09-13 15:37:53.018609818 -0300
+ Birth: 2023-09-13 15:37:40.046930609 -0300
+IPFS hash: QmZco4PThhTt7PYCHsXqvqLoJsPAsKnnuvCNmXJbJaWRvk
+------------------------------
+  File: ./.gitmeta
+  Size: 424       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9868428     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:31:54.920065289 -0300
+Modify: 2023-09-13 15:31:54.916065404 -0300
+Change: 2023-09-13 15:31:54.916065404 -0300
+ Birth: 2023-09-13 15:15:06.501562868 -0300
+IPFS hash: QmZ4mKQN6Dzx9STxv44fBYBKoRsLMSYTqR6UkC1dguKm9K
+------------------------------
+  File: ./pubspec.lock
+  Size: 4830      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,38	Inode: 9845982     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-13 15:37:43.270850762 -0300
+Modify: 2023-09-13 15:27:29.856277789 -0300
+Change: 2023-09-13 15:27:29.856277789 -0300
+ Birth: 2023-09-13 15:27:29.856277789 -0300
+IPFS hash: QmdYwghgYmXFwpLmYQHQQRra1BDeaAXc2FvxmX16nZynoB
+------------------------------
