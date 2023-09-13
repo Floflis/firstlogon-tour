@@ -1,5 +1,3 @@
-- rename, rmv generic "ubuntu"
-
 - enable to export to .deb
 https://pub.dev/packages/flutter_to_debian
 https://github.com/jeffrey0606/flutter_to_debian (PR to fix 'debain')

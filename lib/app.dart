@@ -4,7 +4,7 @@ import 'screens/steps.dart';
 import 'dart:io';
 import 'dart:convert';
 
-class UbuntuTourApp extends StatelessWidget {
+class FirstLogonTourApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
