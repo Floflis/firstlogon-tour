@@ -5,7 +5,6 @@ then add .deb instructions to /media/daniella/Seagate Expansion Drive/flo-bkp-sy
 and copy deb features to /media/daniella/B/git/Floflis/Floflis/HTML5/B2G/davidLauncher/cinnamon
 
 - in app texts, replace "Ubuntu" by the output of a Linux command to get OS name (will be Ubuntu, Floflis or other) ; make this app OS-agnostic
-- add permissive MIT license in .md
 
 - fix all issues and enable multistep from separate files
 
