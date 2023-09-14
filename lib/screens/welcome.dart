@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../app.dart';
-
+import 'dart:io';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -39,9 +39,13 @@ class WelcomeScreen extends StatelessWidget {
                     future: Executable.getImagePath('bash include/linux-icon-getter/linux-icon-getter distributor-logo'),
                     builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
                       if (snapshot.connectionState == ConnectionState.waiting) {
+                        print('Image path: ${snapshot.data}');
+                        print('Image path: $snapshot.data');
                         return CircularProgressIndicator();
                       } else {
                         String imagePath = snapshot.data!;
+                        print('Image path: $imagePath'); // Add this line
+                        print('Image path: ${snapshot.data}');
                         if (imagePath.endsWith('.svg')) {
                           return SvgPicture.file(
                             File(imagePath),

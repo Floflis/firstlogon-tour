@@ -1,0 +1,272 @@
+❯ flutter build linux
+
+ERROR: lib/screens/welcome.dart:47:29: Error: The method 'File' isn't defined for the class 'WelcomeScreen'.
+ERROR:  - 'WelcomeScreen' is from 'package:firstlogon_tour/screens/welcome.dart' ('lib/screens/welcome.dart').
+ERROR: Try correcting the name to the name of an existing method, or defining a method named 'File'.
+ERROR:                             File(imagePath),
+ERROR:                             ^^^^
+ERROR: lib/screens/welcome.dart:53:29: Error: The method 'File' isn't defined for the class 'WelcomeScreen'.
+ERROR:  - 'WelcomeScreen' is from 'package:firstlogon_tour/screens/welcome.dart' ('lib/screens/welcome.dart').
+ERROR: Try correcting the name to the name of an existing method, or defining a method named 'File'.
+ERROR:                             File(imagePath),
+ERROR:                             ^^^^
+ERROR: Target kernel_snapshot failed: Exception
+Building Linux application...                                           
+Build process failed
+
+
+
+
+
+
+
+
+
+The error messages indicate that the File class is not defined in the WelcomeScreen class. This is because the dart:io package, which contains the File class, is not imported in the welcome.dart file.
+
+To fix this, you need to import the dart:io package at the top of your welcome.dart file. Here's how you can do it:
+
+import 'dart:io';
+
+Add this line at the top of your welcome.dart file, right after the other import statements. This will make the File class available in your welcome.dart file, and the error should be resolved.
+
+Please refer to the following code block for the exact location to add the import statement:
+
+import 'package:flutter/material.dart';
+import '../app.dart';
+
+After adding the import statement, your code should look like this:
+
+import 'package:flutter/material.dart';
+import '../app.dart';
+import 'dart:io';
+import 'package:flutter_svg/flutter_svg.dart';
+
+Now, try to build your Flutter application again. If there are no other issues, the build process should succeed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+It built successfully!
+Thank you!
+
+However, running welcome.dart, right below the "Start Setup" there's a big gray footer instead of a 200x200 image.
+
+"bash include/linux-icon-getter/linux-icon-getter distributor-logo" result should be "/usr/share/icons/Floflis/scalable/places/distributor-logo.svg", and I don't see this image.
+
+
+
+
+
+
+
+
+
+The issue seems to be with the image loading process in your welcome.dart file. The FutureBuilder is trying to load an image from the path provided by the Executable.getImagePath('bash include/linux-icon-getter/linux-icon-getter distributor-logo') command. If the image is not found at the specified path, it will not be displayed, and you might see a placeholder or empty space instead.
+
+To debug this issue, you can add some print statements to check the value of imagePath and whether the file exists at that path. Here's how you can do it:
+
+FutureBuilder<String>(
+  future: Executable.getImagePath('bash include/linux-icon-getter/linux-icon-getter distributor-logo'),
+  builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+    if (snapshot.connectionState == ConnectionState.waiting) {
+      return CircularProgressIndicator();
+    } else {
+      String imagePath = snapshot.data!;
+      print('Image path: $imagePath'); // Add this line
+      File imageFile = File(imagePath);
+      print('File exists: ${imageFile.existsSync()}'); // And this line
+      // Rest of your code...
+    }
+  },
+)
+
+This will print the image path and whether the file exists at that path in the console when you run your app. If the file does not exist, you will need to check the output of your bash include/linux-icon-getter/linux-icon-getter distributor-logo command and ensure that it is correctly returning the path to your image.
+
+If the file does exist and is still not displayed, there might be an issue with the way you're trying to display the image. In that case, you might want to try using the Image.file widget to display the image:
+
+Image.file(File(imagePath))
+
+This will create an image widget from a file at the specified path. If there are no other issues, this should display your image correctly.
+
+
+
+
+
+
+
+
+
+Where exactly to place "print('File exists: ${imageFile.existsSync()}'); // And this line" ?
+
+
+
+
+
+
+
+
+
+You should place the print('File exists: ${imageFile.existsSync()}'); line right after you define the imageFile variable. Here's how you can do it:
+
+FutureBuilder<String>(
+  future: Executable.getImagePath('bash include/linux-icon-getter/linux-icon-getter distributor-logo'),
+  builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+    if (snapshot.connectionState == ConnectionState.waiting) {
+      return CircularProgressIndicator();
+    } else {
+      String imagePath = snapshot.data!;
+      print('Image path: $imagePath'); // Add this line
+      File imageFile = File(imagePath);
+      print('File exists: ${imageFile.existsSync()}'); // Add this line
+      // Rest of your code...
+    }
+  },
+)
+
+This will print the image path and whether the file exists at that path in the console when you run your app.
+
+
+
+
+
+
+
+There's no "File imageFile = File(imagePath);" in welcome.dart!
+
+
+
+
+
+
+
+
+
+I apologize for the confusion. You're correct, the File imageFile = File(imagePath); line is not in your welcome.dart file. I suggested it as a way to check if the file exists at the given path.
+
+To implement this, you can modify your FutureBuilder in welcome.dart as follows:
+
+FutureBuilder<String>(
+  future: Executable.getImagePath('bash include/linux-icon-getter/linux-icon-getter distributor-logo'),
+  builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+    if (snapshot.connectionState == ConnectionState.waiting) {
+      return CircularProgressIndicator();
+    } else {
+      String imagePath = snapshot.data!;
+      print('Image path: $imagePath'); // Add this line
+      File imageFile = File(imagePath);
+      print('File exists: ${imageFile.existsSync()}'); // Add this line
+      // Rest of your code...
+    }
+  },
+)
+
+
+
+
+
+
+
+This will print the image path and whether the file exists at that path in the console when you run your app. If the file does not exist, you will need to check the output of your bash include/linux-icon-getter/linux-icon-getter distributor-logo command and ensure that it is correctly returning the path to your image.
+
+
+
+
+
+
+
+
+
+x64/release/bundle on  main [!⇡] 
+❯ ./firstlogon_tour
+flutter: Null check operator used on a null value
+flutter: #0      WelcomeScreen.build.<anonymous closure>.<anonymous closure> (package:firstlogon_tour/screens/welcome.dart:44)
+flutter: #1      _FutureBuilderState.build (package:flutter/src/widgets/async.dart:612)
+flutter: #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5409)
+flutter: #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5297)
+flutter: #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5462)
+flutter: #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5016)
+flutter: #6      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:2779)
+flutter: #7      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:916)
+flutter: #8      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:360)
+flutter: #9      SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1297)
+flutter: #10     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1227)
+flutter: #11     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1085)
+flutter: #12     _invoke (dart:ui/hooks.dart:170)
+flutter: #13     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:401)
+flutter: #14     _drawFrame (dart:ui/hooks.dart:140)
+
+
+
+
+
+
+
+The error message Null check operator used on a null value indicates that you're trying to access a property or method on a null value. This is happening at line 44 in your welcome.dart file.
+
+The error is likely due to the snapshot.data! expression. The ! operator is a null check operator in Dart, which converts a nullable type to a non-nullable type. If the value is null, it throws an error.
+
+To fix this, you should check if snapshot.data is null before using it. Here's how you can do it:
+
+String? imagePath = snapshot.data;
+if (imagePath != null) {
+  print('Image path: $imagePath');
+  File imageFile = File(imagePath);
+  print('File exists: ${imageFile.existsSync()}');
+} else {
+  print('Image path is null');
+}
+
+This code will print 'Image path is null' if snapshot.data is null, which will help you identify if the Executable.getImagePath('bash include/linux-icon-getter/linux-icon-getter distributor-logo') command is returning null. If it is, you'll need to debug why that's happening.
+
+Please refer to the following code block for the exact location to add the null check:
+
+                    future: Executable.getImagePath('bash include/linux-icon-getter/linux-icon-getter distributor-logo'),
+                    builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+                      if (snapshot.connectionState == ConnectionState.waiting) {
+                        return CircularProgressIndicator();
+                      } else {
+                        String imagePath = snapshot.data!;
+                        
+After adding the null check, try running your Flutter application again. If there are no other issues, the error should be resolved.
+
+
+
+
+
+
+
+
+You're insisting in the "File imageFile = File(imagePath);"
+
+
+
+
+
+
+
+
+
+The line File imageFile = File(imagePath); is used to create a File object from the image path. It doesn't control the size of the image when it's displayed in your Flutter app.
+
+To display the image with a specific size, you can use the Image.file widget with a specified width and height. Here's how you can do it:
+
+Image.file(
+  File(imagePath),
+  width: 200,
+  height: 200,
+)
+
+This will display the image with a width and height of 200 pixels. If the image's aspect ratio doesn't match the specified dimensions, the image will be scaled to fit within the box while maintaining its aspect ratio.
+
+Please add this code in the else block of your FutureBuilder in the welcome.dart file, replacing the current code that displays the image.
