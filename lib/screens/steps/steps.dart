@@ -49,8 +49,6 @@ InkWell(
 InkWell(
     onTap: () async {
         //print("card is tapped.");
-                        //String output = await Executable.run('gsettings set org.cinnamon.desktop.interface cursor-theme Floflis');
-                        //String output = await Executable.run('cinnamon-settings');
                         var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'cursor-theme', 'DMZ-White'
 ]);
                 setState(() {
@@ -69,6 +67,93 @@ InkWell(
   ),
 ),
 ),
+          ],
+        ),
+      ),
+      Step(
+        title: Text('Step 2: Theme intensity'),
+        content: Column(
+          children: <Widget>[
+            Text('How you prefer your system theme?'),
+//InkWell learned from https://www.fluttercampus.com/guide/150/how-to-make-any-widget-clickable-on-flutter/
+InkWell(
+    onTap: () async {
+        //print("card is tapped.");
+                        var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis-dark']);
+                var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis-dark']);
+                var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis-dark']);
+                setState(() {
+                  _currentStep++;
+                });
+    },
+//    onDoubleTap: (){
+//      print("Card is double tapped.");
+//    },
+    child: Card(
+  child: Column(
+    children: <Widget>[
+      Image.asset('assets/img/screens/steps/themecolor/dark.png'),
+      Text('⚫Dark (lets save my eyes while computing in the dark)'),
+    ],
+  ),
+),
+),        
+//InkWell learned from https://www.fluttercampus.com/guide/150/how-to-make-any-widget-clickable-on-flutter/
+InkWell(
+    onTap: () async {
+        //print("card is tapped.");
+                        var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis']);
+                var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis']);
+                var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis']);
+                setState(() {
+                  _currentStep++;
+                });
+    },
+//    onDoubleTap: (){
+//      print("Card is double tapped.");
+//    },
+    child: Card(
+  child: Column(
+    children: <Widget>[
+      Image.asset('assets/img/screens/steps/themecolor/normal.png'),
+      Text('🟤Normal (i have strong eyes)'),
+    ],
+  ),
+),
+),           
+//InkWell learned from https://www.fluttercampus.com/guide/150/how-to-make-any-widget-clickable-on-flutter/
+InkWell(
+    onTap: () async {
+        //print("card is tapped.");
+                        //String output = await Executable.run('gsettings set org.cinnamon.desktop.interface cursor-theme Floflis');
+                        //String output = await Executable.run('cinnamon-settings');
+                        var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis-light']);
+                var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis-light']);
+                var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis-light']);
+                setState(() {
+                  _currentStep++;
+                });
+    },
+//    onDoubleTap: (){
+//      print("Card is double tapped.");
+//    },
+    child: Card(
+  child: Column(
+    children: <Widget>[
+      Image.asset('assets/img/screens/steps/themecolor/light.png'),
+      Text('⚪Light (i have stronger eyes, still; lets not abuse)'),
+    ],
+  ),
+),
+),
+          ],
+        ),
+      ),
+      Step(
+        title: Text('Finish'),
+        content: Column(
+          children: <Widget>[
+            Text('Youre all set! Welcome!'),
 //            Checkbox(
 //              value: _checkboxValue,
 //              onChanged: (bool? value) {
@@ -96,130 +181,14 @@ InkWell(
 //    },
 //  ),
 //)
-          ],
-        ),
-      ),
-      Step(
-        title: Text('Step 2: Theme intensity'),
-        content: Column(
-          children: <Widget>[
-            Text('How you prefer your system theme?'),
-//            ElevatedButton(
-//              child: Text('⚫Dark (lets save my eyes while computing in the dark)'),
-//              onPressed: () async {
-//                //String output = await Executable.run('gsettings set org.cinnamon.desktop.wm.preferences theme Yaru-floflis-dark && gsettings set org.cinnamon.desktop.interface gtk-theme Yaru-floflis-dark && gsettings set org.cinnamon.theme name Yaru-floflis-dark');
-//                var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis-dark']);
-//                var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis-dark']);
-//                var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis-dark']);
-//                setState(() {
-//                  _currentStep++;
-//                });
-//              },
-//            ),
-            
-//InkWell learned from https://www.fluttercampus.com/guide/150/how-to-make-any-widget-clickable-on-flutter/
-InkWell(
-    onTap: () async {
-        //print("card is tapped.");
-                        //String output = await Executable.run('gsettings set org.cinnamon.desktop.interface cursor-theme Floflis');
-                        //String output = await Executable.run('cinnamon-settings');
-                        var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis-dark']);
-                var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis-dark']);
-                var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis-dark']);
-                setState(() {
-                  _currentStep++;
-                });
-    },
-//    onDoubleTap: (){
-//      print("Card is double tapped.");
-//    },
-    child: Card(
-  child: Column(
-    children: <Widget>[
-      Image.asset('assets/img/screens/steps/themecolor/dark.png'),
-      Text('⚫Dark (lets save my eyes while computing in the dark)'),
-    ],
-  ),
-),
-),
-            
-//            ElevatedButton(
-//              child: Text('🟤Normal (i have strong eyes)'),
-//              onPressed: () async {
-//                //String output = await Executable.run('gsettings set org.cinnamon.desktop.wm.preferences theme Yaru-floflis && gsettings set org.cinnamon.desktop.interface gtk-theme Yaru-floflis && gsettings set org.cinnamon.theme name Yaru-floflis');
-//                var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis']);
-//                var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis']);
-//                var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis']);
-//                setState(() {
-//                  _currentStep++;
-//                });
-//              },
-//            ),
-            
-//InkWell learned from https://www.fluttercampus.com/guide/150/how-to-make-any-widget-clickable-on-flutter/
-InkWell(
-    onTap: () async {
-        //print("card is tapped.");
-                        //String output = await Executable.run('gsettings set org.cinnamon.desktop.interface cursor-theme Floflis');
-                        //String output = await Executable.run('cinnamon-settings');
-                        var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis']);
-                var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis']);
-                var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis']);
-                setState(() {
-                  _currentStep++;
-                });
-    },
-//    onDoubleTap: (){
-//      print("Card is double tapped.");
-//    },
-    child: Card(
-  child: Column(
-    children: <Widget>[
-      Image.asset('assets/img/screens/steps/themecolor/normal.png'),
-      Text('🟤Normal (i have strong eyes)'),
-    ],
-  ),
-),
-),
-            
-//            ElevatedButton(
-//              child: Text('⚪Light (i have stronger eyes, still; lets not abuse)'),
-//              onPressed: () async {
-//                //String output = await Executable.run('gsettings set org.cinnamon.desktop.wm.preferences theme Yaru-floflis-light && gsettings set org.cinnamon.desktop.interface gtk-theme Yaru-floflis-light && gsettings set org.cinnamon.theme name Yaru-floflis-light');
-//                var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis-light']);
-//                var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis-light']);
-//                var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis-light']);
-//                setState(() {
-//                  _currentStep++;
-//                });
-//              },
-//            ),
-            
-//InkWell learned from https://www.fluttercampus.com/guide/150/how-to-make-any-widget-clickable-on-flutter/
-InkWell(
-    onTap: () async {
-        //print("card is tapped.");
-                        //String output = await Executable.run('gsettings set org.cinnamon.desktop.interface cursor-theme Floflis');
-                        //String output = await Executable.run('cinnamon-settings');
-                        var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis-light']);
-                var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis-light']);
-                var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis-light']);
-                setState(() {
-                  _currentStep++;
-                });
-    },
-//    onDoubleTap: (){
-//      print("Card is double tapped.");
-//    },
-    child: Card(
-  child: Column(
-    children: <Widget>[
-      Image.asset('assets/img/screens/steps/themecolor/light.png'),
-      Text('⚪Light (i have stronger eyes, still; lets not abuse)'),
-    ],
-  ),
-),
-),
+ElevatedButton(
+  child: Text('Finalize'),
+  onPressed: () {
+    //SystemNavigator.pop();
+    //exit();
+    exit(0); //from https://codewithflutter.com/flutter-how-to-programmatically-exit-the-app/
+  },
+)
           ],
         ),
       ),
