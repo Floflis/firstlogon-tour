@@ -1,6 +1,20 @@
 # Ubuntu Tour
 
-This is a Flutter application designed to provide a first-logon tour/wizard for Ubuntu. It leverages external executables, which can be Rust programs or Bash script executables.
+This is a Flutter application designed to provide a first-logon tour/wizard for Ubuntu and other Linux distros. It leverages external executables, which can be Rust programs or Bash script executables.
+
+## Screenshots
+
+<img src="./screenshots/Screenshot from 2023-09-14 06-08-29.png"/>
+
+First logon welcome screen.
+
+<img src="./screenshots/Screenshot from 2023-09-14 06-08-34.png"/>
+
+Set cursor color (black, white).
+
+<img src="./screenshots/Screenshot from 2023-09-14 06-08-37.png"/>
+
+Set theme color (dark, light, normal).
 
 ## Getting Started
 
