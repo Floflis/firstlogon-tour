@@ -31,3 +31,33 @@ Here's how you can modify your code:
 print('bash ' + [Directory.current.path,'/data/flutter_assets/include/linux-icon-getter/linux-icon-getter', 'distributor-logo'].join(' '));
 
 This will join the elements of the list into a single string with spaces in between, and then print that string.
+
+
+
+
+
+
+"flutter: bash /home/daniella/firstlogon_tour/build/linux/x64/release/bundle /data/flutter_assets/include/linux-icon-getter/linux-icon-getter distributor-logo"
+Why that space between /bundle and /data?
+If "var process = await Process.run('bash', [Directory.current.path,'/data/flutter_assets/include/linux-icon-getter/linux-icon-getter', 'distributor-logo']);" is providing the same result, I'm not surprised why it isn't being able to run that executable linux-icon-getter.
+So, if true the Process.run is suffering the same, I want to fix both.
+
+
+
+
+
+
+The issue you're encountering is due to the way you're constructing the command to be run. In your current implementation, you're treating the entire command and its arguments as a single string, which is causing the command to fail.
+
+The Process.run function in Dart expects the command and its arguments to be passed as separate elements in a list. The first element should be the command itself, and the subsequent elements should be the arguments.
+
+Here's how you can modify your code:
+
+var process = await Process.run('bash', [
+  Directory.current.path + '/data/flutter_assets/include/linux-icon-getter/linux-icon-getter',
+  'distributor-logo'
+]);
+
+In this modified version, the command is 'bash', and the arguments are the path to the linux-icon-getter executable and 'distributor-logo'. The path to the linux-icon-getter executable is constructed by concatenating Directory.current.path with the relative path to the executable.
+
+This should resolve the issue and allow the linux-icon-getter executable to run correctly.
