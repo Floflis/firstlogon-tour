@@ -58,7 +58,7 @@ class WelcomeScreen extends StatelessWidget {
                     style: Theme.of(context).textTheme.headline4,
                   ),
                   Text(
-                    'This is your first time logging in. Let\'s set up your system.',
+                    'This is your first time booting it. Let\'s customize your system as you please.',
                     style: Theme.of(context).textTheme.subtitle1,
                   ),
                   SizedBox(height: 50),
@@ -66,7 +66,7 @@ class WelcomeScreen extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushNamed(context, '/steps');
                     },
-                    child: Text('Start Setup'),
+                    child: Text('Begin Customization'),
                   ),
                 ],
               ),
