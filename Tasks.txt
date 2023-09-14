@@ -1,4 +1,3 @@
-- /home/daniella/firstlogon_tour/lib/screens/steps/steps.dart Step 4 fix issue of not loading images (that are in assets/img/)
 - still at steps.dart: fix running multi-argument executables
 
 - enable to export to .deb
