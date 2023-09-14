@@ -1,8 +1,27 @@
-I need your help for welcome.dart.
+firstlogon_tour on  main [✘!?⇡] is 📦 v1.0.0+1 via 🎯 v3.1.1 
+❯ flutter build linux
 
-First: I want to run an executable (a bash script) that should come with this Flutter project, both at the project folder and when compiled (just like the images/ folder).
+ERROR: lib/app.dart:16:3: Error: Can't have modifier 'static' here.
+ERROR: Try removing 'static'.
+ERROR:   static Future<String> getImagePath(String command) async {
+ERROR:   ^^^^^^
+ERROR: lib/screens/welcome.dart:48:22: Error: Member not found: 'Executable.getI
+con-getter distributor-logo'),
+ERROR:                      ^^^^^^^^^^^^
+ERROR: lib/screens/welcome.dart:56:11: Error: The method 'File' isn't defined for the class 'WelcomeScreen'.
+ERROR:  - 'WelcomeScreen' is from 'package:firstlogon_tour/screens/welcome.dart' ('lib/screens/welcome.dart').
+ERROR: Try correcting the name to the name of an existing method, or defining a method named 'File'.
+ERROR:           File(imagePath),
+ERROR:           ^^^^
+ERROR: lib/screens/welcome.dart:62:11: Error: The method 'File' isn't defined for the class 'WelcomeScreen'.
+ERROR:  - 'WelcomeScreen' is from 'package:firstlogon_tour/screens/welcome.dart' ('lib/screens/welcome.dart').
+ERROR: Try correcting the name to the name of an existing method, or defining a method named 'File'.
+ERROR:           File(imagePath),
+ERROR:           ^^^^
+ERROR: Target kernel_snapshot failed: Exception
+Building Linux application...                                           
+Build process failed
 
-Where to place it, and how?
 
 
 
@@ -12,268 +31,184 @@ Where to place it, and how?
 
 
 
-To run an executable script from your Flutter project, you can place it in the root directory of your project, similar to where your README.md and pubspec.yaml files are located.
 
-To run the script from your Flutter code, you can use the Process class from the dart:io package. You already have a class Executable in app.dart that runs a command. You can use this class to run your script.
+The error messages indicate that there are some issues with the code:
 
-Here's how you can modify the Executable class to run your script:
+1. The static keyword is not allowed in the location where it's currently placed.
+2. The Executable.getIcon-getter distributor-logo member was not found.
+3. The File method isn't defined for the WelcomeScreen class.
 
-class Executable {
-  static Future<String> runScript(String scriptName) async {
-    Process process = await Process.start('/bin/bash', [scriptName]);
-    String output = await process.stdout.transform(utf8.decoder).join();
-    return output;
-  }
-}
+To resolve these issues, you need to ensure that the static keyword is used correctly, the Executable.getIcon-getter distributor-logo member exists, and the File class is imported from the dart:io package.
 
-You can then call this method from your WelcomeScreen widget in welcome.dart:
+Here's how you can modify the Executable class and the WelcomeScreen widget:
 
-ElevatedButton(
-  onPressed: () async {
-    String output = await Executable.runScript('your-script.sh');
-    print(output);
-  },
-  child: Text('Run Script'),
-),
-
-Replace 'your-script.sh' with the name of your script.
-
-Please note that the script must be executable. You can make it executable by running chmod +x your-script.sh in the terminal.
-
-When you build your Flutter project, the script will be included in the build output. However, you need to ensure that the script is located in the same directory as the built executable, or provide the correct path to the script in your Dart code.
-
-
-
-
-
-
-
-
-
-
-
-```
-body: Center(
-  child: Column(
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: <Widget>[
-      Text(
-        'Welcome to ${osname.data}!',
-        style: Theme.of(context).textTheme.headline4,
-      ),
-```
-
-above the "Welcome to..." text, I need an image (center-aligned as well), whose source will be the output of the following command: "bash include/linux-icon-getter/linux-icon-getter distributor-logo"
-
-This image should be 200px (both width and height).
-
-
-
-
-
-
-
-
-
-
-
-To display an image whose source is the output of a command, you can modify the Executable class to return the output of the command as a Uint8List. This can be done by using the Process.run method to execute the command and then reading the output as bytes.
-
-Here's how you can modify the Executable class:
-
-class Executable {
-  static Future<Uint8List> getImage(String command) async {
-    ProcessResult result = await Process.run(command, []);
-    return result.stdout as Uint8List;
-  }
-}
-
-Then, in your WelcomeScreen widget, you can use a FutureBuilder to display the image once the command has finished executing. Here's how you can do it:
-
-FutureBuilder<Uint8List>(
-  future: Executable.getImage('bash include/linux-icon-getter/linux-icon-getter distributor-logo'),
-  builder: (BuildContext context, AsyncSnapshot<Uint8List> snapshot) {
-    if (snapshot.connectionState == ConnectionState.waiting) {
-      return CircularProgressIndicator();
-    } else {
-      return Image.memory(
-        snapshot.data!,
-        width: 200,
-        height: 200,
-      );
-    }
-  },
-),
-
-This code will display a CircularProgressIndicator while the command is running, and once it's finished, it will display the image. The image will be 200px in width and height.
-
-Please note that the command should return the image data in a format that Flutter's Image.memory constructor can understand, such as PNG or JPEG. If the command returns a file path instead of the image data, you'll need to read the file into a Uint8List using the dart:io package's File class.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Exactly, that command will return a file path. Please consider that.
-
-
-
-
-
-
-
-
-
-If the command returns a file path, you can read the file into a Uint8List using the dart:io package's File class. Here's how you can modify the Executable class:
+In app.dart:
 
 import 'dart:io';
 
 class Executable {
-  static Future<Uint8List> getImage(String command) async {
-    ProcessResult result = await Process.run(command, []);
-    File imageFile = File(result.stdout.trim());
-    return await imageFile.readAsBytes();
-  }
-}
-
-Then, in your WelcomeScreen widget, you can use a FutureBuilder to display the image once the command has finished executing:
-
-FutureBuilder<Uint8List>(
-  future: Executable.getImage('bash include/linux-icon-getter/linux-icon-getter distributor-logo'),
-  builder: (BuildContext context, AsyncSnapshot<Uint8List> snapshot) {
-    if (snapshot.connectionState == ConnectionState.waiting) {
-      return CircularProgressIndicator();
-    } else {
-      return Image.memory(
-        snapshot.data!,
-        width: 200,
-        height: 200,
-      );
-    }
-  },
-),
-
-This code will display a CircularProgressIndicator while the command is running, and once it's finished, it will display the image. The image will be 200px in width and height.
-
-
-
-
-
-
-
-
-
-
-Does that take into consideration when the image is .svg rather than bitmap/raster?
-
-Also, won't "class Executable {
-  static Future<Uint8List> getImage" interfere with other "Future"s such as when reading OSName?
-  
-  
-  
-  
-  
-
-
-
-
-
-
-If the image is in SVG format, you'll need to use a package like flutter_svg to display it. You can use the SvgPicture.file constructor to create a widget from a file path.
-
-Here's how you can modify the Executable class to return the file path:
-
-class Executable {
   static Future<String> getImagePath(String command) async {
     ProcessResult result = await Process.run(command, []);
     return result.stdout.trim();
   }
 }
 
-Then, in your WelcomeScreen widget, you can use a FutureBuilder to display the SVG image once the command has finished executing:
+In welcome.dart:
 
-FutureBuilder<String>(
-  future: Executable.getImagePath('bash include/linux-icon-getter/linux-icon-getter distributor-logo'),
-  builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
-    if (snapshot.connectionState == ConnectionState.waiting) {
-      return CircularProgressIndicator();
-    } else {
-      return SvgPicture.file(
-        File(snapshot.data!),
-        width: 200,
-        height: 200,
-      );
-    }
-  },
-),
+import 'dart:io';
+import 'package:flutter_svg/flutter_svg.dart';
 
-Regarding your second question, the getImagePath method won't interfere with other Futures such as when reading OSName. Each Future is independent and doesn't affect the execution of other Futures.
-
-
-
-
-
-
-
-
-
-
-
-What about when sometimes the image path is of a SVG and sometimes the image path is of a PNG?
-
-
-
-
-
-
-
-
-
-To handle both SVG and PNG images, you can check the file extension of the image path and display the image accordingly.
-
-First, modify the Executable class to return the image path:
-
-class Executable {
-  static Future<String> getImagePath(String command) async {
-    ProcessResult result = await Process.run(command, []);
-    return result.stdout.trim();
+class WelcomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return FutureBuilder<String>(
+      future: Executable.getImagePath('bash include/linux-icon-getter/linux-icon-getter distributor-logo'),
+      builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return CircularProgressIndicator();
+        } else {
+          String imagePath = snapshot.data!;
+          if (imagePath.endsWith('.svg')) {
+            return SvgPicture.file(
+              File(imagePath),
+              width: 200,
+              height: 200,
+            );
+          } else if (imagePath.endsWith('.png')) {
+            return Image.file(
+              File(imagePath),
+              width: 200,
+              height: 200,
+            );
+          } else {
+            return Text('Unsupported image format');
+          }
+        }
+      },
+    );
   }
 }
 
-Then, in your WelcomeScreen widget, use a FutureBuilder to display the image:
+This code should resolve the issues and allow you to build the Flutter application for Linux.
 
-FutureBuilder<String>(
-  future: Executable.getImagePath('bash include/linux-icon-getter/linux-icon-getter distributor-logo'),
-  builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
-    if (snapshot.connectionState == ConnectionState.waiting) {
-      return CircularProgressIndicator();
-    } else {
-      String imagePath = snapshot.data!;
-      if (imagePath.endsWith('.svg')) {
-        return SvgPicture.file(
-          File(imagePath),
-          width: 200,
-          height: 200,
-        );
-      } else if (imagePath.endsWith('.png')) {
-        return Image.file(
-          File(imagePath),
-          width: 200,
-          height: 200,
-        );
-      } else {
-        return Text('Unsupported image format');
-      }
-    }
-  },
-),
 
-This code will display a CircularProgressIndicator while the command is running. Once it's finished, it will check the file extension of the image path. If it's an SVG, it will display the image using SvgPicture.file. If it's a PNG, it will use Image.file. If the file extension is neither SVG nor PNG, it will display a text widget with the message 'Unsupported image format'.
+
+
+
+
+
+return FutureBuilder<String>(
+  future: Executable.getOSName(),
+  builder: (BuildContext context, AsyncSnapshot<String> osname) {
+  
+Won't that interfere/break getOSName?
+
+
+
+
+
+
+
+
+
+
+No, the Executable.getImagePath method won't interfere with Executable.getOSName. Each Future is independent and doesn't affect the execution of other Futures.
+
+In your WelcomeScreen widget, you're using two separate FutureBuilder widgets: one for Executable.getOSName and another for Executable.getImagePath. These two FutureBuilder widgets operate independently of each other.
+
+The FutureBuilder for Executable.getOSName will execute the getOSName method and rebuild the widget when the Future completes. Similarly, the FutureBuilder for Executable.getImagePath will execute the getImagePath method and rebuild the widget when that Future completes.
+
+So, there's no interference between these two operations. They're both asynchronous operations that are handled independently by the Dart runtime.
+
+
+
+
+
+
+
+
+Please show me the full "class WelcomeScreen extends ...", with your cited implementation as well.
+
+This will make things easier on my side, so all I have to do is copy-paste.
+
+
+
+
+
+
+
+Sure, here's the full WelcomeScreen class with the implementation of Executable.getImagePath:
+
+import 'dart:io';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter/material.dart';
+import 'package:firstlogon_tour/app.dart';
+
+class WelcomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return FutureBuilder<String>(
+      future: Executable.getOSName(),
+      builder: (BuildContext context, AsyncSnapshot<String> osname) {
+        if (osname.connectionState == ConnectionState.waiting) {
+          return CircularProgressIndicator();
+        } else {
+          return Scaffold(
+            appBar: AppBar(
+              title: Text('Welcome to ${osname.data}'),
+            ),
+            body: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    'Welcome to ${osname.data}!',
+                    style: Theme.of(context).textTheme.headline4,
+                  ),
+                  Text(
+                    'This is your first time logging in. Let\'s set up your system.',
+                    style: Theme.of(context).textTheme.subtitle1,
+                  ),
+                  SizedBox(height: 50),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/steps');
+                    },
+                    child: Text('Start Setup'),
+                  ),
+                  FutureBuilder<String>(
+                    future: Executable.getImagePath('bash include/linux-icon-getter/linux-icon-getter distributor-logo'),
+                    builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+                      if (snapshot.connectionState == ConnectionState.waiting) {
+                        return CircularProgressIndicator();
+                      } else {
+                        String imagePath = snapshot.data!;
+                        if (imagePath.endsWith('.svg')) {
+                          return SvgPicture.file(
+                            File(imagePath),
+                            width: 200,
+                            height: 200,
+                          );
+                        } else if (imagePath.endsWith('.png')) {
+                          return Image.file(
+                            File(imagePath),
+                            width: 200,
+                            height: 200,
+                          );
+                        } else {
+                          return Text('Unsupported image format');
+                        }
+                      }
+                    },
+                  ),
+                ],
+              ),
+            ),
+          );
+        }
+      },
+    );
+  }
+}
+
+This code includes a FutureBuilder that uses Executable.getImagePath to get the path of the image file. Depending on the file extension, it either displays the image using SvgPicture.file (for SVG images) or Image.file (for PNG images). If the file extension is neither SVG nor PNG, it displays a text widget with the message 'Unsupported image format'.
