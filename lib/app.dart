@@ -19,9 +19,17 @@ static Future<String> getOSName() async {
 }
 
 //OPERATION DISTRO-LOGO
-  static Future<String> getImagePath(String command) async {
-    ProcessResult result = await Process.run(command, []);
-    return result.stdout.trim();
+  //static Future<String> getImagePath(String command) async {
+    static Future<String> getImagePath() async {
+    //ProcessResult result = await Process.run(command, []);
+    //var process = await Process.run('include/linux-icon-getter/./linux-icon-getter', ['distributor-logo']);
+    //var process = await Process.run('include/linux-icon-getter/./linux-icon-getter', 'distributor-logo');
+    //var process = await Process.run('include/linux-icon-getter/./linux-icon-getter distributor-logo');
+    var process = await Process.run('bash', [$Directory.current.path,'/include/linux-icon-getter/./linux-icon-getter', 'distributor-logo']);
+    //return result.stdout.trim();
+    print('SUPER DEBUG: $process.stdout');
+    print('SUPER DEBUG: ${process.stdout}');
+    return process.stdout.toString().trim();
   }
   //OPERATION DISTRO-LOGO
 }

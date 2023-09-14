@@ -36,26 +36,29 @@ class WelcomeScreen extends StatelessWidget {
                     child: Text('Start Setup'),
                   ),
                   FutureBuilder<String>(
-                    future: Executable.getImagePath('include/linux-icon-getter/./linux-icon-getter distributor-logo'),
-                    builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
-                      print('Current path: ${Directory.current.path}');
-                      if (snapshot.connectionState == ConnectionState.waiting) {
-                        print('Image path: ${snapshot.data}');
-                        print('Image path: $snapshot.data');
+                    //future: Executable.getImagePath('include/linux-icon-getter/./linux-icon-getter distributor-logo'),
+                    future: Executable.getImagePath(),
+                    //builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+                    builder: (BuildContext context, AsyncSnapshot<String> imagepath) {
+                        print('Current path: ${Directory.current.path}');
+                      //if (snapshot.connectionState == ConnectionState.waiting) {
+                        if (imagepath.connectionState == ConnectionState.waiting) {
+                        print('Image path: ${imagepath.data}');
+                        print('Image path: $imagepath.data');
                         return CircularProgressIndicator();
                       } else {
-                        String imagePath = snapshot.data!;
-                        print('Image path: $imagePath'); // Add this line
-                        print('Image path: ${snapshot.data}');
-                        if (imagePath.endsWith('.svg')) {
+                        String imagePathS = imagepath.data!;
+                        print('Image path: $imagePathS'); // Add this line
+                        print('Image path: ${imagepath.data}');
+                        if (imagePathS.endsWith('.svg')) {
                           return SvgPicture.file(
-                            File(imagePath),
+                            File(imagePathS),
                             width: 200,
                             height: 200,
                           );
-                        } else if (imagePath.endsWith('.png')) {
+                        } else if (imagePathS.endsWith('.png')) {
                           return Image.file(
-                            File(imagePath),
+                            File(imagePathS),
                             width: 200,
                             height: 200,
                           );
