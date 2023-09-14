@@ -1,88 +1,20 @@
-print('Image path: ${snapshot.data}');
-                        print('Image path: $snapshot.data');
-                        
-Look at welcome.dart's line 42 and 43, cited above.
+About app.dart:
 
-Their respective outputs when running the executable:
+Line 28's "var process = await Process.run('bash', [$Directory.current.path,'/include/linux-icon-getter/./linux-icon-getter', 'distributor-logo']);"
 
-"flutter: Image path: null
-flutter: Image path: AsyncSnapshot(ConnectionState.waiting, null, null, null).data
-"
+Returns:
 
-Not even "return CircularProgressIndicator();" is showing, only the two "print"s above it.
+firstlogon_tour on  main [!⇡] is 📦 v1.0.0+1 via 🎯 v3.1.1 took 36s 
+❯ flutter build linux
 
-The "print"s outputs mean running "bash include/linux-icon-getter/linux-icon-getter distributor-logo" isn't working.
-Manually, in Gnome Terminal, I can normally run this command; but in Flutter, seems like it isn't being run corretly.
-This command normally outputs "/usr/share/icons/Floflis/scalable/places/distributor-logo.svg".
+ERROR: lib/app.dart:28:46: Error: Undefined name '$Directory'.
+ERROR:     var process = await Process.run('bash', [$Directory.current.path,'/include/linux-icon-getter/./linux-icon-getter', 'distributor-logo']);
+ERROR:                                              ^^^^^^^^^^
+ERROR: Target kernel_snapshot failed: Exception
+Building Linux application...                                           
+Build process failed
 
-If this Flutter project is running linux-icon-getter correctly, then why it says its null rather than getting "/usr/share/icons/Floflis/scalable/places/distributor-logo.svg"?
-
-- Are there a path issue when finding the "include/" folder?
-- Are there any conflict with getOSName?
-
-
-
-
-
-
-
-
-The issue you're experiencing might be due to several reasons. Here are some possibilities:
-
-1. Path Issue: The path to the include/ folder might not be correct. In Flutter, the current working directory is the root of your project. If your include/ folder is not in the root of your project, the path you're providing might not be correct.
-
-2. Conflict with getOSName: If getOSName and getImagePath are running concurrently, there might be a conflict. Dart's single-threaded model of execution could cause unexpected behavior when running multiple processes at the same time.
-
-To debug this issue, you can try the following steps:
-
-1. Print the Current Path: Before running the command, print the current path to check if it's correct. You can use Directory.current.path in Dart to get the current working directory.
-
-print('Current path: ${Directory.current.path}');
-
-2. Run Commands Sequentially: Try to run getOSName and getImagePath sequentially instead of concurrently to see if there's a conflict. You can use async and await to ensure getOSName finishes before getImagePath starts.
-
-3. Check the Command: Make sure the command you're running is correct. You can try to run the command directly in the terminal to see if it works.
-
-If none of these steps solve the issue, please provide more information about your project structure and the exact commands you're running.
-
-
-
-
-
-
-
-
-"3. Check the Command: Make sure the command you're running is correct. You can try to run the command directly in the terminal to see if it works."
-
-Didn't I said already that I'm being able to run the command normally in my Gnome Terminal??
-
-
-
-
-
-
-
-I apologize for the oversight. If the command works correctly in your terminal, it's likely not the issue.
-
-Given that the command works in the terminal but not in the Flutter application, it's possible that the environment in which the Flutter application is running does not have access to the same resources as your terminal.
-
-Here are some additional steps to debug:
-
-1. Check Permissions: Ensure that the Flutter application has the necessary permissions to execute the command and access the file system.
-
-2. Absolute Path: Try using the absolute path to the linux-icon-getter in your command. Relative paths can sometimes cause issues depending on the context in which they're used.
-
-3. Error Handling: Add error handling to the getImagePath method to catch and print any errors that might occur when the command is run. This could provide more insight into what's going wrong. Here's how you can do it:
-
-static Future<String> getImagePath(String command) async {
-  try {
-    ProcessResult result = await Process.run(command, []);
-    return result.stdout.trim();
-  } catch (e) {
-    print('Error running command: $e');
-    return null;
-  }
-}
+For my surprise, in welcome.dart, $Directory.current.path works, showing the current path the Flutter app is running from.
 
 
 
@@ -92,6 +24,55 @@ static Future<String> getImagePath(String command) async {
 
 
 
-4. Debugging: Use debugging tools to step through the code and see where it fails. This can often provide valuable insight into what's going wrong.
 
-If none of these steps solve the issue, it might be helpful to create a minimal, reproducible example of the problem. This would involve creating a small Flutter application that only tries to run the command and print the result. If the problem persists in this smaller application, it would be easier to debug and ask for help.
+
+
+The error you're encountering is due to the use of $Directory in your app.dart file. In Dart, the $ symbol is used for string interpolation, not for accessing global variables or classes.
+
+In your welcome.dart file, you're using ${Directory.current.path} inside a string, which is the correct way to use string interpolation.
+
+To fix the error in app.dart, you should replace $Directory with Directory:
+
+var process = await Process.run('bash', [Directory.current.path,'/include/linux-icon-getter/./linux-icon-getter', 'distributor-logo']);
+
+This should correctly pass the current directory path to the Process.run function.
+
+Remember to import the dart:io package at the top of your app.dart file to use the Directory class:
+
+import 'dart:io';
+
+This should resolve the Undefined name '$Directory' error you're encountering.
+
+
+
+
+
+
+
+
+
+
+Thank you!
+
+Beyond successfully compiling, now I'm finally rid of that gray square appearing bellow the "Start Setup" button: now there's a text saying "Unsupported image format".
+
+Please tell me a preview of how "var process = await Process.run('bash', [Directory.current.path,'/include/linux-icon-getter/./linux-icon-getter', 'distributor-logo']);" runs the commands. Exactly the command that is run.
+
+Are that somewhat like "bash /home/daniella/firstlogon_tour/build/linux/x64/release/bundle/include/linux-icon-getter/./linux-icon-getter distributor-logo"?
+
+
+
+
+
+
+
+
+Yes, you're correct. The Process.run function in Dart runs a process and collects its output. When you pass 'bash' as the command and an array of arguments, it constructs a command line string and executes it.
+
+In your case, the command that is run would be:
+
+bash /home/daniella/firstlogon_tour/include/linux-icon-getter/./linux-icon-getter distributor-logo
+
+This command is executed in the shell, and the output is captured by the Process.run function. The Directory.current.path returns the current working directory of the Dart process, which is /home/daniella/firstlogon_tour in your case.
+
+The "Unsupported image format" error you're seeing is likely due to the image format returned by the linux-icon-getter script not being supported by the flutter_svg package. You might need to convert the image to a supported format (like PNG or JPEG) before displaying it in your Flutter app.
