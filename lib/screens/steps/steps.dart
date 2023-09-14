@@ -112,23 +112,71 @@ Card(
                 });
               },
             ),
-Card(
+//InkWell learned from https://www.fluttercampus.com/guide/150/how-to-make-any-widget-clickable-on-flutter/
+InkWell(
+    onTap: () async {
+        //print("card is tapped.");
+                        //String output = await Executable.run('gsettings set org.cinnamon.desktop.interface cursor-theme DMZ-White');
+                        String output = await Executable.run('cinnamon-settings');
+                print(output);
+                setState(() {
+                  _currentStep++;
+                });
+    },
+//    onDoubleTap: (){
+//      print("Card is double tapped.");
+//    },
+    child: Card(
   child: Column(
     children: <Widget>[
       Image.asset('assets/img/screens/steps/cursorcolor/dark.png'),
-      Text('Option 1'),
+      Text('⚫Black (like in "MecOS"🍎)'),
     ],
   ),
 ),
-Card(
+),
+//InkWell learned from https://www.fluttercampus.com/guide/150/how-to-make-any-widget-clickable-on-flutter/
+InkWell(
+    onTap: () async {
+        //print("card is tapped.");
+                        //String output = await Executable.run('gsettings set org.cinnamon.desktop.interface cursor-theme Floflis');
+                        String output = await Executable.run('cinnamon-settings');
+                print(output);
+                setState(() {
+                  _currentStep++;
+                });
+    },
+//    onDoubleTap: (){
+//      print("Card is double tapped.");
+//    },
+    child: Card(
   child: Column(
     children: <Widget>[
       Image.asset('assets/img/screens/steps/cursorcolor/light.png'),
-      Text('Option 2'),
+      Text('⚪White (like in "WindOS"🪟)'),
     ],
   ),
 ),
+),
           ],
+//child: GestureDetector from https://www.geeksforgeeks.org/flutter-making-card-clickable/
+//		children: GestureDetector(
+//			
+//			onTap: () {
+//			ScaffoldMessenger.of(context).showSnackBar(
+//					SnackBar(content: Text('Gesture Detected!')));			
+//			},
+//			children: Container(
+//			
+//			height: 100,
+//			children: Card(
+//				elevation: 10,
+//				child: Text('Geeks for Geeks, Hello this is clickable card, tap me'),
+//				color: Colors.cyanAccent,
+//				
+//			),
+//			),
+//		),
         ),
       ),
       Step(
