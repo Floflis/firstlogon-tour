@@ -1,5 +1,6 @@
 .dart_tool/
 build/
 linux/
+include/
 
 pubspec.lock

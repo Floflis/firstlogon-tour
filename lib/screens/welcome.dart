@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../app.dart';
 
+import 'package:flutter_svg/flutter_svg.dart';
+
 class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -33,6 +35,42 @@ class WelcomeScreen extends StatelessWidget {
               },
               child: Text('Start Setup'),
             ),
+
+//OPERATION DISTRO-LOGO
+//ElevatedButton(
+//  onPressed: () async {
+//    String output = await Executable.runScript('include/linux-icon-getter/linux-icon-getter');
+//    print(output);
+//  },
+//  child: Text('Run Script'),
+//),
+FutureBuilder<String>(
+  future: Executable.getImagePath('bash include/linux-icon-getter/linux-icon-getter distributor-logo'),
+  builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+    if (snapshot.connectionState == ConnectionState.waiting) {
+      return CircularProgressIndicator();
+    } else {
+      String imagePath = snapshot.data!;
+      if (imagePath.endsWith('.svg')) {
+        return SvgPicture.file(
+          File(imagePath),
+          width: 200,
+          height: 200,
+        );
+      } else if (imagePath.endsWith('.png')) {
+        return Image.file(
+          File(imagePath),
+          width: 200,
+          height: 200,
+        );
+      } else {
+        return Text('Unsupported image format');
+      }
+    }
+  },
+),
+//OPERATION DISTRO-LOGO
+
           ],
         ),
       ),

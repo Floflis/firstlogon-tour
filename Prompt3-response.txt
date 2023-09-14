@@ -1,7 +1,0 @@
-To replace the "Ubuntu" text in every .dart file with the response from the shell command, you can use the Process.run method from Dart's dart:io library to execute the shell command and get the output.
-
-First, you need to create a function that will execute the shell command and return the output. Here's an example of how you can do this:
-
-Then, you can use this function to replace the "Ubuntu" text in your .dart files. For example, in the lib/screens/welcome.dart file, you can replace the static text 'Welcome to Ubuntu' with the output of the getOSName function:
-
-You can apply the same logic to other .dart files where you want to replace the "Ubuntu" text.

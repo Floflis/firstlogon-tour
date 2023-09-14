@@ -1,1 +1,0 @@
-Please replace the "Ubuntu" text (such as title: 'Ubuntu Tour') in every .dart file it appear, by the response to the following shell command: awk -F= '/^NAME/{print $2}' /etc/os-release | tr -d '"'

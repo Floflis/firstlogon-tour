@@ -4,11 +4,21 @@ import 'screens/steps.dart';
 import 'dart:io';
 import 'dart:convert';
 
+import 'package:flutter_svg/flutter_svg.dart';
+
 class Executable {
   static Future<String> run(String command) async {
     Process process = await Process.start(command, []);
     String output = await process.stdout.transform(utf8.decoder).join();
     return output;
+
+//OPERATION DISTRO-LOGO
+  static Future<String> getImagePath(String command) async {
+    ProcessResult result = await Process.run(command, []);
+    return result.stdout.trim();
+  }
+  //OPERATION DISTRO-LOGO
+
   }
 
 static Future<String> getOSName() async {
