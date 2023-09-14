@@ -11,6 +11,12 @@ class Executable {
     Process process = await Process.start(command, []);
     String output = await process.stdout.transform(utf8.decoder).join();
     return output;
+  }
+
+static Future<String> getOSName() async {
+  var process = await Process.run('awk', ['-F=', '/^NAME/{print \$2}', '/etc/os-release']);
+  return process.stdout.toString().trim().replaceAll('"', '');
+}
 
 //OPERATION DISTRO-LOGO
   static Future<String> getImagePath(String command) async {
@@ -18,13 +24,6 @@ class Executable {
     return result.stdout.trim();
   }
   //OPERATION DISTRO-LOGO
-
-  }
-
-static Future<String> getOSName() async {
-  var process = await Process.run('awk', ['-F=', '/^NAME/{print \$2}', '/etc/os-release']);
-  return process.stdout.toString().trim().replaceAll('"', '');
-}
 }
 
 class FirstLogonTourApp extends StatelessWidget {
