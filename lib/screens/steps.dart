@@ -40,6 +40,53 @@ class _StepScreenState extends State<StepScreen> {
           ],
         ),
       ),
+      
+      Step(
+        title: Text('Step 2'),
+        content: Column(
+          children: <Widget>[
+            Text('This is the placeholder for Step 2'),
+            ElevatedButton(
+              child: Text('Run Executable (sample: cinnamon-settings)'),
+              onPressed: () async {
+                String output = await Executable.run('cinnamon-settings');
+                print(output);
+              },
+            ),
+            Checkbox(
+              value: _checkboxValue,
+              onChanged: (bool? value) {
+                setState(() {
+                  _checkboxValue = value ?? false;
+                });
+              },
+            ),
+          ],
+        ),
+      ),
+      Step(
+        title: Text('Step 3'),
+        content: Column(
+          children: <Widget>[
+            Text('This is the placeholder for Step 3'),
+            ElevatedButton(
+              child: Text('Run Executable (sample: cinnamon-settings)'),
+              onPressed: () async {
+                String output = await Executable.run('cinnamon-settings');
+                print(output);
+              },
+            ),
+Card(
+  child: Column(
+    children: <Widget>[
+      Image.asset('path_to_your_image'),
+      Text('Option 1'),
+    ],
+  ),
+),
+          ],
+        ),
+      ),
       // Add more steps here
     ];
   }

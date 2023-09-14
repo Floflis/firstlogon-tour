@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 //import 'app.dart';
-//import 'step_screen.dart';
+//import 'steps.dart';
 
 //Step step1(BuildContext context) {
 //  return Step(
@@ -28,12 +28,12 @@ import 'package:flutter/material.dart';
 //      );
 //}
 
-Step step1(BuildContext context) {
+Step step3(BuildContext context) {
   return Step(
-    title: Text('Step 2'),
+    title: Text('Step 3'),
     content: Column(
       children: <Widget>[
-        Text('This is the placeholder for Step 2'),
+        Text('This is the placeholder for Step 3'),
 ElevatedButton(
   child: Text('Finalize'),
   onPressed: () {
