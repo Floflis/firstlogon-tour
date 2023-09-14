@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../app.dart';
 
+import 'dart:io';
+
 //import 'step1.dart';
 //import 'step2.dart';
 //import 'step3.dart';
@@ -117,8 +119,11 @@ InkWell(
     onTap: () async {
         //print("card is tapped.");
                         //String output = await Executable.run('gsettings set org.cinnamon.desktop.interface cursor-theme DMZ-White');
-                        String output = await Executable.run('cinnamon-settings');
-                print(output);
+                        //String output = await Executable.run('cinnamon-settings');
+                        var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'cursor-theme', 'Floflis'
+]);
+//print('gsettings ' + ['set', 'org.cinnamon.desktop.interface', 'cursor-theme', 'Floflis'].join(' '));
+                //print(process);
                 setState(() {
                   _currentStep++;
                 });
@@ -140,8 +145,11 @@ InkWell(
     onTap: () async {
         //print("card is tapped.");
                         //String output = await Executable.run('gsettings set org.cinnamon.desktop.interface cursor-theme Floflis');
-                        String output = await Executable.run('cinnamon-settings');
-                print(output);
+                        //String output = await Executable.run('cinnamon-settings');
+                        var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'cursor-theme', 'DMZ-White'
+]);
+//print('gsettings ' + ['set', 'org.cinnamon.desktop.interface', 'cursor-theme', 'DMZ-White'].join(' '));
+                //print(output);
                 setState(() {
                   _currentStep++;
                 });

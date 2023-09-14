@@ -1,5 +1,3 @@
-- still at steps.dart: fix running multi-argument executables
-
 - enable to export to .deb
 https://pub.dev/packages/flutter_to_debian
 https://github.com/jeffrey0606/flutter_to_debian (PR to fix 'debain')
