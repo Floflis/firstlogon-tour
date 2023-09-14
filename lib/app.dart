@@ -25,13 +25,17 @@ static Future<String> getOSName() async {
     //var process = await Process.run('include/linux-icon-getter/./linux-icon-getter', ['distributor-logo']);
     //var process = await Process.run('include/linux-icon-getter/./linux-icon-getter', 'distributor-logo');
     //var process = await Process.run('include/linux-icon-getter/./linux-icon-getter distributor-logo');
-    var process = await Process.run('bash', [Directory.current.path,'/data/flutter_assets/include/linux-icon-getter/linux-icon-getter', 'distributor-logo']);
+    //var process = await Process.run('bash', [Directory.current.path,'/data/flutter_assets/include/linux-icon-getter/linux-icon-getter', 'distributor-logo']);
+    var process = await Process.run('bash', [
+  Directory.current.path + '/data/flutter_assets/include/linux-icon-getter/linux-icon-getter',
+  'distributor-logo'
+]);
     //return result.stdout.trim();
     //print('SUPER DEBUG: $process.stdout');
     //print('SUPER DEBUG: ${process.stdout}');
     print('SUPER DEBUG: $process.stdout.toString().trim()');
     print('SUPER DEBUG: ${process.stdout.toString().trim()}');
-    print('bash', [Directory.current.path,'/data/flutter_assets/include/linux-icon-getter/linux-icon-getter', 'distributor-logo']);
+    print('bash ' + [Directory.current.path+'/data/flutter_assets/include/linux-icon-getter/linux-icon-getter', 'distributor-logo'].join(' '));
     return process.stdout.toString().trim();
   }
   //OPERATION DISTRO-LOGO

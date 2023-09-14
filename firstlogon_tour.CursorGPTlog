@@ -1,20 +1,19 @@
-About app.dart:
-
-Line 28's "var process = await Process.run('bash', [$Directory.current.path,'/include/linux-icon-getter/./linux-icon-getter', 'distributor-logo']);"
-
-Returns:
+About app.dart's "print('bash', [Directory.current.path,'/data/flutter_assets/include/linux-icon-getter/linux-icon-getter', 'distributor-logo']);" result:
 
 firstlogon_tour on  main [!⇡] is 📦 v1.0.0+1 via 🎯 v3.1.1 took 36s 
 ❯ flutter build linux
 
-ERROR: lib/app.dart:28:46: Error: Undefined name '$Directory'.
-ERROR:     var process = await Process.run('bash', [$Directory.current.path,'/include/linux-icon-getter/./linux-icon-getter', 'distributor-logo']);
-ERROR:                                              ^^^^^^^^^^
+ERROR: lib/app.dart:34:10: Error: Too many positional arguments: 1 allowed, but 2 found.
+ERROR: Try removing the extra positional arguments.
+ERROR:     print('bash', [Directory.current.path,'/data/flutter_assets/include/linux-icon-getter/linux-icon-getter', 'distributor-logo']);
+ERROR:          ^
+ERROR: org-dartlang-sdk:///third_party/dart/sdk/lib/core/print.dart:8:6: Context: Found this candidate, but the arguments don't match.
+ERROR: void print(Object? object) {
+ERROR:      ^^^^^
 ERROR: Target kernel_snapshot failed: Exception
 Building Linux application...                                           
 Build process failed
 
-For my surprise, in welcome.dart, $Directory.current.path works, showing the current path the Flutter app is running from.
 
 
 
@@ -23,56 +22,12 @@ For my surprise, in welcome.dart, $Directory.current.path works, showing the cur
 
 
 
+The error message you're seeing is due to incorrect usage of the print function in Dart. The print function in Dart only takes one argument. If you want to print multiple items, you can concatenate them into a single string.
 
+In your case, you're trying to print a command that you're running. You can do this by joining the command and its arguments into a single string and then printing that string.
 
+Here's how you can modify your code:
 
+print('bash ' + [Directory.current.path,'/data/flutter_assets/include/linux-icon-getter/linux-icon-getter', 'distributor-logo'].join(' '));
 
-The error you're encountering is due to the use of $Directory in your app.dart file. In Dart, the $ symbol is used for string interpolation, not for accessing global variables or classes.
-
-In your welcome.dart file, you're using ${Directory.current.path} inside a string, which is the correct way to use string interpolation.
-
-To fix the error in app.dart, you should replace $Directory with Directory:
-
-var process = await Process.run('bash', [Directory.current.path,'/include/linux-icon-getter/./linux-icon-getter', 'distributor-logo']);
-
-This should correctly pass the current directory path to the Process.run function.
-
-Remember to import the dart:io package at the top of your app.dart file to use the Directory class:
-
-import 'dart:io';
-
-This should resolve the Undefined name '$Directory' error you're encountering.
-
-
-
-
-
-
-
-
-
-
-Thank you!
-
-Beyond successfully compiling, now I'm finally rid of that gray square appearing bellow the "Start Setup" button: now there's a text saying "Unsupported image format".
-
-Please tell me a preview of how "var process = await Process.run('bash', [Directory.current.path,'/include/linux-icon-getter/./linux-icon-getter', 'distributor-logo']);" runs the commands. Exactly the command that is run.
-
-Are that somewhat like "bash /home/daniella/firstlogon_tour/build/linux/x64/release/bundle/include/linux-icon-getter/./linux-icon-getter distributor-logo"?
-
-
-
-
-
-
-
-
-Yes, you're correct. The Process.run function in Dart runs a process and collects its output. When you pass 'bash' as the command and an array of arguments, it constructs a command line string and executes it.
-
-In your case, the command that is run would be:
-
-bash /home/daniella/firstlogon_tour/include/linux-icon-getter/./linux-icon-getter distributor-logo
-
-This command is executed in the shell, and the output is captured by the Process.run function. The Directory.current.path returns the current working directory of the Dart process, which is /home/daniella/firstlogon_tour in your case.
-
-The "Unsupported image format" error you're seeing is likely due to the image format returned by the linux-icon-getter script not being supported by the flutter_svg package. You might need to convert the image to a supported format (like PNG or JPEG) before displaying it in your Flutter app.
+This will join the elements of the list into a single string with spaces in between, and then print that string.
