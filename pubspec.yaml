@@ -23,6 +23,7 @@ flutter:
   assets:
     - assets/img/
     - assets/img/screens/steps/cursorcolor/
+    - assets/img/screens/steps/themecolor/
     - include/linux-icon-getter/
 
   # The following section is specific to Flutter.
