@@ -36,8 +36,9 @@ class WelcomeScreen extends StatelessWidget {
                     child: Text('Start Setup'),
                   ),
                   FutureBuilder<String>(
-                    future: Executable.getImagePath('bash include/linux-icon-getter/linux-icon-getter distributor-logo'),
+                    future: Executable.getImagePath('include/linux-icon-getter/./linux-icon-getter distributor-logo'),
                     builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+                      print('Current path: ${Directory.current.path}');
                       if (snapshot.connectionState == ConnectionState.waiting) {
                         print('Image path: ${snapshot.data}');
                         print('Image path: $snapshot.data');
