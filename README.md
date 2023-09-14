@@ -1,6 +1,8 @@
-# Ubuntu Tour
+# Ubuntu Cinnamon first logon Tour
 
 This is a Flutter application designed to provide a first-logon tour/wizard for Ubuntu and other Linux distros. It leverages external executables, which can be Rust programs or Bash script executables.
+
+Currently supporting only Cinnamon as DE, but planned to add individual cases for the most popular distros and DEs.
 
 ## Screenshots
 
