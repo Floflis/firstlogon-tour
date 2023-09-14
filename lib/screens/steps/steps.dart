@@ -87,6 +87,104 @@ Card(
           ],
         ),
       ),
+      Step(
+        title: Text('Step 4: Mouse cursor 🖱️'),
+        content: Column(
+          children: <Widget>[
+            Text('How you prefer your mouse cursor color?'),
+            ElevatedButton(
+              child: Text('⚫Black (like in "MecOS"🍎)'),
+              onPressed: () async {
+                String output = await Executable.run('gsettings set org.cinnamon.desktop.interface cursor-theme DMZ-White');
+                print(output);
+                setState(() {
+                  _currentStep++;
+                });
+              },
+            ),
+            ElevatedButton(
+              child: Text('⚪White (like in "WindOS"🪟)'),
+              onPressed: () async {
+                String output = await Executable.run('gsettings set org.cinnamon.desktop.interface cursor-theme Floflis');
+                print(output);
+                setState(() {
+                  _currentStep++;
+                });
+              },
+            ),
+Card(
+  child: Column(
+    children: <Widget>[
+      Image.asset('path_to_your_image'),
+      Text('Option 1'),
+    ],
+  ),
+),
+          ],
+        ),
+      ),
+      Step(
+        title: Text('Step 5'),
+        content: Column(
+          children: <Widget>[
+            Text('This is the placeholder for Step 5'),
+Card(
+  child: Column(
+    children: <Widget>[
+      Image.asset('path_to_your_image'),
+      Text('Option 1'),
+    ],
+  ),
+),
+          ],
+        ),
+      ),
+      Step(
+        title: Text('Step 6: Theme intensity'),
+        content: Column(
+          children: <Widget>[
+            Text('How you prefer your system theme?'),
+            ElevatedButton(
+              child: Text('⚫Dark (lets save my eyes while computing in the dark)'),
+              onPressed: () async {
+                String output = await Executable.run('gsettings set org.cinnamon.desktop.wm.preferences theme Yaru-floflis-dark && gsettings set org.cinnamon.desktop.interface gtk-theme Yaru-floflis-dark && gsettings set org.cinnamon.theme name Yaru-floflis-dark');
+                print(output);
+                setState(() {
+                  _currentStep++;
+                });
+              },
+            ),
+            ElevatedButton(
+              child: Text('🟤Normal (i have strong eyes)'),
+              onPressed: () async {
+                String output = await Executable.run('gsettings set org.cinnamon.desktop.wm.preferences theme Yaru-floflis && gsettings set org.cinnamon.desktop.interface gtk-theme Yaru-floflis && gsettings set org.cinnamon.theme name Yaru-floflis');
+                print(output);
+                setState(() {
+                  _currentStep++;
+                });
+              },
+            ),
+            ElevatedButton(
+              child: Text('⚪Light (i have stronger eyes, still; lets not abuse)'),
+              onPressed: () async {
+                String output = await Executable.run('gsettings set org.cinnamon.desktop.wm.preferences theme Yaru-floflis-light && gsettings set org.cinnamon.desktop.interface gtk-theme Yaru-floflis-light && gsettings set org.cinnamon.theme name Yaru-floflis-light');
+                print(output);
+                setState(() {
+                  _currentStep++;
+                });
+              },
+            ),
+Card(
+  child: Column(
+    children: <Widget>[
+      Image.asset('path_to_your_image'),
+      Text('Option 1'),
+    ],
+  ),
+),
+          ],
+        ),
+      ),
       // Add more steps here
     ];
   }
