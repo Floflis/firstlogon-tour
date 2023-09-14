@@ -115,8 +115,16 @@ Card(
 Card(
   child: Column(
     children: <Widget>[
-      Image.asset('path_to_your_image'),
+      Image.asset('assets/img/screens/steps/cursorcolor/dark.png'),
       Text('Option 1'),
+    ],
+  ),
+),
+Card(
+  child: Column(
+    children: <Widget>[
+      Image.asset('assets/img/screens/steps/cursorcolor/light.png'),
+      Text('Option 2'),
     ],
   ),
 ),

@@ -1,0 +1,62 @@
+This folder: /home/daniella/firstlogon_tour/lib/screens/steps
+
+  File: ./Screenshot from 2023-09-14 04-04-26.png
+  Size: 11726     	Blocks: 24         IO Block: 4096   regular file
+Device: 8,38	Inode: 10226094    Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-14 04:15:36.531304916 -0300
+Modify: 2023-09-14 04:15:15.710674746 -0300
+Change: 2023-09-14 04:15:36.295297700 -0300
+ Birth: 2023-09-14 04:15:36.291297579 -0300
+IPFS hash: QmbfhEP3CbcgiJnXrAeCd1prNQemuMDv85qUGmppGwK2Gi
+------------------------------
+  File: ./Screenshot from 2023-09-14 04-04-31.png
+  Size: 11936     	Blocks: 24         IO Block: 4096   regular file
+Device: 8,38	Inode: 10226102    Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-14 04:15:36.543305284 -0300
+Modify: 2023-09-14 04:15:11.094536810 -0300
+Change: 2023-09-14 04:15:36.295297700 -0300
+ Birth: 2023-09-14 04:15:36.295297700 -0300
+IPFS hash: QmXdPzMja3LEo17X83o7EFaPxnACmo23SqeBGofztHuVB2
+------------------------------
+  File: ./step1.dart.future
+  Size: 1228      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9874061     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-14 03:35:46.315304719 -0300
+Modify: 2023-09-13 17:23:02.620096949 -0300
+Change: 2023-09-14 03:33:50.746574730 -0300
+ Birth: 2023-09-13 17:23:02.608096587 -0300
+IPFS hash: QmT4PwENueCfgmSr7RobBVnUNsVhhucPCkiWXwbXnzcGbF
+------------------------------
+  File: ./step2.dart.future
+  Size: 1595      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9873965     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-14 03:35:46.315304719 -0300
+Modify: 2023-09-14 03:30:36.012276288 -0300
+Change: 2023-09-14 03:33:50.746574730 -0300
+ Birth: 2023-09-14 03:30:36.008275687 -0300
+IPFS hash: QmZP996omHJzb63qCgS5En4q8o5uXBU2bZRLw4Acf7LQ5j
+------------------------------
+  File: ./step3.dart.future
+  Size: 1170      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,38	Inode: 9873979     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-14 03:35:46.315304719 -0300
+Modify: 2023-09-14 03:30:37.020427844 -0300
+Change: 2023-09-14 03:33:50.750575076 -0300
+ Birth: 2023-09-14 03:30:37.016427244 -0300
+IPFS hash: QmdHLCFR6XwRrtUsQxsuskW94dx1txHDSeKb6AGvgv3s3v
+------------------------------
+  File: ./steps.dart
+  Size: 7011      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,38	Inode: 10224010    Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-14 03:51:42.004157486 -0300
+Modify: 2023-09-14 03:50:30.809720415 -0300
+Change: 2023-09-14 03:50:30.817721178 -0300
+ Birth: 2023-09-14 03:50:30.801719651 -0300
+IPFS hash: QmZ9JLTQUxnXCqUGfawC8wzRScSwU6P5dEdhMLdAeiJo1i
+------------------------------
