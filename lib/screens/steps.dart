@@ -53,31 +53,39 @@ class _StepScreenState extends State<StepScreen> {
 //  ];
 //}
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Ubuntu Tour'),
-      ),
-      body: Stepper(
-        steps: _buildSteps(),
-        currentStep: _currentStep,
-        onStepContinue: () {
-          if (_currentStep < _buildSteps().length - 1) {
-            setState(() {
-              _currentStep++;
-            });
-          }
-        },
-        onStepCancel: () {
-          if (_currentStep > 0) {
-            setState(() {
-              _currentStep--;
-            });
-          }
-        },
-      ),
-    );
-  }
+@override
+Widget build(BuildContext context) {
+  return FutureBuilder<String>(
+    future: Executable.getOSName(),
+    builder: (BuildContext context, AsyncSnapshot<String> osname) {
+      if (osname.connectionState == ConnectionState.waiting) {
+        return CircularProgressIndicator();
+      } else {
+        return Scaffold(
+          appBar: AppBar(
+            title: Text('${osname.data} Tour'),
+          ),
+          body: Stepper(
+            steps: _buildSteps(),
+            currentStep: _currentStep,
+            onStepContinue: () {
+              if (_currentStep < _buildSteps().length - 1) {
+                setState(() {
+                  _currentStep++;
+                });
+              }
+            },
+            onStepCancel: () {
+              if (_currentStep > 0) {
+                setState(() {
+                  _currentStep--;
+                });
+              }
+            },
+          ),
+        );
+      }
+    },
+  );
 }
-
+}
