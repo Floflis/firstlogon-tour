@@ -8,14 +8,29 @@ https://pub.dev/packages/flutter_to_debian
 https://github.com/jeffrey0606/flutter_to_debian (PR to fix 'debain')
 then add .deb instructions to /media/daniella/Seagate Expansion Drive/flo-bkp-sync_custom/CursorAI_promptRules.txt
 and copy deb features to /media/daniella/B/git/Floflis/Floflis/HTML5/B2G/davidLauncher/cinnamon
+[REPRODUCE ON FMWK-FLUTTER]
 
 Current drawbacks:
 - stepper should be a sidebar, not atop the content putting it doooooown
 - Only Cinnamon supported (should support GNOME and other popular DEs such as KDE)
 - Focus on Yaru-floflis themes, and Floflis icons (should support beyond Floflis: Ubuntu and all of its flavors starting by UCR)
 
+mv to a GTK/GNOME design:
+https://www.google.com/search?client=firefox-b-d&q=gnome+fluter
+https://github.com/gtk-flutter/libadwaita
+https://github.com/gtk-flutter/gtk_theme_fl
+https://github.com/gtk-flutter/adwaita
+https://discourse.ubuntu.com/t/a-flutter-based-desktop-environment-for-ubuntu/26124/8
+https://github.com/ubuntu/yaru_widgets.dart
+https://github.com/ubuntu-flutter-community/yaru_tutorial
+https://github.com/ubuntu-flutter-community/settings
+[REPRODUCE ON FMWK-FLUTTER]
+
+enable window blur when supported: https://pub.dev/packages/flutter_acrylic/versions/0.1.0 [REPRODUCE ON FMWK-FLUTTER]
+
 HOW HELLISH IS TO STYLIZE YOUR FLUTTER APP https://docs.flutter.dev/get-started/flutter-for/web-devs
 but here's the savior: https://docs.flutter-view.io/guide/styling-with-css https://docs.flutter-view.io/
 then apply this savior to /media/daniella/B/git/Floflis/Floflis/HTML5/B2G/davidLauncher/cinnamon as well
+[REPRODUCE ON FMWK-FLUTTER]
 
 FMWK r3+ support Flutter+FlutterView, then use it!
