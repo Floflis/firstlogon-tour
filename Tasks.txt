@@ -1,7 +1,10 @@
-- frameless window, diminish that top header/bar
-- ask chatgpt if this sizing is the page's padding or a pre-set window size; ask to set it bound the page size, so make that window smaller
+r3 (fl attempt 47):
 
 - fix all multistep issues and enable multistep from separate files /home/daniella/firstlogon_tour/lib/screens/steps
+
+https://hackernoon.com/creating-and-releasing-an-app-with-flutter-part-i?ref=hackernoon.com
+https://hackernoon.com/creating-and-releasing-an-app-with-flutter-part-ii
+[REPRODUCE ON FMWK-FLUTTER]
 
 - enable to export to .deb
 https://pub.dev/packages/flutter_to_debian
@@ -10,10 +13,17 @@ then add .deb instructions to /media/daniella/Seagate Expansion Drive/flo-bkp-sy
 and copy deb features to /media/daniella/B/git/Floflis/Floflis/HTML5/B2G/davidLauncher/cinnamon
 [REPRODUCE ON FMWK-FLUTTER]
 
+r4 (fl attempt 48):
+
+- frameless window, diminish that top header/bar https://stackoverflow.com/questions/63397479/flutter-desktop-frameless-window-support
+- ask chatgpt if this sizing is the page's padding or a pre-set window size; ask to set it bound the page size, so make that window smaller
+
 Current drawbacks:
 - stepper should be a sidebar, not atop the content putting it doooooown
 - Only Cinnamon supported (should support GNOME and other popular DEs such as KDE)
 - Focus on Yaru-floflis themes, and Floflis icons (should support beyond Floflis: Ubuntu and all of its flavors starting by UCR)
+
+r5 (fl attempt 49):
 
 mv to a GTK/GNOME design:
 https://www.google.com/search?client=firefox-b-d&q=gnome+fluter
@@ -26,14 +36,16 @@ https://github.com/ubuntu-flutter-community/yaru_tutorial
 https://github.com/ubuntu-flutter-community/settings
 [REPRODUCE ON FMWK-FLUTTER]
 
-enable window blur when supported: https://pub.dev/packages/flutter_acrylic/versions/0.1.0 [REPRODUCE ON FMWK-FLUTTER]
--
-https://pub.dev/packages/blur
-https://medium.com/fluttervn/how-to-make-blur-effect-in-flutter-using-backdropfilter-imagefilter-559ffd8ab73
-
-may insp:
-https://stackoverflow.com/questions/63397479/flutter-desktop-frameless-window-support
 https://www.reddit.com/r/flutterhelp/comments/twk9ob/desktop_app_rounded_corners/
+[REPRODUCE ON FMWK-FLUTTER]
+
+r6 (fl attempt 50):
+
+at window level: enable window blur when supported: https://pub.dev/packages/flutter_acrylic/versions/0.1.0 [REPRODUCE ON FMWK-FLUTTER]
+-
+at in-page elements level: https://pub.dev/packages/blur https://medium.com/fluttervn/how-to-make-blur-effect-in-flutter-using-backdropfilter-imagefilter-559ffd8ab73 [REPRODUCE ON FMWK-FLUTTER]
+
+new:
 
 HOW HELLISH IS TO STYLIZE YOUR FLUTTER APP https://docs.flutter.dev/get-started/flutter-for/web-devs
 but here's the savior: https://docs.flutter-view.io/guide/styling-with-css https://docs.flutter-view.io/
