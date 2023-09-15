@@ -27,6 +27,13 @@ https://github.com/ubuntu-flutter-community/settings
 [REPRODUCE ON FMWK-FLUTTER]
 
 enable window blur when supported: https://pub.dev/packages/flutter_acrylic/versions/0.1.0 [REPRODUCE ON FMWK-FLUTTER]
+-
+https://pub.dev/packages/blur
+https://medium.com/fluttervn/how-to-make-blur-effect-in-flutter-using-backdropfilter-imagefilter-559ffd8ab73
+
+may insp:
+https://stackoverflow.com/questions/63397479/flutter-desktop-frameless-window-support
+https://www.reddit.com/r/flutterhelp/comments/twk9ob/desktop_app_rounded_corners/
 
 HOW HELLISH IS TO STYLIZE YOUR FLUTTER APP https://docs.flutter.dev/get-started/flutter-for/web-devs
 but here's the savior: https://docs.flutter-view.io/guide/styling-with-css https://docs.flutter-view.io/
