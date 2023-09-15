@@ -12,6 +12,10 @@ then add .deb instructions to /media/daniella/Seagate Expansion Drive/flo-bkp-sy
 and copy deb features to /media/daniella/B/git/Floflis/Floflis/HTML5/B2G/davidLauncher/cinnamon
 [REPRODUCE ON FMWK-FLUTTER]
 
+- add test PNG icon to run in taskbar
+- build.sh: will run "flutter build linux" and an inkscape command for generating the flutter icon out of a svg
+- init-newbie.sh: will install flutter and inkscape
+
 r4 (fl attempt 48):
 
 - frameless window, diminish that top header/bar https://stackoverflow.com/questions/63397479/flutter-desktop-frameless-window-support
