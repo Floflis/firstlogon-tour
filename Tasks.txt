@@ -1,10 +1,9 @@
 r3 (fl attempt 47):
 
-- fix all multistep issues and enable multistep from separate files /home/daniella/firstlogon_tour/lib/screens/steps
+- fix all multistep issues and enable multistep from separate files /home/daniella/firstlogon_tour/lib/screens/steps [REPRODUCE ON FMWK-FLUTTER]
+- https://hackernoon.com/creating-and-releasing-an-app-with-flutter-part-i?ref=hackernoon.com https://hackernoon.com/creating-and-releasing-an-app-with-flutter-part-ii [REPRODUCE ON FMWK-FLUTTER]
 
-https://hackernoon.com/creating-and-releasing-an-app-with-flutter-part-i?ref=hackernoon.com
-https://hackernoon.com/creating-and-releasing-an-app-with-flutter-part-ii
-[REPRODUCE ON FMWK-FLUTTER]
+- create the firstlogon-tour_cli package, and pair its features with firstlogon_tour (GUI) /media/daniella/B/git/Floflis/Floflis/Floflis-DNA/layers/soil/to-merge/include-firstlogon/System/firstlogon-tour_cli
 
 - enable to export to .deb
 https://pub.dev/packages/flutter_to_debian
