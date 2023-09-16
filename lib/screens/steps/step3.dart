@@ -1,32 +1,8 @@
 import 'package:flutter/material.dart';
-import 'app.dart';
+import '../../app.dart';
 import 'steps.dart';
 
-//Step step1(BuildContext context) {
-//  return Step(
-//        title: Text('Step 1'),
-//        content: Column(
-//          children: <Widget>[
-//            Text('This is the placeholder for Step 1'),
-//            ElevatedButton(
-//              child: Text('Run Executable'),
-//              onPressed: () async {
-//                String output = await Executable.run('your-command-here');
-//                print(output);
-//              },
-//            ),
-//            Checkbox(
-//              value: _checkboxValue,
-//              onChanged: (bool? value) {
-//                setState(() {
-//                  _checkboxValue = value ?? false;
-//                });
-//              },
-//            ),
-//          ],
-//        ),
-//      );
-//}
+import 'dart:io';
 
 Step step3(BuildContext context) {
   return Step(
@@ -37,7 +13,8 @@ Step step3(BuildContext context) {
 ElevatedButton(
   child: Text('Finalize'),
   onPressed: () {
-    SystemNavigator.pop();
+    //SystemNavigator.pop();
+    exit(0); //from https://codewithflutter.com/flutter-how-to-programmatically-exit-the-app/
   },
 )
         // Add more widgets here

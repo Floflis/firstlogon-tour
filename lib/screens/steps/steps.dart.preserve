@@ -3,9 +3,9 @@ import '../../app.dart';
 
 import 'dart:io';
 
-import 'step1.dart';
-import 'step2.dart';
-import 'step3.dart';
+//import 'step1.dart';
+//import 'step2.dart';
+//import 'step3.dart';
 // import more steps as needed
 
 class StepScreen extends StatefulWidget {
@@ -24,6 +24,8 @@ class _StepScreenState extends State<StepScreen> {
         content: Column(
           children: <Widget>[
             Text('How you prefer your mouse cursor color?'),
+Row(
+  children: <Widget>[
 //InkWell learned from https://www.fluttercampus.com/guide/150/how-to-make-any-widget-clickable-on-flutter/
 InkWell(
     onTap: () async {
@@ -67,6 +69,8 @@ InkWell(
   ),
 ),
 ),
+  ],
+)
           ],
         ),
       ),
@@ -75,6 +79,8 @@ InkWell(
         content: Column(
           children: <Widget>[
             Text('How you prefer your system theme?'),
+Row(
+  children: <Widget>[
 //InkWell learned from https://www.fluttercampus.com/guide/150/how-to-make-any-widget-clickable-on-flutter/
 InkWell(
     onTap: () async {
@@ -146,6 +152,8 @@ InkWell(
   ),
 ),
 ),
+  ],
+)
           ],
         ),
       ),
