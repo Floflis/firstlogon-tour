@@ -6,9 +6,25 @@ Currently supporting only Cinnamon as DE, but planned to add individual cases fo
 
 ## Screenshots
 
+### Multi-distro
+
+| Ubuntu                                                                                                      |
+|:-----------------------------------------------------------------------------------------------------------:|
+| ![](./wrong timestamp, using BIOS time/Screenshots/Ubuntu/Screenshot from 2023-09-16 20-52-37.png "Ubuntu") |
+| Linux Mint                                                                                                    |
+|:-------------------------------------------------------------------------------------------------------------:|
+| ![](./wrong timestamp, using BIOS time/Screenshots/Mint/Screenshot from 2023-09-16 20-13-13.png "Linux Mint") |
+| Ubuntu Cinnamon                                                                                                   |
+|:-----------------------------------------------------------------------------------------------------------------:|
+| ![](./wrong timestamp, using BIOS time/Screenshots/UCR/Screenshot from 2023-09-16 19-47-12.png "Ubuntu Cinnamon") |
+
+### On Floflis
+
 <img src="./screenshots/Screenshot from 2023-09-14 06-08-29.png"/>
 
 First logon welcome screen.
+
+#### Details
 
 <img src="./screenshots/Screenshot from 2023-09-14 06-08-34.png"/>
 
