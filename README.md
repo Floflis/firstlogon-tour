@@ -15,17 +15,16 @@ Currently supporting only Cinnamon as DE, but planned to add individual cases fo
 <td><img title="Linux Mint" alt="Linux Mint" src="./wrong timestamp, using BIOS time/Screenshots/Mint/Screenshot from 2023-09-16 20-13-13.png"/> Linux Mint</td>
 <td><img title="Ubuntu Cinnamon" alt="Ubuntu Cinnamon" src="./wrong timestamp, using BIOS time/Screenshots/UCR/Screenshot from 2023-09-16 19-47-12.png"/> Ubuntu Cinnamon</td>
 </tr>
+<tr>
+<td><img title="Floflis" alt="Floflis" src="./screenshots/Screenshot from 2023-09-14 06-08-29.png"/> Floflis</td>
+</tr>
 </tbody>
 </table>
 <!-- DivTable.com -->
 
-### On Floflis
-
-<img src="./screenshots/Screenshot from 2023-09-14 06-08-29.png"/>
-
 First logon welcome screen.
 
-#### Details
+### Details
 
 <img src="./screenshots/Screenshot from 2023-09-14 06-08-34.png"/>
 
