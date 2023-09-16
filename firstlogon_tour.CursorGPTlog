@@ -1,174 +1,12 @@
-About "body: Stepper(", how to remove these "Continue" and "Cancel" buttons?
+firstlogon_tour on  main [!⇡] is 📦 v1.0.0+1 via 🎯 v3.1.2 took 16s 
+❯ git add firstlogon_tour.CursorGPTlog lib
 
-
-
-
-
-
-
-
-To remove the "Continue" and "Cancel" buttons from the Stepper widget in Flutter, you can use the controlsBuilder property. This property allows you to override the default controls with your own widget. If you want to remove the buttons, you can return an empty Container.
-
-Here is how you can do it:
-
-Stepper(
-  controlsBuilder: (BuildContext context, {VoidCallback onStepContinue, VoidCallback onStepCancel}) {
-    return Container();
-  },
-  // other properties...
-)
-
-This will replace the default controls with an empty Container, effectively removing the "Continue" and "Cancel" buttons.
-
-Please apply this change to the Stepper widget in your code. For example, in the file lib/screens/steps/steps.dart from line 228 to line 244.
-
-
-
-
-
-
-firstlogon_tour on  main [!⇡] is 📦 v1.0.0+1 via 🎯 v3.1.2 took 5s 
-❯ flutter build linux
-
-ERROR: package:firstlogon_tour/screens/steps/steps.dart: Error: The parameter 'onStepCancel' can't have a value of 'null' because of its type 'void Function()', but the implicit default value is 'null'.
-ERROR: Try adding either an explicit non-'null' default value or the 'required' modifier.
-ERROR: package:firstlogon_tour/screens/steps/steps.dart: Error: The parameter 'onStepContinue' can't have a value of 'null' because of its type 'void Function()', but the implicit default value is 'null'.
-ERROR: Try adding either an explicit non-'null' default value or the 'required' 
-Function(BuildContext, {void Function() onStepCancel, void Function() onStepContinue})' can't be assigned to the parameter type 'Widget Function(BuildContext, ControlsDetails)?'.
+(BuildContext, ControlsDetails)?'.
 ERROR:  - 'Container' is from 'package:flutter/src/widgets/container.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/widgets/container.dart').
 ERROR:  - 'BuildContext' is from 'package:flutter/src/widgets/framework.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/widgets/framework.dart').
 ERROR:  - 'Widget' is from 'package:flutter/src/widgets/framework.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/widgets/framework.dart').
 ERROR:  - 'ControlsDetails' is from 'package:flutter/src/material/stepper.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/material/stepper.dart').
-ERROR:   controlsBuilder: (BuildContext context, {VoidCallback onStepContinue, VoidCallback onStepCancel}) {
-ERROR:                    ^
-ERROR: Target kernel_snapshot failed: Exception
-Building Linux application...                                           
-Build process failed
-
-
-
-
-
-
-
-
-The error you're encountering is due to the null safety feature in Dart. The controlsBuilder function parameters onStepContinue and onStepCancel are non-nullable, but you're not providing them any value, which is causing the error.
-
-To fix this, you can provide an empty function for onStepContinue and onStepCancel parameters. Here's how you can do it:
-
-Stepper(
-  controlsBuilder: (BuildContext context, {VoidCallback? onStepContinue, VoidCallback? onStepCancel}) {
-    return Container();
-  },
-  // other properties...
-)
-
-Please apply this change to the Stepper widget in your code. For example, in the file lib/screens/steps/steps.dart from line 228 to line 244.
-
-
-
-
-
-
-
-
-firstlogon_tour on  main [!⇡] is 📦 v1.0.0+1 via 🎯 v3.1.2 took 17s 
-❯ flutter build linux
-Function(BuildContext, {void Function()? onStepCancel, void Function()? onStepContinue})' can't be assigned to the parameter type 'Widget Function(BuildContext, ControlsDetails)?'.
-ERROR:  - 'Container' is from 'package:flutter/src/widgets/container.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/widgets/container.dart').
-ERROR:  - 'BuildContext' is from 'package:flutter/src/widgets/framework.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/widgets/framework.dart').
-ERROR:  - 'Widget' is from 'package:flutter/src/widgets/framework.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/widgets/framework.dart').
-ERROR:  - 'ControlsDetails' is from 'package:flutter/src/material/stepper.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/material/stepper.dart').
-ERROR:   controlsBuilder: (BuildContext context, {VoidCallback? onStepContinue, VoidCallback? onStepCancel}) {
-ERROR:                    ^
-ERROR: Target kernel_snapshot failed: Exception
-Building Linux application...                                           
-Build process failed
-
-
-
-
-
-
-
-
-The error you're encountering is due to the mismatch of the function signature of controlsBuilder. The controlsBuilder function expects a ControlsDetails object as the second parameter, not two separate callbacks.
-
-To fix this, you need to modify the controlsBuilder function to match the expected signature. Here's how you can do it:
-
-Stepper(
-  controlsBuilder: (BuildContext context, {required ControlsDetails controlsDetails}) {
-    return Container();
-  },
-  // other properties...
-)
-
-In this code, controlsDetails is a ControlsDetails object that contains onStepContinue and onStepCancel callbacks. Since you're not using these callbacks, you can ignore this object.
-
-Please apply this change to the Stepper widget in your code. For example, in the file lib/screens/steps/steps.dart from line 228 to line 244.
-
-
-
-
-
-
-firstlogon_tour on  main [!⇡] is 📦 v1.0.0+1 via 🎯 v3.1.2 took 17s 
-❯ flutter build linux
-
-ERROR: lib/screens/steps/steps.dart:229:85: Error: Expected ')' before this.
-ERROR:   controlsBuilder: (BuildContext context, {required ControlsDetails controlsDetails}, {VoidCallback? onStepContinue, VoidCallback? onStepCancel}) {
-ERROR: lib/screens/steps/steps.dart:229:20: Error: The argument type 'Container Function(BuildContext, {ControlsDetails controlsDetails})' can't be assigned to the parameter type 'Widget Function(BuildContext, ControlsDetails)?'.
-ERROR:  - 'Container' is from 'package:flutter/src/widgets/container.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/widgets/container.dart').
-ERROR:  - 'BuildContext' is from 'package:flutter/src/widgets/framework.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/widgets/framework.dart').
-ERROR:  - 'ControlsDetails' is from 'package:flutter/src/material/stepper.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/material/stepper.dart').
-ERROR:  - 'Widget' is from 'package:flutter/src/widgets/framework.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/widgets/framework.dart').
-ERROR:   controlsBuilder: (BuildContext context, {required ControlsDetails controlsDetails}, {VoidCallback? onStepContinue, VoidCallback? onStepCancel}) {
-ERROR:                    ^
-ERROR: Target kernel_snapshot failed: Exception
-Building Linux application...                                           
-Build process failed
-
-
-
-
-
-
-
-
-
-
-The error message indicates that the controlsBuilder function in your Stepper widget is not correctly defined. The controlsBuilder function should take two parameters: BuildContext and ControlsDetails. However, in your code, it seems like you're trying to pass three parameters.
-
-Here is the correct way to define the controlsBuilder function:
-
-controlsBuilder: (BuildContext context, {required ControlsDetails controlsDetails}) {
-  return Container();
-},
-
-You can see this in the code block:
-
-  controlsBuilder: (BuildContext context, {required ControlsDetails controlsDetails}, {VoidCallback? onStepContinue, VoidCallback? onStepCancel}) {
-    return Container();
-  },
-  
-Please correct the controlsBuilder function in your Stepper widget to match the correct definition.
-
-
-
-
-
-
-
-
-
-
-firstlogon_tour on  main [!⇡] is 📦 v1.0.0+1 via 🎯 v3.1.2 took 18s 
-ERROR: lib/screens/steps/steps.dart:229:18: Error: The argument type 'Container Function(BuildContext, {ControlsDetails controlsDetails})' can't be assigned to the parameter type 'Widget Function(BuildContext, ControlsDetails)?'.
-ERROR:  - 'Container' is from 'package:flutter/src/widgets/container.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/widgets/container.dart').
-ERROR:  - 'BuildContext' is from 'package:flutter/src/widgets/framework.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/widgets/framework.dart').
-ERROR:  - 'ControlsDetails' is from 'package:flutter/src/material/stepper.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/material/stepper.dart').
-ERROR:  - 'Widget' is from 'package:flutter/src/widgets/framework.dart' ('/home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/widgets/framework.dart').
-ERROR: controlsBuilder: (BuildContext context, {required ControlsDetails controlsDetails}) {
+ERROR: controlsBuilder: (BuildContext context) {
 ERROR:                  ^
 ERROR: Target kernel_snapshot failed: Exception
 Building Linux application...                                           
@@ -182,18 +20,31 @@ Build process failed
 
 
 
-The error message indicates that the controlsBuilder function in your Stepper widget is not correctly defined. The controlsBuilder function should take two parameters: BuildContext and ControlsDetails. However, in your code, it seems like you're trying to pass three parameters.
 
-Here is the correct way to define the controlsBuilder function:
 
-controlsBuilder: (BuildContext context, {required ControlsDetails controlsDetails}) {
+The error message indicates that the controlsBuilder function in the Stepper widget is not returning a widget. The controlsBuilder function is expected to return a widget that describes the controls below each step.
+
+In the provided code, the controlsBuilder function is returning a Container without any child, which is causing the error.
+
+controlsBuilder: (BuildContext context) {
   return Container();
 },
 
-You can see this in the code block:
+To fix this error, you need to return a widget that describes the controls. For example, you can return a Row widget with two TextButton widgets for "CONTINUE" and "CANCEL" actions. Here is an example:
 
-  controlsBuilder: (BuildContext context, {required ControlsDetails controlsDetails}, {VoidCallback? onStepContinue, VoidCallback? onStepCancel}) {
-    return Container();
-  },
-  
-Please correct the controlsBuilder function in your Stepper widget to match the correct definition.
+controlsBuilder: (BuildContext context, {VoidCallback? onStepContinue, VoidCallback? onStepCancel}) {
+  return Row(
+    children: <Widget>[
+      TextButton(
+        onPressed: onStepContinue,
+        child: const Text('CONTINUE'),
+      ),
+      TextButton(
+        onPressed: onStepCancel,
+        child: const Text('CANCEL'),
+      ),
+    ],
+  );
+},
+
+This will add "CONTINUE" and "CANCEL" buttons below each step. You can customize this to fit your needs.
