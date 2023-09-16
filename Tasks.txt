@@ -16,6 +16,8 @@ and copy deb features to /media/daniella/B/git/Floflis/Floflis/HTML5/B2G/davidLa
 - build.sh: will run "flutter build linux" and an inkscape command for generating the flutter icon out of a svg
 - init-newbie.sh: will install flutter and inkscape
 
+open https://github.com/canonical/ubuntu-welcome after done, if Ubuntu (or its flavors) is detected
+
 r4 (fl attempt 48):
 
 - frameless window, diminish that top header/bar https://stackoverflow.com/questions/63397479/flutter-desktop-frameless-window-support
