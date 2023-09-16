@@ -63,7 +63,7 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                   Text(
                     'Please note that currently only Cinnamon is supported; GNOME and other desktop environments soon!',
-                    style: Theme.of(context).textTheme.subtitle1,
+                    style: TextStyle(fontSize: 12.0),
                   ),
                   SizedBox(height: 50),
                   ElevatedButton(

@@ -1,0 +1,24 @@
+In welcome.dart, how to make "'Please note that currently only Cinnamon is supported; GNOME and other desktop environments soon!'" as small as a <small> HTML-equivalent?
+
+
+
+
+
+
+
+
+In Flutter, you can use the TextStyle widget to adjust the font size of a Text widget. To make the text smaller, you can reduce the fontSize property. Here's how you can do it:
+
+Text(
+  'Please note that currently only Cinnamon is supported; GNOME and other desktop environments soon!',
+  style: TextStyle(fontSize: 12.0), // Adjust the font size here
+),
+
+This code is in the welcome.dart file:
+
+                  Text(
+                    'Please note that currently only Cinnamon is supported; GNOME and other desktop environments soon!',
+                    style: Theme.of(context).textTheme.subtitle1,
+                  ),
+                  
+You can adjust the fontSize value to suit your needs. The value is in logical pixels, so a smaller value will result in smaller text.
