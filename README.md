@@ -11,9 +11,9 @@ Currently supporting only Cinnamon as DE, but planned to add individual cases fo
 <table>
 <tbody>
 <tr>
-<td><img title="Ubuntu" alt="Ubuntu" src="./wrong timestamp, using BIOS time/Screenshots/Ubuntu/Screenshot from 2023-09-16 20-52-37.png"/> Ubuntu</td>
-<td><img title="Linux Mint" alt="Linux Mint" src="./wrong timestamp, using BIOS time/Screenshots/Mint/Screenshot from 2023-09-16 20-13-13.png"/> Linux Mint</td>
-<td><img title="Ubuntu Cinnamon" alt="Ubuntu Cinnamon" src="./wrong timestamp, using BIOS time/Screenshots/UCR/Screenshot from 2023-09-16 19-47-12.png"/> Ubuntu Cinnamon</td>
+<td><img title="Ubuntu" alt="Ubuntu" src="./screenshots/wrong timestamp, using BIOS time/Ubuntu/Screenshot from 2023-09-16 20-52-37.png"/> Ubuntu</td>
+<td><img title="Linux Mint" alt="Linux Mint" src="./screenshots/wrong timestamp, using BIOS time/Mint/Screenshot from 2023-09-16 20-13-13.png"/> Linux Mint</td>
+<td><img title="Ubuntu Cinnamon" alt="Ubuntu Cinnamon" src="./screenshots/wrong timestamp, using BIOS time/UCR/Screenshot from 2023-09-16 19-47-12.png"/> Ubuntu Cinnamon</td>
 </tr>
 <tr>
 <td><img title="Floflis" alt="Floflis" src="./screenshots/Screenshot from 2023-09-14 06-08-29.png"/> Floflis</td>
