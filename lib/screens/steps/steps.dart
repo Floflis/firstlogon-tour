@@ -226,6 +226,9 @@ Widget build(BuildContext context) {
             title: Text('${osname.data} Tour'),
           ),
           body: Stepper(
+controlsBuilder: (BuildContext context, {required ControlsDetails controlsDetails}) {
+  return Container();
+},
             steps: _buildSteps(),
             currentStep: _currentStep,
             onStepContinue: () {
