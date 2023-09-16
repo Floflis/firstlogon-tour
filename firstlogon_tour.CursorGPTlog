@@ -1,35 +1,49 @@
 firstlogon_tour on  main [✘!?⇡] is 📦 v1.0.0+1 via 🎯 v3.1.2 
 ❯ flutter build linux
 
-ERROR: lib/screens/steps/step1.dart:21:19: Error: Getter not found: '_currentStep'.
-ERROR:                   _currentStep++;
-ERROR:                   ^^^^^^^^^^^^
-ERROR: lib/screens/steps/step1.dart:20:17: Error: Method not found: 'setState'.
-ERROR:                 setState(() {
-ERROR:                 ^^^^^^^^
-ERROR: lib/screens/steps/step1.dart:43:19: Error: Getter not found: '_currentStep'.
-ERROR:                   _currentStep++;
-ERROR:                   ^^^^^^^^^^^^
-ERROR: lib/screens/steps/step1.dart:42:17: Error: Method not found: 'setState'.
-ERROR:                 setState(() {
-ERROR:                 ^^^^^^^^
-ERROR: lib/screens/steps/step2.dart:23:19: Error: Getter not found: '_currentSte
-ERROR:                   ^^^^^^^^^^^^
-ERROR: lib/screens/steps/step2.dart:22:17: Error: Method not found: 'setState'.
-ERROR:                 setState(() {
-ERROR:                 ^^^^^^^^
-ERROR: lib/screens/steps/step2.dart:46:19: Error: Getter not found: '_currentStep'.
-ERROR:                   _currentStep++;
-ERROR:                   ^^^^^^^^^^^^
-ERROR: lib/screens/steps/step2.dart:45:17: Error: Method not found: 'setState'.
-ERROR:                 setState(() {
-ERROR:                 ^^^^^^^^
-ERROR: lib/screens/steps/step2.dart:71:19: Error: Getter not found: '_currentStep'.
-ERROR:                   _currentStep++;
-ERROR:                   ^^^^^^^^^^^^
-ERROR: lib/screens/steps/step2.dart:70:17: Error: Method not found: 'setState'.
-ERROR:                 setState(() {
-ERROR:                 ^^^^^^^^
+ERROR: lib/screens/steps/steps.dart:32:7: Error: '_StepScreenState' is already declared in this scope.
+ERROR: class _StepScreenState extends State<StepScreen> {
+ERROR:       ^^^^^^^^^^^^^^^^
+ERROR: lib/screens/steps/steps.dart:15:7: Context: Previous declaration of '_StepScreenState'.
+ERROR: class _StepScreenState extends State<StepScreen> {
+ERROR:       ^^^^^^^^^^^^^^^^
+ERROR: lib/screens/steps/steps.dart:15:38: Error: Type 'StepScreen' not found.
+ERROR: class _StepScreenState extends State<StepScreen> {
+ERROR:                                      ^^^^^^^^^^
+ERROR: lib/screens/steps/steps.dart:32:38: Error: Type 'StepScreen' not found.
+ERROR: class _StepScreenState extends State<StepScreen> {
+ERROR:                                      ^^^^^^^^^^
+ERROR: lib/screens/steps/steps.dart:15:7: Error: The non-abstract class '_StepScreenState' is missing implementations for these members:
+ERROR:  - State.build
+ERROR: Try to either
+ERROR:  - provide an implementation,
+ERROR:  - inherit an implementation from a superclass or mixin,
+ERROR:  - mark the class as abstract, or
+ERROR:  - provide a 'noSuchMethod' implementation.
+ERROR: class _StepScreenState extends State<StepScreen> {
+ERROR:       ^^^^^^^^^^^^^^^^
+ERROR: /home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/widgets/framework.dart:1375:10: Context: 'State.build' is defined here.
+ERROR:   Widget build(BuildContext context);
+ERROR:          ^^^^^
+ERROR: lib/app.dart:62:32: Error: The method 'StepScreen' isn't defined for the class 'FirstLogonTourApp'.
+ERROR:  - 'FirstLogonTourApp' is from 'package:firstlogon_tour/app.dart' ('lib/app.dart').
+ERROR: Try correcting the name to the name of an existing method, or defining a method named 'StepScreen'.
+ERROR:         '/steps': (context) => StepScreen(),
+ERROR:                                ^^^^^^^^^^
+ERROR: lib/screens/steps/steps.dart:20:24: Error: The method '_buildSteps' isn't defined for the class '_StepScreenState'.
+ERROR:  - '_StepScreenState' is from 'package:firstlogon_tour/screens/steps/steps.dart' ('lib/screens/steps/steps.dart').
+ERROR:     if (_currentStep < _buildSteps(context).length - 1) {
+ERROR:                        ^^^^^^^^^^^
+ERROR: lib/screens/steps/steps.dart:38:40: Error: The method '_incrementStep' isn't defined for the class '_StepScreenState#1#0'.
+ERROR:  - '_StepScreenState#1#0' is from 'package:firstlogon_tour/screens/steps/steps.dart' ('lib/screens/steps/steps.dart').
+ERROR: Try correcting the name to the name of an existing method, or defining a method named '_incrementStep'.
+ERROR:     step1(context, _currentStep, () => _incrementStep()),
+ERROR:                                        ^^^^^^^^^^^^^^
+ERROR: lib/screens/steps/steps.dart:39:40: Error: The method '_incrementStep' isn't defined for the class '_StepScreenState#1#0'.
+ERROR:  - '_StepScreenState#1#0' is from 'package:firstlogon_tour/screens/steps/steps.dart' ('lib/screens/steps/steps.dart').
+ERROR: Try correcting the name to the name of an existing method, or defining a method named '_incrementStep'.
+ERROR:     step2(context, _currentStep, () => _incrementStep()),
+ERROR:                                        ^^^^^^^^^^^^^^
 ERROR: Target kernel_snapshot failed: Exception
 Building Linux application...                                           
 Build process failed
@@ -42,126 +56,28 @@ Build process failed
 
 
 
-The error messages indicate that the [currentStep](file:///media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/steps.dart#17%2C7-17%2C7) variable and setState method are not found in the step1.dart and step2.dart files. This is because these files are trying to access a variable and a method that are defined in another file (steps.dart), which is not directly accessible.
 
-To fix this, you need to pass the _currentStep variable and a function to update it from steps.dart to step1.dart and step2.dart.
+The error messages indicate that there are several issues in your code:
 
-Here's how you can modify the steps.dart file to pass these:
+1. The class [StepScreenState](file:///media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/steps.dart#15%2C7-15%2C7) is declared twice in the steps.dart file.
+2. The class StepScreen is not defined.
+3. The method _buildSteps is not defined for the class _StepScreenState.
+4. The method _incrementStep is not defined for the class _StepScreenState.
 
-    step1(context),
-    step2(context),
-    step3(context),
-    // add more steps here
-  ];
-  
-In the above code, you need to modify the step1(context) and step2(context) calls to pass _currentStep and a function to increment it. For example, you can change step1(context) to step1(context, _currentStep, () => _incrementStep()).
+Here are the solutions:
 
-Then, in step1.dart and step2.dart, you need to modify the step1 and step2 functions to accept these additional parameters and use them instead of _currentStep and setState.
-
-Here's how you can modify the step1.dart file:
-
-Step step1(BuildContext context) {
-  return Step(
-  
-In the above code, you need to modify the step1 function to accept the additional parameters. For example, you can change Step step1(BuildContext context) to Step step1(BuildContext context, int currentStep, Function incrementStep).
-
-Then, replace _currentStep++ with incrementStep() and remove the setState calls, as the state will be managed in steps.dart.
-
-You need to make similar changes in step2.dart.
-
-
-
-
-
-
-
-
-
-firstlogon_tour on  main [✘!?⇡] is 📦 v1.0.0+1 via 🎯 v3.1.2 took 18s 
-ERROR: lib/screens/steps/steps.dart:22:10: Error: Too few positional arguments: 3 required, 1 given.
-ERROR:     step1(context),
-ERROR:          ^
-ERROR: lib/screens/steps/step1.dart:7:6: Context: Found this candidate, but the arguments don't match.
-ERROR: Step step1(BuildContext context, int currentStep, Function incrementStep) {
-ERROR:      ^^^^^
-ERROR: lib/screens/steps/steps.dart:23:10: Error: Too few positional arguments: 3 required, 1 given.
-ERROR:     step2(context),
-ERROR:          ^
-ERROR: lib/screens/steps/step2.dart:7:6: Context: Found this candidate, but the arguments don't match.
-ERROR: Step step2(BuildContext context, int currentStep, Function incrementStep) {
-ERROR:      ^^^^^
-ERROR: Target kernel_snapshot failed: Exception
-Building Linux application...                                           
-Build process failed
-
-
-
-
-
-
-
-
-
-The error messages indicate that the step1 and step2 functions in steps.dart are not being called with the correct number of arguments. You modified these functions to accept three arguments, but you're still calling them with only one argument in steps.dart.
-
-Here's how you can modify the steps.dart file to pass the correct arguments:
-
-List<Step> _buildSteps(BuildContext context) {
-  return [
-    step1(context, _currentStep, () => _incrementStep()),
-    step2(context, _currentStep, () => _incrementStep()),
-    step3(context),
-    // add more steps here
-  ];
-}
-
-In the above code, step1(context) and step2(context) are changed to step1(context, _currentStep, () => _incrementStep()) and step2(context, _currentStep, () => _incrementStep()) respectively. This way, you're passing the [currentStep](file:///media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/steps.dart#17%2C7-17%2C7) variable and a function to increment it to step1 and step2.
-
-Please ensure that the _incrementStep function is defined in the _StepScreenState class in steps.dart. Here's how you can define it:
-
-void _incrementStep() {
-  if (_currentStep < _buildSteps(context).length - 1) {
-    setState(() {
-      _currentStep++;
-    });
-  }
-}
-
-This function increments _currentStep if it's less than the number of steps, and updates the state of the widget.
-
-
-
-
-
-
-
-
-
-Where exactly I put that "void _incrementStep() {..."?
-
-
-
-
-
-
-
-
-
-The [incrementStep()](file:///media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/steps.dart#22%2C40-22%2C40) function should be defined within the _StepScreenState class in the steps.dart file. Here's how you can add it:
+1. Remove the duplicate declaration of _StepScreenState in the steps.dart file. You can find this at:
 
 class _StepScreenState extends State<StepScreen> {
   int _currentStep = 0;
   bool _checkboxValue = false;
 
-  void _incrementStep() {
-    if (_currentStep < _buildSteps(context).length - 1) {
-      setState(() {
-        _currentStep++;
-      });
-    }
-  }
+2. Define the StepScreen class. It seems like you commented out the StepScreen class declaration. Uncomment it and make sure it extends StatefulWidget.
+3. Define the _buildSteps method inside the _StepScreenState class. This method should return a list of steps for your stepper.
+4. Define the _incrementStep method inside the _StepScreenState class. This method should increment the _currentStep variable.
 
-  // rest of your code...
-}
+Also, in the app.dart file, you are trying to use StepScreen as a function. It should be used as a constructor to create an instance of the StepScreen class. You can find this at:
 
-In the above code, the _incrementStep() function is added just after the _currentStep and _checkboxValue variables. This function checks if _currentStep is less than the total number of steps (which is the length of the list returned by _buildSteps(context)), and if so, it increments _currentStep and updates the state of the widget.
+        '/steps': (context) => StepScreen(),
+        
+Replace StepScreen() with new StepScreen().

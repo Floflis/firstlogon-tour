@@ -59,7 +59,11 @@ class FirstLogonTourApp extends StatelessWidget {
       home: WelcomeScreen(),
       routes: {
         '/welcome': (context) => WelcomeScreen(),
+        //Also, in the app.dart file, you are trying to use StepScreen as a function. It should be used as a constructor to create an instance of the StepScreen class. You can find this at:
         '/steps': (context) => StepScreen(),
+        //Replace StepScreen() with new StepScreen().
+        //'/steps': (context) => new StepScreen(),
+        //may do as CursorGPT is saying, if I find it fit
             },
           );
         }

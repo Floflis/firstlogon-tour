@@ -1,7 +1,5 @@
 r3 (fl attempt 47):
 
-- multistep from separate files!
-
 - follow these best-practices guides: https://hackernoon.com/creating-and-releasing-an-app-with-flutter-part-i?ref=hackernoon.com https://hackernoon.com/creating-and-releasing-an-app-with-flutter-part-ii
 
 - merge into this repo: /media/daniella/B/git/Floflis/Floflis/HTML5/System/FirstLogonTour

@@ -8,9 +8,10 @@ import 'step2.dart';
 import 'step3.dart';
 // import more steps as needed
 
-//class StepScreen extends StatefulWidget {
-//
-//}
+class StepScreen extends StatefulWidget {
+  @override
+  _StepScreenState createState() => _StepScreenState();
+}
 
 class _StepScreenState extends State<StepScreen> {
   int _currentStep = 0;
@@ -25,13 +26,11 @@ class _StepScreenState extends State<StepScreen> {
   }
 
   // rest of your code...
-  @override
-  _StepScreenState createState() => _StepScreenState();
-}
+//}
 
-class _StepScreenState extends State<StepScreen> {
-  int _currentStep = 0;
-  bool _checkboxValue = false;
+//class _StepScreenState extends State<StepScreen> {
+//  int _currentStep = 0;
+//  bool _checkboxValue = false;
 
 List<Step> _buildSteps(BuildContext context) {
   return [
