@@ -1,8 +1,10 @@
 r3 (fl attempt 47):
 
-- follow these best-practices guides: https://hackernoon.com/creating-and-releasing-an-app-with-flutter-part-i?ref=hackernoon.com https://hackernoon.com/creating-and-releasing-an-app-with-flutter-part-ii
-
-- merge into this repo: /media/daniella/B/git/Floflis/Floflis/HTML5/System/FirstLogonTour
+- enable to export to .deb
+https://pub.dev/packages/flutter_to_debian
+https://github.com/jeffrey0606/flutter_to_debian (PR to fix 'debain')
+then add .deb instructions to /media/daniella/Seagate Expansion Drive/flo-bkp-sync_custom/CursorAI_promptRules.txt
+and copy deb features to /media/daniella/B/git/Floflis/Floflis/HTML5/B2G/davidLauncher/cinnamon
 
 leverage firstlogon_tour-cli, even its gsettings calls from it.
 - inside sh: detect username, which will be useful for changing Cinnamon applet settings.
@@ -10,28 +12,20 @@ leverage firstlogon_tour-cli, even its gsettings calls from it.
 - /media/daniella/B/git/Floflis/Floflis/Floflis-DNA/layers/soil/to-merge/include-firstlogon/System/firstlogon-tour_cli
 - /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/Tasks/multidistroSupport
 
-- enable to export to .deb
-https://pub.dev/packages/flutter_to_debian
-https://github.com/jeffrey0606/flutter_to_debian (PR to fix 'debain')
-then add .deb instructions to /media/daniella/Seagate Expansion Drive/flo-bkp-sync_custom/CursorAI_promptRules.txt
-and copy deb features to /media/daniella/B/git/Floflis/Floflis/HTML5/B2G/davidLauncher/cinnamon
+- add test PNG icon to run in taskbar
+- build.sh: will run "flutter build linux" and an inkscape command for generating the flutter icon out of a svg
+- init-newbie.sh: will install flutter and inkscape
 
 - platform: support multi-arch, such as arm64 and armhf
 https://github.com/flutter/flutter/pull/61221
 https://github.com/flutter/flutter/issues/117826#issuecomment-1370378620
 https://github.com/flutter/flutter/issues/74929
 
-- add test PNG icon to run in taskbar
-- build.sh: will run "flutter build linux" and an inkscape command for generating the flutter icon out of a svg
-- init-newbie.sh: will install flutter and inkscape
-
-open https://github.com/canonical/ubuntu-welcome after done, if Ubuntu (or its flavors) is detected
+- merge into this repo: /media/daniella/B/git/Floflis/Floflis/HTML5/System/FirstLogonTour
 
 [REPRODUCE ALL ON FMWK-FLUTTER]
 
 r4 (fl attempt 48):
-
-- give it to the ubuntu and the larger debian community https://github.com/Floflis/firstlogon-tour/issues/1#issuecomment-1720800376
 
 - frameless window, diminish that top header/bar https://stackoverflow.com/questions/63397479/flutter-desktop-frameless-window-support
 - ask chatgpt if this sizing is the page's padding or a pre-set window size; ask to set it bound the page size, so make that window smaller
@@ -56,6 +50,9 @@ https://github.com/ubuntu-flutter-community/settings
 
 https://www.reddit.com/r/flutterhelp/comments/twk9ob/desktop_app_rounded_corners/
 [REPRODUCE ON FMWK-FLUTTER]
+
+- open https://github.com/canonical/ubuntu-welcome after done, if Ubuntu (or its flavors) is detected (when installing at chroot, deactivate ubuntu-welcome from auto-starting, and replace it)
+- give it to the ubuntu and the larger debian community https://github.com/Floflis/firstlogon-tour/issues/1#issuecomment-1720800376
 
 r6 (fl attempt 50):
 
