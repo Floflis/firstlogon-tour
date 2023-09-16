@@ -20,6 +20,8 @@ open https://github.com/canonical/ubuntu-welcome after done, if Ubuntu (or its f
 
 r4 (fl attempt 48):
 
+- give it to the ubuntu and the larger debian community https://github.com/Floflis/firstlogon-tour/issues/1#issuecomment-1720800376
+
 - frameless window, diminish that top header/bar https://stackoverflow.com/questions/63397479/flutter-desktop-frameless-window-support
 - ask chatgpt if this sizing is the page's padding or a pre-set window size; ask to set it bound the page size, so make that window smaller
 
