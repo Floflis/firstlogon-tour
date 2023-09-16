@@ -1,7 +1,8 @@
 r3 (fl attempt 47):
 
-- fix all multistep issues and enable multistep from separate files /home/daniella/firstlogon_tour/lib/screens/steps /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/error-prompt.txt [REPRODUCE ON FMWK-FLUTTER]
-- https://hackernoon.com/creating-and-releasing-an-app-with-flutter-part-i?ref=hackernoon.com https://hackernoon.com/creating-and-releasing-an-app-with-flutter-part-ii [REPRODUCE ON FMWK-FLUTTER]
+- multistep from separate files!
+
+- follow these best-practices guides: https://hackernoon.com/creating-and-releasing-an-app-with-flutter-part-i?ref=hackernoon.com https://hackernoon.com/creating-and-releasing-an-app-with-flutter-part-ii
 
 - merge into this repo: /media/daniella/B/git/Floflis/Floflis/HTML5/System/FirstLogonTour
 
@@ -16,7 +17,6 @@ https://pub.dev/packages/flutter_to_debian
 https://github.com/jeffrey0606/flutter_to_debian (PR to fix 'debain')
 then add .deb instructions to /media/daniella/Seagate Expansion Drive/flo-bkp-sync_custom/CursorAI_promptRules.txt
 and copy deb features to /media/daniella/B/git/Floflis/Floflis/HTML5/B2G/davidLauncher/cinnamon
-[REPRODUCE ON FMWK-FLUTTER]
 
 - platform: support multi-arch, such as arm64 and armhf
 https://github.com/flutter/flutter/pull/61221
@@ -28,6 +28,8 @@ https://github.com/flutter/flutter/issues/74929
 - init-newbie.sh: will install flutter and inkscape
 
 open https://github.com/canonical/ubuntu-welcome after done, if Ubuntu (or its flavors) is detected
+
+[REPRODUCE ALL ON FMWK-FLUTTER]
 
 r4 (fl attempt 48):
 

@@ -6,19 +6,46 @@ import 'dart:io';
 
 Step step3(BuildContext context) {
   return Step(
-    title: Text('Step 3'),
-    content: Column(
-      children: <Widget>[
-        Text('This is the placeholder for Step 3'),
+        title: Text('Finish'),
+        content: Column(
+          children: <Widget>[
+            Text('Youre all set! Welcome!'),
+//            Checkbox(
+//              value: _checkboxValue,
+//              onChanged: (bool? value) {
+//                setState(() {
+//                  _checkboxValue = value ?? false;
+//                });
+//              },
+//            ),
+//            ElevatedButton(
+//              child: Text('Run Executable (sample: cinnamon-settings)'),
+//              onPressed: () async {
+//                String output = await Executable.run('cinnamon-settings');
+//                print(output);
+//              },
+//            ),
+//ListTile(
+//  title: const Text('Option 1'),
+//  leading: Radio(
+//    value: 1,
+//    groupValue: _radioValue,
+//    onChanged: (int? value) {
+//      setState(() {
+//        _radioValue = value;
+//      });
+//    },
+//  ),
+//)
 ElevatedButton(
   child: Text('Finalize'),
   onPressed: () {
     //SystemNavigator.pop();
+    //exit();
     exit(0); //from https://codewithflutter.com/flutter-how-to-programmatically-exit-the-app/
   },
 )
-        // Add more widgets here
-      ],
-    ),
-  );
+          ],
+        ),
+      );
 }
