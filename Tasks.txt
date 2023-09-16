@@ -13,6 +13,9 @@ and copy deb features to /media/daniella/B/git/Floflis/Floflis/HTML5/B2G/davidLa
 [REPRODUCE ON FMWK-FLUTTER]
 
 - platform: support multi-arch, such as arm64 and armhf
+https://github.com/flutter/flutter/pull/61221
+https://github.com/flutter/flutter/issues/117826#issuecomment-1370378620
+https://github.com/flutter/flutter/issues/74929
 
 - add test PNG icon to run in taskbar
 - build.sh: will run "flutter build linux" and an inkscape command for generating the flutter icon out of a svg
