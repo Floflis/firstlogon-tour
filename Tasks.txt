@@ -5,7 +5,11 @@ r3 (fl attempt 47):
 
 - merge into this repo: /media/daniella/B/git/Floflis/Floflis/HTML5/System/FirstLogonTour
 
-- leverage firstlogon_tour-cli, even its gsettings calls from it. inside sh: detect username, which will be useful for changing Cinnamon applet settings. also inside sh: run cmds according to the linux distro (see "Current drawbacks" CTRL+F) pair its features with firstlogon_tour (GUI) /media/daniella/B/git/Floflis/Floflis/Floflis-DNA/layers/soil/to-merge/include-firstlogon/System/firstlogon-tour_cli
+leverage firstlogon_tour-cli, even its gsettings calls from it.
+- inside sh: detect username, which will be useful for changing Cinnamon applet settings.
+- also inside sh: run cmds according to the linux distro (see "Current drawbacks" CTRL+F) pair its features with firstlogon_tour (GUI)
+- /media/daniella/B/git/Floflis/Floflis/Floflis-DNA/layers/soil/to-merge/include-firstlogon/System/firstlogon-tour_cli
+- /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/Tasks/multidistroSupport
 
 - enable to export to .deb
 https://pub.dev/packages/flutter_to_debian
