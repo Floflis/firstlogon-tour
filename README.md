@@ -16,7 +16,7 @@ Currently supporting only Cinnamon as DE, but planned to add individual cases fo
 <td><img title="Ubuntu Cinnamon" alt="Ubuntu Cinnamon" src="./screenshots/wrong timestamp, using BIOS time/UCR/Screenshot from 2023-09-16 19-47-12.png"/> Ubuntu Cinnamon</td>
 </tr>
 <tr>
-<td><img title="Floflis" alt="Floflis" src="./screenshots/Screenshot from 2023-09-14 06-08-29.png"/> Floflis</td>
+<td><img title="Floflis" alt="Floflis" src="./screenshots/Floflis/Screenshot from 2023-09-14 06-08-29.png"/> Floflis</td>
 </tr>
 </tbody>
 </table>
