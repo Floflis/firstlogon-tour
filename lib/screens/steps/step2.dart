@@ -4,7 +4,7 @@ import 'steps.dart';
 
 import 'dart:io';
 
-Step step2(BuildContext context) {
+Step step2(BuildContext context, int currentStep, Function incrementStep) {
   return Step(
         title: Text('Step 2: Theme intensity'),
         content: Column(
@@ -19,9 +19,7 @@ InkWell(
                         var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis-dark']);
                 var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis-dark']);
                 var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis-dark']);
-                setState(() {
-                  _currentStep++;
-                });
+                incrementStep();
     },
 //    onDoubleTap: (){
 //      print("Card is double tapped.");
@@ -42,9 +40,7 @@ InkWell(
                         var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis']);
                 var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis']);
                 var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis']);
-                setState(() {
-                  _currentStep++;
-                });
+                incrementStep();
     },
 //    onDoubleTap: (){
 //      print("Card is double tapped.");
@@ -67,9 +63,7 @@ InkWell(
                         var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis-light']);
                 var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis-light']);
                 var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis-light']);
-                setState(() {
-                  _currentStep++;
-                });
+                incrementStep();
     },
 //    onDoubleTap: (){
 //      print("Card is double tapped.");

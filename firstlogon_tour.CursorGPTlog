@@ -1,15 +1,35 @@
 firstlogon_tour on  main [✘!?⇡] is 📦 v1.0.0+1 via 🎯 v3.1.2 
 ❯ flutter build linux
 
-ERROR: lib/screens/steps/steps.dart:42:31: Error: Too few positional arguments: 1 required, 0 given.
-ERROR:             steps: _buildSteps(),
-ERROR:                               ^
-ERROR: lib/screens/steps/steps.dart:45:45: Error: Too few positional arguments: 1 required, 0 given.
-ERROR:               if (_currentStep < _buildSteps().length - 1) {
-ERROR:                                             ^
-ERROR: lib/screens/steps/step3.dart:40:5: Error: Undefined name 'SystemNavigator'.
-ERROR:     SystemNavigator.pop();
-ERROR:     ^^^^^^^^^^^^^^^
+ERROR: lib/screens/steps/step1.dart:21:19: Error: Getter not found: '_currentStep'.
+ERROR:                   _currentStep++;
+ERROR:                   ^^^^^^^^^^^^
+ERROR: lib/screens/steps/step1.dart:20:17: Error: Method not found: 'setState'.
+ERROR:                 setState(() {
+ERROR:                 ^^^^^^^^
+ERROR: lib/screens/steps/step1.dart:43:19: Error: Getter not found: '_currentStep'.
+ERROR:                   _currentStep++;
+ERROR:                   ^^^^^^^^^^^^
+ERROR: lib/screens/steps/step1.dart:42:17: Error: Method not found: 'setState'.
+ERROR:                 setState(() {
+ERROR:                 ^^^^^^^^
+ERROR: lib/screens/steps/step2.dart:23:19: Error: Getter not found: '_currentSte
+ERROR:                   ^^^^^^^^^^^^
+ERROR: lib/screens/steps/step2.dart:22:17: Error: Method not found: 'setState'.
+ERROR:                 setState(() {
+ERROR:                 ^^^^^^^^
+ERROR: lib/screens/steps/step2.dart:46:19: Error: Getter not found: '_currentStep'.
+ERROR:                   _currentStep++;
+ERROR:                   ^^^^^^^^^^^^
+ERROR: lib/screens/steps/step2.dart:45:17: Error: Method not found: 'setState'.
+ERROR:                 setState(() {
+ERROR:                 ^^^^^^^^
+ERROR: lib/screens/steps/step2.dart:71:19: Error: Getter not found: '_currentStep'.
+ERROR:                   _currentStep++;
+ERROR:                   ^^^^^^^^^^^^
+ERROR: lib/screens/steps/step2.dart:70:17: Error: Method not found: 'setState'.
+ERROR:                 setState(() {
+ERROR:                 ^^^^^^^^
 ERROR: Target kernel_snapshot failed: Exception
 Building Linux application...                                           
 Build process failed
@@ -22,34 +42,32 @@ Build process failed
 
 
 
-The error messages indicate that the [buildSteps()](file:///media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/steps.dart#20%2C12-20%2C12) function is being called without the required positional argument BuildContext context. Also, SystemNavigator.pop() is not defined.
+The error messages indicate that the [currentStep](file:///media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/steps.dart#17%2C7-17%2C7) variable and setState method are not found in the step1.dart and step2.dart files. This is because these files are trying to access a variable and a method that are defined in another file (steps.dart), which is not directly accessible.
 
-To fix these issues, you need to pass the BuildContext context to the _buildSteps() function and replace SystemNavigator.pop() with Navigator.of(context).pop().
+To fix this, you need to pass the _currentStep variable and a function to update it from steps.dart to step1.dart and step2.dart.
 
-Here are the changes you need to make:
+Here's how you can modify the steps.dart file to pass these:
 
-In the steps.dart file:
+    step1(context),
+    step2(context),
+    step3(context),
+    // add more steps here
+  ];
+  
+In the above code, you need to modify the step1(context) and step2(context) calls to pass _currentStep and a function to increment it. For example, you can change step1(context) to step1(context, _currentStep, () => _incrementStep()).
 
-            steps: _buildSteps(),
-            
-In the step3.dart file:
+Then, in step1.dart and step2.dart, you need to modify the step1 and step2 functions to accept these additional parameters and use them instead of _currentStep and setState.
 
-    SystemNavigator.pop();
-    
-After making these changes, try building the project again.
+Here's how you can modify the step1.dart file:
 
+Step step1(BuildContext context) {
+  return Step(
+  
+In the above code, you need to modify the step1 function to accept the additional parameters. For example, you can change Step step1(BuildContext context) to Step step1(BuildContext context, int currentStep, Function incrementStep).
 
+Then, replace _currentStep++ with incrementStep() and remove the setState calls, as the state will be managed in steps.dart.
 
-
-
-
-
-
-
-
-This doesn't make sense.
-
-steps.dart do really have " steps: _buildSteps(),", so as step3.dart having "SystemNavigator.pop();" already.
+You need to make similar changes in step2.dart.
 
 
 
@@ -59,21 +77,91 @@ steps.dart do really have " steps: _buildSteps(),", so as step3.dart having "Sys
 
 
 
+firstlogon_tour on  main [✘!?⇡] is 📦 v1.0.0+1 via 🎯 v3.1.2 took 18s 
+ERROR: lib/screens/steps/steps.dart:22:10: Error: Too few positional arguments: 3 required, 1 given.
+ERROR:     step1(context),
+ERROR:          ^
+ERROR: lib/screens/steps/step1.dart:7:6: Context: Found this candidate, but the arguments don't match.
+ERROR: Step step1(BuildContext context, int currentStep, Function incrementStep) {
+ERROR:      ^^^^^
+ERROR: lib/screens/steps/steps.dart:23:10: Error: Too few positional arguments: 3 required, 1 given.
+ERROR:     step2(context),
+ERROR:          ^
+ERROR: lib/screens/steps/step2.dart:7:6: Context: Found this candidate, but the arguments don't match.
+ERROR: Step step2(BuildContext context, int currentStep, Function incrementStep) {
+ERROR:      ^^^^^
+ERROR: Target kernel_snapshot failed: Exception
+Building Linux application...                                           
+Build process failed
 
 
 
-I apologize for the confusion. The issue is that the [buildSteps()](file:///media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/steps.dart#20%2C12-20%2C12) function is expecting a BuildContext as an argument, but it's being called without any arguments. Similarly, SystemNavigator.pop() is not a recognized function in Flutter.
 
-Here's how you can fix these issues:
 
-In the steps.dart file, change the _buildSteps() function calls to include the context argument:
 
-steps: _buildSteps(context),
 
-if (_currentStep < _buildSteps(context).length - 1) {
 
-In the step3.dart file, replace SystemNavigator.pop() with Navigator.of(context).pop():
 
-Navigator.of(context).pop();
+The error messages indicate that the step1 and step2 functions in steps.dart are not being called with the correct number of arguments. You modified these functions to accept three arguments, but you're still calling them with only one argument in steps.dart.
 
-After making these changes, try building the project again.
+Here's how you can modify the steps.dart file to pass the correct arguments:
+
+List<Step> _buildSteps(BuildContext context) {
+  return [
+    step1(context, _currentStep, () => _incrementStep()),
+    step2(context, _currentStep, () => _incrementStep()),
+    step3(context),
+    // add more steps here
+  ];
+}
+
+In the above code, step1(context) and step2(context) are changed to step1(context, _currentStep, () => _incrementStep()) and step2(context, _currentStep, () => _incrementStep()) respectively. This way, you're passing the [currentStep](file:///media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/steps.dart#17%2C7-17%2C7) variable and a function to increment it to step1 and step2.
+
+Please ensure that the _incrementStep function is defined in the _StepScreenState class in steps.dart. Here's how you can define it:
+
+void _incrementStep() {
+  if (_currentStep < _buildSteps(context).length - 1) {
+    setState(() {
+      _currentStep++;
+    });
+  }
+}
+
+This function increments _currentStep if it's less than the number of steps, and updates the state of the widget.
+
+
+
+
+
+
+
+
+
+Where exactly I put that "void _incrementStep() {..."?
+
+
+
+
+
+
+
+
+
+The [incrementStep()](file:///media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/steps.dart#22%2C40-22%2C40) function should be defined within the _StepScreenState class in the steps.dart file. Here's how you can add it:
+
+class _StepScreenState extends State<StepScreen> {
+  int _currentStep = 0;
+  bool _checkboxValue = false;
+
+  void _incrementStep() {
+    if (_currentStep < _buildSteps(context).length - 1) {
+      setState(() {
+        _currentStep++;
+      });
+    }
+  }
+
+  // rest of your code...
+}
+
+In the above code, the _incrementStep() function is added just after the _currentStep and _checkboxValue variables. This function checks if _currentStep is less than the total number of steps (which is the length of the list returned by _buildSteps(context)), and if so, it increments _currentStep and updates the state of the widget.

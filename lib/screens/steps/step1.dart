@@ -4,7 +4,7 @@ import 'steps.dart';
 
 import 'dart:io';
 
-Step step1(BuildContext context) {
+Step step1(BuildContext context, int currentStep, Function incrementStep) {
   return Step(
         title: Text('Step 1: Mouse cursor 🖱️'),
         content: Column(
@@ -17,9 +17,7 @@ InkWell(
     onTap: () async {
                         var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'cursor-theme', 'Floflis'
 ]);
-                setState(() {
-                  _currentStep++;
-                });
+                incrementStep();
     },
 //    onDoubleTap: (){
 //      print("Card is double tapped.");
@@ -39,9 +37,7 @@ InkWell(
         //print("card is tapped.");
                         var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'cursor-theme', 'DMZ-White'
 ]);
-                setState(() {
-                  _currentStep++;
-                });
+                incrementStep();
     },
 //    onDoubleTap: (){
 //      print("Card is double tapped.");
