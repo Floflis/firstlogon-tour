@@ -61,16 +61,17 @@ class WelcomeScreen extends StatelessWidget {
                     'This is your first time booting it. Let\'s customize your system as you please.',
                     style: Theme.of(context).textTheme.subtitle1,
                   ),
-                  Text(
-                    'Please note that currently only Cinnamon is supported; GNOME and other desktop environments soon!',
-                    style: TextStyle(fontSize: 12.0),
-                  ),
                   SizedBox(height: 50),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.pushNamed(context, '/steps');
                     },
                     child: Text('Begin Customization'),
+                  ),
+                  SizedBox(height: 50),
+                  Text(
+                    'Please note that currently only Cinnamon is supported; GNOME and other desktop environments soon!',
+                    style: TextStyle(fontSize: 12.0),
                   ),
                 ],
               ),
