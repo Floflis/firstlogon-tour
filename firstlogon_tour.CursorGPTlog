@@ -1,4 +1,4 @@
-In welcome.dart, how to make "'Please note that currently only Cinnamon is supported; GNOME and other desktop environments soon!'" as small as a <small> HTML-equivalent?
+In steps.dart, how to make the cards (and their InkWell father elements) appearing in-line rather than one atop another?
 
 
 
@@ -7,18 +7,22 @@ In welcome.dart, how to make "'Please note that currently only Cinnamon is suppo
 
 
 
-In Flutter, you can use the TextStyle widget to adjust the font size of a Text widget. To make the text smaller, you can reduce the fontSize property. Here's how you can do it:
+To make the cards appear in-line rather than one atop another, you need to wrap the Card widgets inside a Row widget. The Row widget in Flutter allows you to align its children widgets in a horizontal manner.
 
-Text(
-  'Please note that currently only Cinnamon is supported; GNOME and other desktop environments soon!',
-  style: TextStyle(fontSize: 12.0), // Adjust the font size here
-),
+Here's how you can modify the code:
 
-This code is in the welcome.dart file:
+Row(
+  children: <Widget>[
+    InkWell(
+      // ... existing InkWell code for first card ...
+    ),
+    InkWell(
+      // ... existing InkWell code for second card ...
+    ),
+    // Add more InkWell widgets for additional cards
+  ],
+)
 
-                  Text(
-                    'Please note that currently only Cinnamon is supported; GNOME and other desktop environments soon!',
-                    style: Theme.of(context).textTheme.subtitle1,
-                  ),
-                  
-You can adjust the fontSize value to suit your needs. The value is in logical pixels, so a smaller value will result in smaller text.
+You can apply this modification to the relevant parts of your code. For instance, in the code block starting from line 28 in steps.dart, you can wrap the InkWell widgets inside a Row widget.
+
+Remember to adjust the mainAxisAlignment and crossAxisAlignment properties of the Row widget to control the alignment and spacing of the cards.
