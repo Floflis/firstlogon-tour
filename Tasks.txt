@@ -6,6 +6,8 @@ r3 (fl attempt 47):
 
 - stepscustom.dart: used to run custom steps before the laststep /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/custom/stepscustom.dart.soon
 
+- cmd/path bug after installed from deb: bash /home/daniella/data/flutter_assets/include/linux-icon-getter/linux-icon-getter distributor-logo
+
 - platform: support multi-arch, such as arm64 and armhf + cross-compiling
 https://github.com/flutter/flutter/pull/61221
 https://github.com/flutter/flutter/issues/117826#issuecomment-1370378620
