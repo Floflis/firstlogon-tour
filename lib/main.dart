@@ -12,7 +12,7 @@ class AppLoader extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: FutureBuilder(
-        future: Future.delayed(Duration(seconds: 2)), // Simulate a loading delay
+        future: Future.delayed(Duration(seconds: 1)), // Simulate a loading delay
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(child: CircularProgressIndicator());
