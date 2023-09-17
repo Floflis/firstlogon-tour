@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import '../../app.dart';
+import '../app.dart';
 
 import 'dart:io';
 
-import 'step1.dart';
-import 'step2.dart';
-import 'laststep.dart';
+import 'steps/step1.dart';
+import 'steps/step2.dart';
+import 'steps/laststep.dart';
 // import more steps as needed
 
 class StepScreen extends StatefulWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../app.dart';
-import 'steps.dart';
+import '../steps.dart';
 
 import 'dart:io';
 
