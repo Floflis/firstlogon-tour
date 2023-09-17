@@ -28,7 +28,7 @@ InkWell(
   child: Column(
     children: <Widget>[
       Image.asset('assets/img/screens/steps/themecolor/dark.png'),
-      Text('⚫Dark (lets save my eyes while computing in the dark)'),
+      Text('Dark (lets save my eyes while computing in the dark)'),
     ],
   ),
 ),
@@ -49,7 +49,7 @@ InkWell(
   child: Column(
     children: <Widget>[
       Image.asset('assets/img/screens/steps/themecolor/normal.png'),
-      Text('🟤Normal (i have strong eyes)'),
+      Text('Normal (i have strong eyes)'),
     ],
   ),
 ),
@@ -72,7 +72,7 @@ InkWell(
   child: Column(
     children: <Widget>[
       Image.asset('assets/img/screens/steps/themecolor/light.png'),
-      Text('⚪Light (i have stronger eyes, still; lets not abuse)'),
+      Text('Light (i have stronger eyes, still; lets not abuse)'),
     ],
   ),
 ),

@@ -26,7 +26,7 @@ InkWell(
   child: Column(
     children: <Widget>[
       Image.asset('assets/img/screens/steps/cursorcolor/dark.png'),
-      Text('⚫Black (like in "MecOS"🍎)'),
+      Text('Black (like in "MecOS"🍎)'),
     ],
   ),
 ),
@@ -46,7 +46,7 @@ InkWell(
   child: Column(
     children: <Widget>[
       Image.asset('assets/img/screens/steps/cursorcolor/light.png'),
-      Text('⚪White (like in "WindOS"🪟)'),
+      Text('White (like in "WindOS"🪟)'),
     ],
   ),
 ),
