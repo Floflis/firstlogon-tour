@@ -2,16 +2,16 @@ r3 (fl attempt 47):
 
 - leverage firstlogon_tour-cli as a backend: /media/daniella/B/git/Floflis/Floflis/Floflis-DNA/layers/soil/to-merge/include-firstlogon/System/firstlogon-tour_cli
 
-- stepscustom.dart: used to run custom steps before the steplast /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/steps/custom/stepscustom.dart.soon
+- stepscustom.dart: used to run custom steps before the laststep /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/custom/stepscustom.dart.soon
 
-- platform: support multi-arch, such as arm64 and armhf
+- platform: support multi-arch, such as arm64 and armhf + cross-compiling
 https://github.com/flutter/flutter/pull/61221
 https://github.com/flutter/flutter/issues/117826#issuecomment-1370378620
 https://github.com/flutter/flutter/issues/74929
 
-- merge into this repo: /media/daniella/B/git/Floflis/Floflis/HTML5/System/FirstLogonTour
+- merge into this repo: /media/daniella/B/git/Floflis/Floflis/HTML5/System/FirstLogonTour (rmv + re-add github branch)
 
-[REPRODUCE ALL ON FMWK-FLUTTER]
+[REPRODUCE ALL ON FMWK-FLUTTER, then add back at davidLauncher]
 
 r4 (fl attempt 48):
 
