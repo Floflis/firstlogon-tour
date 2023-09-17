@@ -1,0 +1,14 @@
+flutter_app: 
+  command: firstlogon-tour
+  arch: x64
+  parent: /usr/local/lib
+
+control:
+  Package: Firstlogon-Tour
+  Version: 3.0.0
+  Architecture: amd64
+  Essential: no
+  Priority: optional
+  Depends:
+  Maintainer: danimesq
+  Description: A Flutter application designed to provide a first-logon tour/wizard for Ubuntu and other Linux distros

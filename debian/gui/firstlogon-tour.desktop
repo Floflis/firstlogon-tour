@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=3.0.0
+Name=Firstlogon Tour
+GenericName=Firstlogon Tour
+Comment=A Flutter application designed to provide a first-logon tour/wizard for Ubuntu and other Linux distros.
+Terminal=false
+Type=Application
+Categories=Utility
+Keywords=Flutter;share;files;
+NoDisplay=true

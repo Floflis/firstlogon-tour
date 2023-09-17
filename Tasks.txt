@@ -1,7 +1,5 @@
 r3 (fl attempt 47):
 
-- enable to export to .deb
-https://pub.dev/packages/flutter_to_debian
 https://github.com/jeffrey0606/flutter_to_debian (PR to fix 'debain')
 then add .deb instructions to /media/daniella/Seagate Expansion Drive/flo-bkp-sync_custom/CursorAI_promptRules.txt
 and copy deb features to /media/daniella/B/git/Floflis/Floflis/HTML5/B2G/davidLauncher/cinnamon
@@ -13,7 +11,7 @@ leverage firstlogon_tour-cli, even its gsettings calls from it.
 - /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/Tasks/multidistroSupport
 
 - add test PNG icon to run in taskbar
-- build.sh: will run "flutter build linux" and an inkscape command for generating the flutter icon out of a svg
+- build.sh: will run "flutter build linux", "flutter_to_debian" and an inkscape command for generating the flutter icon out of a svg
 - init-newbie.sh: will install flutter and inkscape
 
 - platform: support multi-arch, such as arm64 and armhf
