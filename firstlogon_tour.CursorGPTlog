@@ -1,52 +1,6 @@
-firstlogon_tour on  main [✘!?⇡] is 📦 v1.0.0+1 via 🎯 v3.1.2 
-❯ flutter build linux
+Let's make this app surprisingly, blazingly fast to be openned right after clicked.
 
-ERROR: lib/screens/steps/steps.dart:32:7: Error: '_StepScreenState' is already declared in this scope.
-ERROR: class _StepScreenState extends State<StepScreen> {
-ERROR:       ^^^^^^^^^^^^^^^^
-ERROR: lib/screens/steps/steps.dart:15:7: Context: Previous declaration of '_StepScreenState'.
-ERROR: class _StepScreenState extends State<StepScreen> {
-ERROR:       ^^^^^^^^^^^^^^^^
-ERROR: lib/screens/steps/steps.dart:15:38: Error: Type 'StepScreen' not found.
-ERROR: class _StepScreenState extends State<StepScreen> {
-ERROR:                                      ^^^^^^^^^^
-ERROR: lib/screens/steps/steps.dart:32:38: Error: Type 'StepScreen' not found.
-ERROR: class _StepScreenState extends State<StepScreen> {
-ERROR:                                      ^^^^^^^^^^
-ERROR: lib/screens/steps/steps.dart:15:7: Error: The non-abstract class '_StepScreenState' is missing implementations for these members:
-ERROR:  - State.build
-ERROR: Try to either
-ERROR:  - provide an implementation,
-ERROR:  - inherit an implementation from a superclass or mixin,
-ERROR:  - mark the class as abstract, or
-ERROR:  - provide a 'noSuchMethod' implementation.
-ERROR: class _StepScreenState extends State<StepScreen> {
-ERROR:       ^^^^^^^^^^^^^^^^
-ERROR: /home/daniella/snap/flutter/common/flutter/packages/flutter/lib/src/widgets/framework.dart:1375:10: Context: 'State.build' is defined here.
-ERROR:   Widget build(BuildContext context);
-ERROR:          ^^^^^
-ERROR: lib/app.dart:62:32: Error: The method 'StepScreen' isn't defined for the class 'FirstLogonTourApp'.
-ERROR:  - 'FirstLogonTourApp' is from 'package:firstlogon_tour/app.dart' ('lib/app.dart').
-ERROR: Try correcting the name to the name of an existing method, or defining a method named 'StepScreen'.
-ERROR:         '/steps': (context) => StepScreen(),
-ERROR:                                ^^^^^^^^^^
-ERROR: lib/screens/steps/steps.dart:20:24: Error: The method '_buildSteps' isn't defined for the class '_StepScreenState'.
-ERROR:  - '_StepScreenState' is from 'package:firstlogon_tour/screens/steps/steps.dart' ('lib/screens/steps/steps.dart').
-ERROR:     if (_currentStep < _buildSteps(context).length - 1) {
-ERROR:                        ^^^^^^^^^^^
-ERROR: lib/screens/steps/steps.dart:38:40: Error: The method '_incrementStep' isn't defined for the class '_StepScreenState#1#0'.
-ERROR:  - '_StepScreenState#1#0' is from 'package:firstlogon_tour/screens/steps/steps.dart' ('lib/screens/steps/steps.dart').
-ERROR: Try correcting the name to the name of an existing method, or defining a method named '_incrementStep'.
-ERROR:     step1(context, _currentStep, () => _incrementStep()),
-ERROR:                                        ^^^^^^^^^^^^^^
-ERROR: lib/screens/steps/steps.dart:39:40: Error: The method '_incrementStep' isn't defined for the class '_StepScreenState#1#0'.
-ERROR:  - '_StepScreenState#1#0' is from 'package:firstlogon_tour/screens/steps/steps.dart' ('lib/screens/steps/steps.dart').
-ERROR: Try correcting the name to the name of an existing method, or defining a method named '_incrementStep'.
-ERROR:     step2(context, _currentStep, () => _incrementStep()),
-ERROR:                                        ^^^^^^^^^^^^^^
-ERROR: Target kernel_snapshot failed: Exception
-Building Linux application...                                           
-Build process failed
+Let's load as the first thing, a spinner at the center; it will disappear when everything is loaded.
 
 
 
@@ -57,27 +11,35 @@ Build process failed
 
 
 
-The error messages indicate that there are several issues in your code:
 
-1. The class [StepScreenState](file:///media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/steps.dart#15%2C7-15%2C7) is declared twice in the steps.dart file.
-2. The class StepScreen is not defined.
-3. The method _buildSteps is not defined for the class _StepScreenState.
-4. The method _incrementStep is not defined for the class _StepScreenState.
+To make the app load faster, you can display a spinner at the center of the screen while the rest of the app is loading. This can be achieved by using a FutureBuilder in Flutter.
 
-Here are the solutions:
+In your app.dart and welcome.dart files, you are already using FutureBuilder to display a CircularProgressIndicator while waiting for the Executable.getOSName() function to complete.
 
-1. Remove the duplicate declaration of _StepScreenState in the steps.dart file. You can find this at:
+You can extend this concept to cover the entire app loading process. Here's how you can modify your main.dart file to display a spinner while the app is loading:
 
-class _StepScreenState extends State<StepScreen> {
-  int _currentStep = 0;
-  bool _checkboxValue = false;
+void main() {
+  runApp(AppLoader());
+}
 
-2. Define the StepScreen class. It seems like you commented out the StepScreen class declaration. Uncomment it and make sure it extends StatefulWidget.
-3. Define the _buildSteps method inside the _StepScreenState class. This method should return a list of steps for your stepper.
-4. Define the _incrementStep method inside the _StepScreenState class. This method should increment the _currentStep variable.
+class AppLoader extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: FutureBuilder(
+        future: Future.delayed(Duration(seconds: 2)), // Simulate a loading delay
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(child: CircularProgressIndicator());
+          } else {
+            return FirstLogonTourApp();
+          }
+        },
+      ),
+    );
+  }
+}
 
-Also, in the app.dart file, you are trying to use StepScreen as a function. It should be used as a constructor to create an instance of the StepScreen class. You can find this at:
+In this example, I've simulated a loading delay with Future.delayed(Duration(seconds: 2)). Replace this with your actual loading process.
 
-        '/steps': (context) => StepScreen(),
-        
-Replace StepScreen() with new StepScreen().
+Remember, the goal is to make your app load as quickly as possible. Therefore, try to minimize the work done during app startup. If there are tasks that can be deferred until after the app has loaded, consider doing so.

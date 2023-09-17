@@ -2,9 +2,7 @@ r3 (fl attempt 47):
 
 - leverage firstlogon_tour-cli as a backend: /media/daniella/B/git/Floflis/Floflis/Floflis-DNA/layers/soil/to-merge/include-firstlogon/System/firstlogon-tour_cli
 
-- stepscustom.dart: used to run custom steps before the steplast
-
-
+- stepscustom.dart: used to run custom steps before the steplast /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/steps/custom/stepscustom.dart.soon
 
 - platform: support multi-arch, such as arm64 and armhf
 https://github.com/flutter/flutter/pull/61221
