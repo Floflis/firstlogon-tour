@@ -24,6 +24,10 @@ r4 (fl attempt 48):
 - change the displayed cards (mouse cursor, theme) and their images according to firstlogon-tour_cli output! /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/assets/img/screens/steps/themecolor/ubuntu
 - same for when not displaying light theme card when not floflis: detect by /1 rather than literally Floflis (so support its forks)
 
+README.md Details:
+cursor: table Linux Mint / Others
+theme color: table Floflis / Others
+
 - add test PNG icon to run in taskbar
 - init-newbie.sh: will install flutter and inkscape
 - build.sh: an inkscape command for generating the flutter icon out of a svg
