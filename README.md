@@ -1,8 +1,10 @@
 # Ubuntu Cinnamon first logon Tour
 
-A Flutter application designed to provide a first-logon tour/wizard for Ubuntu and other Linux distros. It leverages external executables, which can be Rust programs or Bash script executables.
+A Flutter application designed to provide a first-logon tour/wizard for Ubuntu and other Debian-based distros; also, a replacement to the [ubuntu-welcome](https://github.com/canonical/ubuntu-welcome) app, running on its place and later calling it on Ubuntu-based distros.
 
 Currently supporting only Cinnamon as DE, but planned to add individual cases for the most popular distros and DEs.
+
+It leverages external executables, which can be Rust programs or Bash script executables.
 
 ## Screenshots
 
@@ -51,11 +53,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repository
 ```bash
-git clone https://github.com/floflis/ubuntutour.git
+git clone https://github.com/Floflis/firstlogon-tour.git firstlogon_tour
 ```
 2. Navigate into the project directory
 ```bash
-cd ubuntutour
+mv firstlogon-tour firstlogon_tour && cd firstlogon_tour
 ```
 3. Get the dependencies and prepare for Linux build
 ```bash
