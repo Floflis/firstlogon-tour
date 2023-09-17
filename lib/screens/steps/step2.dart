@@ -16,9 +16,7 @@ Row(
 InkWell(
     onTap: () async {
         //print("card is tapped.");
-                        var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis-dark']);
-                var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis-dark']);
-                var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis-dark']);
+                        var process = await Process.run('bash', [Directory.current.path + '/data/flutter_assets/include/firstlogon-tour_cli/core.sh', 'changethemestyle_dark']);
                 incrementStep();
     },
 //    onDoubleTap: (){
@@ -37,9 +35,7 @@ InkWell(
 InkWell(
     onTap: () async {
         //print("card is tapped.");
-                        var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis']);
-                var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis']);
-                var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis']);
+                        var process = await Process.run('bash', [Directory.current.path + '/data/flutter_assets/include/firstlogon-tour_cli/core.sh', 'changethemestyle_default']);
                 incrementStep();
     },
 //    onDoubleTap: (){
@@ -60,9 +56,7 @@ InkWell(
         //print("card is tapped.");
                         //String output = await Executable.run('gsettings set org.cinnamon.desktop.interface cursor-theme Floflis');
                         //String output = await Executable.run('cinnamon-settings');
-                        var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.wm.preferences', 'theme', 'Yaru-floflis-light']);
-                var processtwo = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'gtk-theme', 'Yaru-floflis-light']);
-                var processthree = await Process.run('gsettings', ['set', 'org.cinnamon.theme', 'name', 'Yaru-floflis-light']);
+                        var process = await Process.run('bash', [Directory.current.path + '/data/flutter_assets/include/firstlogon-tour_cli/core.sh', 'changethemestyle_light']);
                 incrementStep();
     },
 //    onDoubleTap: (){

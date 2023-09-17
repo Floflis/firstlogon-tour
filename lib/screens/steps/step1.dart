@@ -15,8 +15,11 @@ Row(
 //InkWell learned from https://www.fluttercampus.com/guide/150/how-to-make-any-widget-clickable-on-flutter/
 InkWell(
     onTap: () async {
-                        var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'cursor-theme', 'Floflis'
+                        var process = await Process.run('bash', [
+  Directory.current.path + '/data/flutter_assets/include/firstlogon-tour_cli/core.sh',
+  'changecursor_black'
 ]);
+                        print('bash ' + [Directory.current.path+'/data/flutter_assets/include/firstlogon-tour_cli/core.sh', 'changecursor_black'].join(' '));
                 incrementStep();
     },
 //    onDoubleTap: (){
@@ -25,7 +28,7 @@ InkWell(
     child: Card(
   child: Column(
     children: <Widget>[
-      Image.asset('assets/img/screens/steps/cursorcolor/dark.png'),
+      Image.asset('assets/img/screens/steps/cursorcolor/black.png'),
       Text('Black (like in "MecOS"🍎)'),
     ],
   ),
@@ -35,8 +38,11 @@ InkWell(
 InkWell(
     onTap: () async {
         //print("card is tapped.");
-                        var process = await Process.run('gsettings', ['set', 'org.cinnamon.desktop.interface', 'cursor-theme', 'DMZ-White'
+                        var process = await Process.run('bash', [
+  Directory.current.path + '/data/flutter_assets/include/firstlogon-tour_cli/core.sh',
+  'changecursor_white'
 ]);
+                        print('bash ' + [Directory.current.path+'/data/flutter_assets/include/firstlogon-tour_cli/core.sh', 'changecursor_white'].join(' '));
                 incrementStep();
     },
 //    onDoubleTap: (){
@@ -45,7 +51,7 @@ InkWell(
     child: Card(
   child: Column(
     children: <Widget>[
-      Image.asset('assets/img/screens/steps/cursorcolor/light.png'),
+      Image.asset('assets/img/screens/steps/cursorcolor/white.png'),
       Text('White (like in "WindOS"🪟)'),
     ],
   ),

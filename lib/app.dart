@@ -18,27 +18,16 @@ static Future<String> getOSName() async {
   return process.stdout.toString().trim().replaceAll('"', '');
 }
 
-//OPERATION DISTRO-LOGO
-  //static Future<String> getImagePath(String command) async {
     static Future<String> getImagePath() async {
-    //ProcessResult result = await Process.run(command, []);
-    //var process = await Process.run('include/linux-icon-getter/./linux-icon-getter', ['distributor-logo']);
-    //var process = await Process.run('include/linux-icon-getter/./linux-icon-getter', 'distributor-logo');
-    //var process = await Process.run('include/linux-icon-getter/./linux-icon-getter distributor-logo');
-    //var process = await Process.run('bash', [Directory.current.path,'/data/flutter_assets/include/linux-icon-getter/linux-icon-getter', 'distributor-logo']);
     var process = await Process.run('bash', [
   Directory.current.path + '/data/flutter_assets/include/linux-icon-getter/linux-icon-getter',
   'distributor-logo'
 ]);
-    //return result.stdout.trim();
-    //print('SUPER DEBUG: $process.stdout');
-    //print('SUPER DEBUG: ${process.stdout}');
     print('SUPER DEBUG: $process.stdout.toString().trim()');
     print('SUPER DEBUG: ${process.stdout.toString().trim()}');
     print('bash ' + [Directory.current.path+'/data/flutter_assets/include/linux-icon-getter/linux-icon-getter', 'distributor-logo'].join(' '));
     return process.stdout.toString().trim();
-  }
-  //OPERATION DISTRO-LOGO
+  }  
 }
 
 class FirstLogonTourApp extends StatelessWidget {

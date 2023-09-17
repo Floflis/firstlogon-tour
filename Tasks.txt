@@ -1,8 +1,6 @@
 r3 (fl attempt 47):
 
-- leverage firstlogon_tour-cli as a backend: /media/daniella/B/git/Floflis/Floflis/Floflis-DNA/layers/soil/to-merge/include-firstlogon/System/firstlogon-tour_cli
-
-- if osname is Floflis, then display:none the light-theme-card
+- if osname isn't Floflis, then display:none the light-theme-card
 
 - stepscustom.dart: used to run custom steps before the laststep /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/custom/stepscustom.dart.soon
 
