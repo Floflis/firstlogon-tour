@@ -1,0 +1,92 @@
+This folder: /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/wrong timestamp, using BIOS time
+
+  File: ./floflis insp
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,20	Inode: 4255032     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-16 18:12:09.452241800 -0300
+Modify: 2023-09-16 18:12:04.300955900 -0300
+Change: 2023-09-16 18:12:04.300955900 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./Insp (copy).png
+  Size: 10534     	Blocks: 24         IO Block: 4096   regular file
+Device: 8,20	Inode: 4255042     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-16 18:23:49.963216700 -0300
+Modify: 2023-09-16 18:23:47.079920900 -0300
+Change: 2023-09-16 18:23:47.407230900 -0300
+ Birth: -
+IPFS hash: QmfTX5dvY1kNCEGpDh4EQVCuJrRafa33au93ZrZHtCvVkD
+------------------------------
+  File: ./Insp.png
+  Size: 359308    	Blocks: 704        IO Block: 4096   regular file
+Device: 8,20	Inode: 4255000     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-16 17:57:43.371467200 -0300
+Modify: 2023-09-16 17:57:24.719014000 -0300
+Change: 2023-09-16 18:21:02.737625500 -0300
+ Birth: -
+IPFS hash: QmaQ36myikBKFjfghDaZeZ9TDa1rw3PEErLzfVbujp2Hyd
+------------------------------
+  File: ./multidistroSupport
+  Size: 114       	Blocks: 1          IO Block: 4096   regular file
+Device: 8,20	Inode: 973657      Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-16 17:22:07.968352000 -0300
+Modify: 2023-09-16 16:40:03.363880900 -0300
+Change: 2023-09-16 17:12:21.000409000 -0300
+ Birth: -
+IPFS hash: QmPQWcpHiJvzwAhTVmUZpanwU8oN2LEiLfa4zkUfRhoqgt
+------------------------------
+  File: ./multidistroSupport-2
+  Size: 241       	Blocks: 1          IO Block: 4096   regular file
+Device: 8,20	Inode: 4254806     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-16 17:19:03.372010200 -0300
+Modify: 2023-09-16 17:19:03.045302200 -0300
+Change: 2023-09-16 17:19:03.368336900 -0300
+ Birth: -
+IPFS hash: QmRCRaEEffSuUHLGmyRELvKJcvK2ApB1YtrJMJqduKaCan
+------------------------------
+  File: ./multidistroSupport-3
+  Size: 618       	Blocks: 2          IO Block: 4096   regular file
+Device: 8,20	Inode: 4255016     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-16 18:06:36.952317600 -0300
+Modify: 2023-09-16 18:06:36.633432200 -0300
+Change: 2023-09-16 18:06:36.948746700 -0300
+ Birth: -
+IPFS hash: QmcAuEhWMqneeztk39og1xdts7B8Anu86S34M5rp1pU7Ht
+------------------------------
+  File: ./multidistroSupport-4
+  Size: 942       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,20	Inode: 4255062     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-16 18:20:24.862134200 -0300
+Modify: 2023-09-16 18:16:33.635930500 -0300
+Change: 2023-09-16 18:16:33.953010400 -0300
+ Birth: -
+IPFS hash: Qmf4Y8F87AQeyrsHMK6wUpeRciwAXL7u2beFUd84c7cvXn
+------------------------------
+  File: ./Screenshots
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,20	Inode: 4254848     Links: 1
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-16 17:57:36.795762400 -0300
+Modify: 2023-09-16 17:55:07.325974600 -0300
+Change: 2023-09-16 17:55:07.325974600 -0300
+ Birth: -
+IPFS hash: 
+------------------------------
+  File: ./test.png
+  Size: 10240     	Blocks: 24         IO Block: 4096   regular file
+Device: 8,20	Inode: 4255051     Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-16 18:23:52.806854800 -0300
+Modify: 2023-09-16 18:23:10.904225700 -0300
+Change: 2023-09-16 18:23:52.585708300 -0300
+ Birth: -
+IPFS hash: QmdzfmTf9iAsUwYfaP73kpovaEJWjMeKA7iUyfFmZuYymA
+------------------------------

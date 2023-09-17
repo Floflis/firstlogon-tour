@@ -1,0 +1,53 @@
+Are you aware about that "future: Executable.getOSName()," steps.dart has access to, displayed with "${osname.data}"?
+
+I need /steps/step2.dart to have access to the same.
+
+And, beyond that, I want the following:
+When osname.data != "Floflis" (if isn't equal), then display:none the second InkWell Card.
+
+
+
+
+
+
+
+
+To access the osname.data in step2.dart, you can use the FutureBuilder widget just like in welcome.dart.
+
+Here is how you can modify the step2 function in step2.dart to include the FutureBuilder:
+
+Step step2(BuildContext context, int currentStep, Function incrementStep) {
+  return Step(
+    title: Text('Step 2: Theme intensity'),
+    content: FutureBuilder<String>(
+      future: Executable.getOSName(),
+      builder: (BuildContext context, AsyncSnapshot<String> osname) {
+        if (osname.connectionState == ConnectionState.waiting) {
+          return CircularProgressIndicator();
+        } else {
+          // Check if osname.data is not equal to "Floflis"
+          if (osname.data != "Floflis") {
+            // If it's not "Floflis", return an empty Container (equivalent to display:none)
+            return Container();
+          } else {
+            // If it's "Floflis", return the original Column widget
+            return Column(
+              children: <Widget>[
+                // ... existing widgets ...
+              ],
+            );
+          }
+        }
+      },
+    ),
+  );
+}
+
+This code will check if osname.data is not equal to "Floflis". If it's not, it will return an empty Container (which is equivalent to display:none in CSS). If it is "Floflis", it will return the original Column widget with all the existing widgets inside it.
+
+Please replace the existing step2 function in step2.dart with the above code. The file is located at:
+
+Step step2(BuildContext context, int currentStep, Function incrementStep) {
+  return Step(
+        title: Text('Step 2: Theme intensity'),
+        content: Column(

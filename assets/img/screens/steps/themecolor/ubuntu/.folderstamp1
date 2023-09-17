@@ -1,0 +1,92 @@
+This folder: /home/daniella/Documents
+
+  File: ./Dossier
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,38	Inode: 9588947     Links: 8
+Access: (0775/drwxrwxr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-15 20:35:30.105615380 -0300
+Modify: 2023-03-31 23:51:08.268720800 -0300
+Change: 2023-04-30 00:06:59.269745559 -0300
+ Birth: 2023-04-30 00:06:57.852464202 -0300
+IPFS hash: 
+------------------------------
+  File: ./dossierpublico.com.br
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,38	Inode: 10882037    Links: 3
+Access: (0775/drwxrwxr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-15 20:35:30.097615471 -0300
+Modify: 2023-08-02 14:44:53.915207404 -0300
+Change: 2023-08-02 14:44:53.915207404 -0300
+ Birth: 2023-07-13 12:55:30.517037053 -0300
+IPFS hash: 
+------------------------------
+  File: ./dssqueue
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,38	Inode: 9588948     Links: 36
+Access: (0775/drwxrwxr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-16 04:10:01.086901456 -0300
+Modify: 2023-09-16 04:05:57.428245493 -0300
+Change: 2023-09-16 04:05:57.428245493 -0300
+ Birth: 2023-04-30 00:06:57.852464202 -0300
+IPFS hash: 
+------------------------------
+  File: ./git
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,38	Inode: 10223869    Links: 3
+Access: (0775/drwxrwxr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-15 20:35:30.101615425 -0300
+Modify: 2023-09-14 06:59:17.394523832 -0300
+Change: 2023-09-14 06:59:17.394523832 -0300
+ Birth: 2023-09-14 06:59:06.770389433 -0300
+IPFS hash: 
+------------------------------
+  File: ./MEDdss
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,38	Inode: 10777839    Links: 3
+Access: (0775/drwxrwxr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-15 20:35:30.101615425 -0300
+Modify: 2023-06-26 15:15:35.858515161 -0300
+Change: 2023-06-26 15:15:35.858515161 -0300
+ Birth: 2023-06-26 15:11:31.559477663 -0300
+IPFS hash: 
+------------------------------
+  File: ./PDF
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,38	Inode: 10778845    Links: 3
+Access: (0775/drwxrwxr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-15 20:35:30.097615471 -0300
+Modify: 2023-08-05 13:05:03.623504789 -0300
+Change: 2023-08-05 13:05:03.623504789 -0300
+ Birth: 2023-07-12 19:02:34.154205531 -0300
+IPFS hash: 
+------------------------------
+  File: ./test.png
+  Size: 10240     	Blocks: 24         IO Block: 4096   regular file
+Device: 8,38	Inode: 9221681     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-16 18:23:14.379087914 -0300
+Modify: 2023-09-16 18:23:10.904225734 -0300
+Change: 2023-09-16 18:23:10.904225734 -0300
+ Birth: 2023-09-16 18:23:10.892229785 -0300
+IPFS hash: QmdzfmTf9iAsUwYfaP73kpovaEJWjMeKA7iUyfFmZuYymA
+------------------------------
+  File: ./to Coordinations Court
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,38	Inode: 9312309     Links: 2
+Access: (0775/drwxrwxr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-15 20:35:30.109615334 -0300
+Modify: 2023-08-07 16:37:25.096848407 -0300
+Change: 2023-08-07 16:37:25.096848407 -0300
+ Birth: 2023-08-07 16:22:21.997043810 -0300
+IPFS hash: 
+------------------------------
+  File: ./vpsbkp
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,38	Inode: 9588949     Links: 4
+Access: (0775/drwxrwxr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-09-15 20:35:30.101615425 -0300
+Modify: 2023-04-20 18:53:44.595027600 -0300
+Change: 2023-04-30 00:08:51.572523221 -0300
+ Birth: 2023-04-30 00:06:57.852464202 -0300
+IPFS hash: 
+------------------------------

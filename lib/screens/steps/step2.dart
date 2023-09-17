@@ -44,12 +44,26 @@ InkWell(
     child: Card(
   child: Column(
     children: <Widget>[
-      Image.asset('assets/img/screens/steps/themecolor/normal.png'),
+      Image.asset('assets/img/screens/steps/themecolor/default.png'),
       Text('Normal (i have strong eyes)'),
     ],
   ),
 ),
-),           
+),
+    FutureBuilder<String>(
+      future: Executable.getOSName(),
+      builder: (BuildContext context, AsyncSnapshot<String> osname) {
+        if (osname.connectionState == ConnectionState.waiting) {
+          return CircularProgressIndicator();
+        } else {
+          // Check if osname.data is not equal to "Floflis"
+          if (osname.data != "Floflis") {
+            // If it's not "Floflis", return an empty Container (equivalent to display:none)
+            return Container();
+          } else {
+            // If it's "Floflis", return the original Column widget
+            return Column(
+              children: <Widget>[
 //InkWell learned from https://www.fluttercampus.com/guide/150/how-to-make-any-widget-clickable-on-flutter/
 InkWell(
     onTap: () async {
@@ -71,6 +85,12 @@ InkWell(
   ),
 ),
 ),
+              ],
+            );
+          }
+        }
+      },
+    ),
   ],
 )
           ],

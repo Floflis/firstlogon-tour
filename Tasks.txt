@@ -1,7 +1,5 @@
 r3 (fl attempt 47):
 
-- if osname isn't Floflis, then display:none the light-theme-card
-
 - stepscustom.dart: used to run custom steps before the laststep /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/custom/stepscustom.dart.soon
 
 - cmd/path bug after installed from deb: bash /home/daniella/data/flutter_assets/include/linux-icon-getter/linux-icon-getter distributor-logo
@@ -22,6 +20,7 @@ r4 (fl attempt 48):
 
 - leverage firstlogon_tour-cli's gsettings calls
 - change the displayed cards (mouse cursor, theme) and their images according to firstlogon-tour_cli output! /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/assets/img/screens/steps/themecolor/ubuntu
+- same for when not displaying light theme card when not floflis: detect by /1 rather than literally Floflis (so support its forks)
 
 README.md:
 Compatible with:
