@@ -1,11 +1,10 @@
 r3 (fl attempt 47):
 
-leverage firstlogon_tour-cli: /media/daniella/B/git/Floflis/Floflis/Floflis-DNA/layers/soil/to-merge/include-firstlogon/System/firstlogon-tour_cli
+- leverage firstlogon_tour-cli as a backend: /media/daniella/B/git/Floflis/Floflis/Floflis-DNA/layers/soil/to-merge/include-firstlogon/System/firstlogon-tour_cli
 
-- rename step2 to steplast
 - stepscustom.dart: used to run custom steps before the steplast
 
-- init-newbie.sh: will install flutter and inkscape
+
 
 - platform: support multi-arch, such as arm64 and armhf
 https://github.com/flutter/flutter/pull/61221
@@ -22,6 +21,7 @@ r4 (fl attempt 48):
 - change the displayed cards (mouse cursor, theme) and their images according to firstlogon-tour_cli output! /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/assets/img/screens/steps/themecolor/ubuntu
 
 - add test PNG icon to run in taskbar
+- init-newbie.sh: will install flutter and inkscape
 - build.sh: an inkscape command for generating the flutter icon out of a svg
 
 - frameless window, diminish that top header/bar https://stackoverflow.com/questions/63397479/flutter-desktop-frameless-window-support

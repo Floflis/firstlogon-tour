@@ -4,7 +4,7 @@ import 'steps.dart';
 
 import 'dart:io';
 
-Step step3(BuildContext context) {
+Step laststep(BuildContext context) {
   return Step(
         title: Text('Finish'),
         content: Column(

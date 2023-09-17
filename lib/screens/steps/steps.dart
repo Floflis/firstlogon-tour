@@ -5,7 +5,7 @@ import 'dart:io';
 
 import 'step1.dart';
 import 'step2.dart';
-import 'step3.dart';
+import 'laststep.dart';
 // import more steps as needed
 
 class StepScreen extends StatefulWidget {
@@ -36,7 +36,7 @@ List<Step> _buildSteps(BuildContext context) {
   return [
     step1(context, _currentStep, () => _incrementStep()),
     step2(context, _currentStep, () => _incrementStep()),
-    step3(context),
+    laststep(context),
     // add more steps here
   ];
 }
