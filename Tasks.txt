@@ -1,6 +1,6 @@
 r3 (fl attempt 47):
 
-- stepscustom.dart: used to run custom steps before the laststep /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/custom/stepscustom.dart.soon
+- stepscustom.dart: use it to run custom steps before the laststep /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/lib/screens/steps/custom/stepscustom.dart.soon ; document that at dev.md
 
 - cmd/path bug after installed from deb: bash /home/daniella/data/flutter_assets/include/linux-icon-getter/linux-icon-getter distributor-logo
 

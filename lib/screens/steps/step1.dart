@@ -6,10 +6,14 @@ import 'dart:io';
 
 Step step1(BuildContext context, int currentStep, Function incrementStep) {
   return Step(
-        title: Text('Step 1: Mouse cursor 🖱️'),
+        title: Text('Step 1: Mouse cursor'),
         content: Column(
           children: <Widget>[
-            Text('How you prefer your mouse cursor color?'),
+//            Text('How you prefer your mouse cursor color?'),
+                        Text(
+                    'How you prefer your mouse cursor color? 🖱️',
+                    style: Theme.of(context).textTheme.headline4,
+                  ),
 Row(
   children: <Widget>[
 //InkWell learned from https://www.fluttercampus.com/guide/150/how-to-make-any-widget-clickable-on-flutter/
@@ -29,7 +33,15 @@ InkWell(
   child: Column(
     children: <Widget>[
       Image.asset('assets/img/screens/steps/cursorcolor/black.png'),
-      Text('Black (like in "MecOS"🍎)'),
+//      Text('Black (like in "MecOS"🍎)'),
+      Text(
+                    'Black',
+                    style: Theme.of(context).textTheme.subtitle1,
+                  ),
+      Text(
+                    'like in "MecOS"🍎',
+                    style: TextStyle(fontSize: 12.0),
+                  ),
     ],
   ),
 ),
@@ -52,7 +64,15 @@ InkWell(
   child: Column(
     children: <Widget>[
       Image.asset('assets/img/screens/steps/cursorcolor/white.png'),
-      Text('White (like in "WindOS"🪟)'),
+//      Text('White (like in "WindOS"🪟)'),
+      Text(
+                    'White',
+                    style: Theme.of(context).textTheme.subtitle1,
+                  ),
+      Text(
+                    'like in "WindOS"🪟',
+                    style: TextStyle(fontSize: 12.0),
+                  ),
     ],
   ),
 ),

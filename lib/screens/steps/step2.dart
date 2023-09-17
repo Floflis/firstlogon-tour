@@ -9,7 +9,11 @@ Step step2(BuildContext context, int currentStep, Function incrementStep) {
         title: Text('Step 2: Theme intensity'),
         content: Column(
           children: <Widget>[
-            Text('How you prefer your system theme?'),
+//            Text('How you prefer your system theme?'),
+            Text(
+                    'How you prefer your system theme?',
+                    style: Theme.of(context).textTheme.headline4,
+                  ),
 Row(
   children: <Widget>[
 //InkWell learned from https://www.fluttercampus.com/guide/150/how-to-make-any-widget-clickable-on-flutter/
@@ -26,7 +30,15 @@ InkWell(
   child: Column(
     children: <Widget>[
       Image.asset('assets/img/screens/steps/themecolor/dark.png'),
-      Text('Dark (lets save my eyes while computing in the dark)'),
+//      Text('Dark (lets save my eyes while computing in the dark)'),
+      Text(
+                    'Dark',
+                    style: Theme.of(context).textTheme.subtitle1,
+                  ),
+      Text(
+                    'let\'s save my eyes while computing in the dark',
+                    style: TextStyle(fontSize: 12.0),
+                  ),
     ],
   ),
 ),
@@ -45,7 +57,15 @@ InkWell(
   child: Column(
     children: <Widget>[
       Image.asset('assets/img/screens/steps/themecolor/default.png'),
-      Text('Normal (i have strong eyes)'),
+//      Text('Normal (i have strong eyes)'),
+      Text(
+                    'Default',
+                    style: Theme.of(context).textTheme.subtitle1,
+                  ),
+      Text(
+                    'I have strong eyes',
+                    style: TextStyle(fontSize: 12.0),
+                  ),
     ],
   ),
 ),
@@ -80,7 +100,15 @@ InkWell(
   child: Column(
     children: <Widget>[
       Image.asset('assets/img/screens/steps/themecolor/light.png'),
-      Text('Light (i have stronger eyes, still; lets not abuse)'),
+//      Text('Light (i have stronger eyes, still; lets not abuse)'),
+      Text(
+                    'Light',
+                    style: Theme.of(context).textTheme.subtitle1,
+                  ),
+      Text(
+                    'I have stronger eyes, still; let\'s not abuse',
+                    style: TextStyle(fontSize: 12.0),
+                  ),
     ],
   ),
 ),

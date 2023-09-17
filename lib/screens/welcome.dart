@@ -68,11 +68,11 @@ class WelcomeScreen extends StatelessWidget {
                     },
                     child: Text('Begin Customization'),
                   ),
-                  SizedBox(height: 50),
-                  Text(
-                    'Please note that currently only Cinnamon is supported; GNOME and other desktop environments soon!',
-                    style: TextStyle(fontSize: 12.0),
-                  ),
+//                  SizedBox(height: 50),
+//                  Text(
+//                    'Please note that currently only Cinnamon is supported; GNOME and other desktop environments soon!',
+//                    style: TextStyle(fontSize: 12.0),
+//                  ),
                 ],
               ),
             ),
