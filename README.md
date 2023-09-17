@@ -61,11 +61,11 @@ mv firstlogon-tour firstlogon_tour && cd firstlogon_tour
 ```
 3. Get the dependencies and prepare for Linux build
 ```bash
-./init.sh
+sh init.sh
 ```
 4. Compile the application
 ```bash
-flutter build linux
+sh build.sh
 ```
 5. The executable will be located in the `build/linux/x64/release/bundle` directory.
 
