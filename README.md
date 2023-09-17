@@ -1,10 +1,16 @@
-# Ubuntu Cinnamon first logon Tour
+# First logon Tour
 
 A Flutter application designed to provide a first-logon tour/wizard for Ubuntu and other Debian-based distros; also, a replacement to the [ubuntu-welcome](https://github.com/canonical/ubuntu-welcome) app, running on its place and later calling it on Ubuntu-based distros.
 
-Currently supporting only Cinnamon as DE, but planned to add individual cases for the most popular distros and DEs.
+It uses [this CLI as backend](https://github.com/Floflis/firstlogon-tour_cli).
 
-It leverages external executables, which can be Rust programs or Bash script executables.
+## Currently supported:
+
+- Ubuntu 23+
+- Linux Mint 21.1+ Cinnamon
+- Ubuntu Cinnamon 22+
+- Floflis
+- more soon. PRs both to this GUI [and its backend](https://github.com/Floflis/firstlogon-tour_cli) are welcome!
 
 ## Screenshots
 
@@ -28,11 +34,11 @@ First logon welcome screen.
 
 ### Details
 
-<img src="./screenshots/Screenshot from 2023-09-14 06-08-34.png"/>
+<img src="./screenshots/Screenshot from 2023-09-17 04-14-08.png"/>
 
 Set cursor color (black, white).
 
-<img src="./screenshots/Screenshot from 2023-09-14 06-08-37.png"/>
+<img src="./screenshots/Screenshot from 2023-09-17 04-14-12.png"/>
 
 Set theme color (dark, light, normal).
 
@@ -83,7 +89,7 @@ flutter test
 
 ## Authors
 
-- Daniella Mesquita/Floflis DAO
+- [Daniella Mesquita](https://danimesq.com) and [Floflis DAO](https://floflis.com)
 
 ## License
 
