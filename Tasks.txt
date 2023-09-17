@@ -1,13 +1,7 @@
 r3 (fl attempt 47):
 
-leverage firstlogon_tour-cli, even its gsettings calls from it.
-- inside sh: detect username, which will be useful for changing Cinnamon applet settings.
-- also inside sh: run cmds according to the linux distro (see "Current drawbacks" CTRL+F) pair its features with firstlogon_tour (GUI)
-- /media/daniella/B/git/Floflis/Floflis/Floflis-DNA/layers/soil/to-merge/include-firstlogon/System/firstlogon-tour_cli
-- /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/Tasks/multidistroSupport
+leverage firstlogon_tour-cli: /media/daniella/B/git/Floflis/Floflis/Floflis-DNA/layers/soil/to-merge/include-firstlogon/System/firstlogon-tour_cli
 
-- add test PNG icon to run in taskbar
-- build.sh: an inkscape command for generating the flutter icon out of a svg
 - init-newbie.sh: will install flutter and inkscape
 
 - platform: support multi-arch, such as arm64 and armhf
@@ -20,6 +14,12 @@ https://github.com/flutter/flutter/issues/74929
 [REPRODUCE ALL ON FMWK-FLUTTER]
 
 r4 (fl attempt 48):
+
+- leverage firstlogon_tour-cli's gsettings calls
+- change the displayed cards (mouse cursor, theme) and their images according to firstlogon-tour_cli output! /media/daniella/B/git/Floflis/Floflis/ProgramsApps/firstlogon_tour/assets/img/screens/steps/themecolor/ubuntu
+
+- add test PNG icon to run in taskbar
+- build.sh: an inkscape command for generating the flutter icon out of a svg
 
 - frameless window, diminish that top header/bar https://stackoverflow.com/questions/63397479/flutter-desktop-frameless-window-support
 - ask chatgpt if this sizing is the page's padding or a pre-set window size; ask to set it bound the page size, so make that window smaller
