@@ -25,6 +25,7 @@ flutter:
     - assets/img/screens/steps/cursorcolor/
     - assets/img/screens/steps/themecolor/
     - include/linux-icon-getter/
+    - include/firstlogon-tour_cli/
 
   # The following section is specific to Flutter.
 #  flutter:
