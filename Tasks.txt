@@ -2,6 +2,9 @@ r3 (fl attempt 47):
 
 leverage firstlogon_tour-cli: /media/daniella/B/git/Floflis/Floflis/Floflis-DNA/layers/soil/to-merge/include-firstlogon/System/firstlogon-tour_cli
 
+- rename step2 to steplast
+- stepscustom.dart: used to run custom steps before the steplast
+
 - init-newbie.sh: will install flutter and inkscape
 
 - platform: support multi-arch, such as arm64 and armhf
