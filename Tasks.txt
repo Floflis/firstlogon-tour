@@ -6,10 +6,11 @@ r3 (fl attempt 47):
 
 - cmd/path bug after installed from deb: bash /home/daniella/data/flutter_assets/include/linux-icon-getter/linux-icon-getter distributor-logo
 
-- platform: support multi-arch, such as arm64 and armhf + cross-compiling
+- platform: support multi-arch, such as arm64 (and armhf?) + cross-compiling
 https://github.com/flutter/flutter/pull/61221
 https://github.com/flutter/flutter/issues/117826#issuecomment-1370378620
 https://github.com/flutter/flutter/issues/74929
+https://www.google.com/search?client=firefox-b-d&q=Flutter+armhf#ip=1
 
 - ask to install MS Edge (display terms first)
 - ask to install MS Calc
