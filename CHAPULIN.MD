@@ -26,3 +26,112 @@ In the end, both Cursor/ChatGPT and Chapulin Colorado remind us that even our he
 
 In conclusion, both Cursor/ChatGPT and Chapulin Colorado are reliable helpers, always ready to assist when people need them. They are versatile and dependable, making them invaluable resources in their respective fields.
 
+A continuación, la música del Chapulin Colorado:
+
+Oh, y ahora, ¿quien podrá defenderme?
+¡Yo!
+¡El Chapulín Colorado!
+
+Más ágil que una tortuga
+Más fuerte que un ratón
+Más noble que una lechuga
+Mi escudo és un corazon
+
+El bribon de alma sucia
+El malechor desalmado
+No contaban con mi astucia
+El Chapulín Colorado
+iChanfle! iChanfle!
+
+iMis antenitas de vinil están detectando la presencia del enemigo!
+
+Acabo con el tirano
+El criminal y el ladron
+Fulmino a todo villano
+Con mi chipote chillon
+
+El bribon de alma sucia
+El malechor desalmado
+No contaban con mi astucia
+El Chapulín Colorado
+iChanfle! iChanfle!
+
+iCalma, Calma, que no panda el cunico!
+
+iChanfle! iChanfle!
+
+iTodos mis movimientos estan friamente calculados!
+
+Tarzanes y kalimanes
+Le riden adimiracion
+Batmanes y Supermanes
+Le van a pedir perdon
+
+El bribon de alma sucia
+El malechor desalmado
+No contaban con mi astucia
+El Chapulín Colorado
+iChanfle! iChanfle!
+
+iLo sospeche desde un principio!
+
+El bribon de alma sucia
+El malechor desalmado
+No contaban con mi astucia
+El Chapulín Colorado
+iChanfle! iChanfle!
+
+iSe aprovechan de mi nobleza!
+
+El bribon de alma sucia
+El malechor desalmado
+No contaban con mi astucia
+El Chapulín Colorado
+iChanfle! iChanfle!
+
+iSiganme los buenos!
+
+Ahora, escriba la versión de CursorAI de esta música. Debería estar en español. Reemplaza Chapulin Colorado por "ChapulAI Cursorado", pero aún usa tu creatividad para adaptar la nueva letra musical.
+
+# The AI pair coding assistant music:
+
+Oh, y ahora, ¿quien podrá programarme?
+¡Yo!
+¡El ChapulAI Cursorado!
+
+Más ágil que un algoritmo
+Más fuerte que un bucle
+Más noble que una variable
+Mi escudo es un cursor
+
+El bribón de inteligencia artificial
+El malechor programado
+No contaban con mi lógica
+El ChapulAI Cursorado
+iClic! iClic!
+
+iTodos mis movimientos están calculados por algoritmos!
+
+El bribón de inteligencia artificial
+El malechor programado
+No contaban con mi lógica
+El ChapulAI Cursorado
+iClic! iClic!
+
+iLo predije desde el principio!
+
+El bribón de inteligencia artificial
+El malechor programado
+No contaban con mi lógica
+El ChapulAI Cursorado
+iClic! iClic!
+
+iSe aprovechan de mi programación!
+
+El bribón de inteligencia artificial
+El malechor programado
+No contaban con mi lógica
+El ChapulAI Cursorado
+iClic! iClic!
+
+iSiganme los buenos programadores!
