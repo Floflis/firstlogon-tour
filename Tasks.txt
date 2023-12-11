@@ -44,13 +44,18 @@ Current drawbacks:
 r5 (fl attempt 49):
 
 mv to a GTK/GNOME design:
+https://github.com/ubuntu/user_manager https://github.com/ubuntu-flutter-community/yaru_tutorial
+https://github.com/ubuntu/yaru.dart
+https://github.com/ubuntu/yaru_widgets.dart
+https://github.com/ubuntu/yaru_icons.dart
+https://github.com/canonical/ubuntu-flutter-plugins
+-
 https://www.google.com/search?client=firefox-b-d&q=gnome+fluter
-https://github.com/gtk-flutter/libadwaita
+-? https://github.com/gtk-flutter/libadwaita
 https://github.com/gtk-flutter/gtk_theme_fl
-https://github.com/gtk-flutter/adwaita
+-? https://github.com/gtk-flutter/adwaita
 https://discourse.ubuntu.com/t/a-flutter-based-desktop-environment-for-ubuntu/26124/8
 https://github.com/ubuntu/yaru_widgets.dart
-https://github.com/ubuntu-flutter-community/yaru_tutorial
 https://github.com/ubuntu-flutter-community/settings
 [REPRODUCE ON FMWK-FLUTTER]
 
