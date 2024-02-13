@@ -6,9 +6,9 @@ It uses [this CLI as backend](https://github.com/Floflis/firstlogon-tour_cli).
 
 ## Currently supported:
 
-- Ubuntu 23+
-- Linux Mint 21.1+ Cinnamon
-- Ubuntu Cinnamon 22+
+- Ubuntu 23+ (or older; untested)
+- Linux Mint 21.1+ Cinnamon (or older; untested)
+- Ubuntu Cinnamon 22+ (or older; untested)
 - Floflis
 - more soon. PRs both to this GUI [and its backend](https://github.com/Floflis/firstlogon-tour_cli) are welcome!
 
